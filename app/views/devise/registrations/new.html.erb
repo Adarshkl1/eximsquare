@@ -1,0 +1,86 @@
+<div class="col-md-6 col-md-offset-3">
+</br>
+<h2 class="text-center sign-head"><b>Sign up</b></h2>
+
+
+<%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+  <%= render "devise/shared/error_messages", resource: resource %>
+
+    <div class="field">
+    <b><%= f.label :name,"Name",class: "signin-text" %> : </b><br /> 
+    <%= f.text_field :fullname,autofocus: true,placeholder: "Full Name", :maxlength=>"40",class: "form-control" %>
+  </div></br>
+
+    <div class="field"> 
+    <b><%= f.label :country,"Country",class: "signin-text" %> : </b><br />
+    <%= f.text_field :country, placeholder: "Your Country", :maxlength=>"20",class: "form-control"  %>
+  </div></br>
+
+  <div class="field">
+ <b> <%= f.label :Business_Type,class: "signin-text" %> : </b><br />
+    <%= f.select :business_type,[["Select One", " "],
+['Retail store'],
+['Agriculture,Animal,Food & Beverages'], 
+['Apparel, Textile & Leather'], 
+['Fashion Accessories & wear'],
+['Cosmetic & Beauty'], 
+['Sports & Fitness'], 
+['Automobiles & Transportations'], 
+['Computer & Telecommunication'], 
+['Electronics'], 
+['Electrical'],
+['Education service business'],  
+['Buildings & Construction'], 
+['School, College & University'],
+['Hospital & Medical'], 
+['Household & Kitchen'], 
+['Hotel/Touism/Paying guest'], 
+['Machinery & Industrial parts'],
+['Manufacturer'],
+['Valuable Jewelry, Gem & Metal'],
+['Wholesaler/Distributor'], 
+['Bags, Rubber & Plastics'], 
+['Energy, Environments & Power'], 
+['Exporter/Importer'],
+['Paper & Packing material'], 
+['Printing, publishing & Hardware'],
+['Security, Alarm & Safety'], 
+['Laboratory & Measuring instruments'], 
+['Pipes, Tubes & Fitting'], 
+['Handicrafts, Toys, Gifts & Crafts'], 
+['Furniture & Furnishings'], 
+['Games, Movies & Entertainment'], 
+['Business services & Freelancer']],{},class: "form form-group form-control"%>
+  </div>
+  
+  <div class="field">
+    <%= f.label :email %><br />
+    <%= f.email_field :email, autofocus: true, autocomplete: "email",:maxlength=>"40",class: "form-control" %>
+  </div></br>
+
+  <div class="field">
+    <%= f.label :password %>
+    <% if @minimum_password_length %>
+    <em>(<%= @minimum_password_length %> characters minimum)</em>
+    <% end %><br />
+    <%= f.password_field :password, autocomplete: "new-password",:maxlength=>"40",class: "form-control" %>
+  </div></br>
+
+  <div class="field">
+    <%= f.label :password_confirmation %><br />
+    <%= f.password_field :password_confirmation, autocomplete: "new-password",:maxlength=>"40",class: "form-control" %>
+  </div></br>
+
+    <div class="field">
+    <b><%= f.label :Mobile_Number,class: "signin-text" %> : </b><br />
+    <%= f.text_field :mobile_number,:size=>"55",:maxlength=>"30",class: "form-control",placeholder: "Mobile_Number" %>
+  </div></br>
+
+  <div class="actions">
+    <%= f.submit "Sign up",class: "btn-success btn btn-lg" %>
+  </div>
+<% end %>
+
+<%= render "devise/shared/links" %>
+
+</div>

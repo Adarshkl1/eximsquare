@@ -1,0 +1,2430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<style>
+
+
+	  
+</style>
+
+<div class="table-responsive">
+<table class="table table-bordered">
+<h3>Cereal</h3>				
+<tr>		
+<td>Barley</td>		
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Russia(18.2M)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Germany(12.3M)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>France(10.4M)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Ukraine(9.95M)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Australia(8.6M)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Canada(8.1M)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Spain(7.6M)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Turkey(6.7M)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>UK(6.4M)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>USA(4.3M)</td>
+</tr>
+
+
+
+
+
+<tr>		
+<td>Buckwheat</td>		
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Russia(892.16K)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>China(503.99K)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Ukraine(97.64K)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>US(86.40K)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Brazil(65.12K)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Japan(44.80K)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Kazakhstan(40.09K)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Belarus (28.30K)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Tanzania(25.77K)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Canada(18.9k)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Belgium(16.0k)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Nepal(11.44k)</td>
+</tr>
+
+<tr>
+<td>Canary-seeds</td>		
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Canada(69.18%)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Thailand(14.60%)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Argentina(7.98%)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Turkey(4.87%)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Australia(1.93%)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Uruguay(1.41%)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Morocco(0.08%)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Mexico(0%)</td>
+</tr>		
+
+
+<tr>		
+<td>Fonio</td>		
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Guinea(619.2k)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Nigeria(94.8k)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Mali(44.9k)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Côte-d'Ivoire(20.8k)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Burkina Faso(10.6k)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Niger(6.34k)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Senegal(1.12k)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Benin(1.4k)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Guinea-Bissau(742)</td>
+</tr>
+
+
+<tr>
+<td>Maize(corn)</td>		
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>US(392.5m)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>China(257.3m)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Brazil(82.3m)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Argentina(43.5m)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Ukraine(35.8m)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Indonesia(30.3m)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>India(27.8m)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Mexico(27.2m)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Romania(18.7m)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Canada(13.9m)</td>
+</tr>
+
+
+<tr>
+<td>Millet</td>		
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>India(12.49M)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Niger(3.51M)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>China(2.30M)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Nigeria(2.00M)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Mali(1.92M)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Ethiopia(1.22M)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Senegal(1.14M)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Burkina-Faso(957.00K)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Chad(686.58K)</td>
+</tr>		
+		
+		
+<tr>		
+<td>Oats</td>		
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Russian(4.7m)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Canada(3.8m)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Poland(1.4m)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Australia(1.2m)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Finland(1.03m)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>USA(944k)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Spain(884k)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Brazil(878k)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>UK(818k)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Argentina(798k)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Sweden(768k)</td>
+</tr>
+
+
+<tr>		
+<td>Quinoa</td>		
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Peru(117.3k)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Bolivia(78.8k)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Ecuador(0.9k)</td>
+</tr>		
+
+<tr>
+<td>Rice/Paddy</td>		
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>China(208.3m)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>India(162.6m)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Indonesia(79m)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Vietnam(48.1m)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Thailand(38.8m)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Bangladesh(34.8m)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Myanmar(34m)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Philippines(19m)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Brazil(12.5m)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Japan(10.9m)</td>
+</tr>
+
+<tr>
+<td>Rye</td>		
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>European-Union(63.4m)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Germany(23.1m)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Poland(21.7m)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Russia(19.8m)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>China(10.8m)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Belarus(5.2m)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Denmark(4.9m)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Ukraine(3.9m)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Spain(3.9m)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Turkey(3.4m)</td>
+</tr>
+
+
+<tr>
+<td>Sorghum</td>		
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>US(11.5m)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>India(7.5m)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Nigeria(7.4m)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Mexico(6.1m)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Sudan(4.4m)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Sudan-former(3.7m)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>China(3.1m)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Argentina(2.9m)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Ethiopia(2.2m)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Australia(1.9m)</td>
+</tr>
+
+
+<tr>		
+<td>Triticale</td>		
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Poland(4.09m)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Germany(1.94m)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>France(1.38m)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Belarus(1.01m)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Spain(0.65m)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Russia(0.4m)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Romania(0.34m)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Hungary(0.33m)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Austria(0.28m)</td>
+</tr>
+
+
+<tr>
+<td>Weath</td>		
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>China(135m)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>India(103m)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Russia(77m)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>US(50m)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>France(40m)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Canada(34m)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Ukraine(28m)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Pakistan(26m)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Australia(24m)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Argentina(21m)</td>
+</tr>
+
+<tr>		
+<td>Cotten</td>		
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>India(6.1m)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>China(5.5m)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>US(4.1m)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Brazil(1.9m)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Pakistan(1.7m)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Uzbekistan(792k)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Turkey(711k)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Australia(644k)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Benin(314k)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Greece(304k)</td>
+</tr>		
+</table>
+</div>
+
+<table>	
+
+<h3>Vegetables</h3>		
+		
+<tr>		
+<td>Lettuce & chicory</td>		
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>China(14.32M)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>USA(4.40M)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>India(1.12M)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Spain(969.06K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Italy(735.47K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Japan(580.55K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Mexico(541.80K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Belgium(538.90K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Turkey(520.15K)</td>
+</tr>    		
+		
+<tr>		
+<td>Lentil</td>		
+    <td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Canada(3.4m)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>India(1.08m)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Turkey(366k)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>USA(264k)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Nepal(254k)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Australia(192k)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Ethiopia(168k)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Bangladesh(154k)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>China(144k)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Kazakhstan(139k)</td>
+ 	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Syria(112k)</td>
+</tr>
+
+<tr>		
+<td>Dry Bean</td>		
+     <td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Myanmar(3.9m)</td>
+	 <td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>India(3.6m)</td>
+	 <td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Brazil(2.9m)</td>
+	 <td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>China(1.4m)</td>
+	 <td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Mexico(1.2m)</td>
+	 <td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Tanzania(1.1m)</td>
+	 <td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>USAs(1.1m)</td>
+	 <td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Kenya(529k)</td>
+	 <td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Uganda(461k)</td>
+	 <td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Rwanda(43k)</td>
+</tr>	
+		
+<tr>		
+<td>onion</td>		
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>China(20.2m)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>India(13.4m)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>United States(3.3m)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Egypt(2.2m)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Iran(1.92m)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Turkey(1.9m)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Pakistan(1.7m)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Brazil(1.5.5m)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Russia(15.3m)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>South Korea(14.1m)</td>
+</tr>	
+		
+		
+<tr>		
+<td>Cabbage and other brassicas</td>		
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>China(32.8m)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>India(8.5m)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Russia(3.3m)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Japan(2.3m)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>South Korea(2.1m)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Ukraine(1.9m)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Indonesia(1.4m)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Poland(1.1m)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Romania(990k)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>USA(964k)</td>
+</tr>	
+		
+		
+<tr>		
+<td>Green Bean</td>		
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>India(6.3m)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Myanmar(5.3m)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Brazil(3.0m)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>USA(1.6m)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>China(1.33m)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>China(1.32m)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Mexico(1.18m)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Tanzania(1.14m)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Uganda(1.2m)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Kenya(846k)</td>
+</tr>	
+		
+<tr>		
+<td>Green pea</td>		
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>China(12.5m)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>India(5.3m)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>USA(243k)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>France(227k)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Egypt(189k)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Pakistan(151k)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Peru(131k)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Algeria(130k)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>United Kingdom(129k)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Russian(117k)</td>
+</tr>	
+		
+<tr>		
+<td>Chickpea</td>		
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>India(7.8m)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Australia(874k)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Myanmar(558k)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Pakistan(518k)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Turkey(456k)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Ethiopia(444k)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Russian(318k)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Iran(178k)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Mexico(124k)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>USA(108k)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Canada(104k)</td>
+</tr>	
+
+<tr>		
+<td>pulses</td>		
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>India</td>	
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Canada</td>	
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Myanmar</td>	
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>China</td>	
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Nigeria</td>	
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Brazil</td>	
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Australia</td>	
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>USA</td>	
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Russia</td>	
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Tanzania</td>	
+</tr>	
+		
+		
+<tr>		
+<td>Cauliflower and Broccoli</td> 		
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>China(9.1m)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>India(7.8m)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Spain(540k)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Mexico(481k)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Italy(381k)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>France(337k)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>USA(288k)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Poland(276k)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Pakistan(229k)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Egypt(178k)</td>
+</tr>	
+		
+		
+<tr>		
+<td>Eggplant</td>		
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>China(28m)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>India(13m)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Egypt(1.2m)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Turkey(828k)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Iran(733k)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Indonesia(545k)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Iraq(519k)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Japan(321k)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Italy(302k)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Philippines(219k)</td>
+</tr>	
+		
+<tr>		
+<td>potato</td>		
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>China(99.2m)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>India(49.8m)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Russian(29.5m)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Ukraine(22.2m)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>USA(20.1m)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Germany(11.7m)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Bangladesh(10.2m)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Poland(9.1m)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Netherlands(7.39m)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>France(7.34m)</td>
+</tr>	
+		
+		
+<tr>		
+<td>SPINACH</td>		
+	 <td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>China(28.61M)</td>
+	 <td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>USA(387.43K)</td>
+	 <td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Kenya(244.34K)</td>
+	 <td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Turkey(221.52K)</td>
+	 <td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Japan(218.28K)</td>
+	 <td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Indonesia (167.02K)</td>
+	 <td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Italy(99.97K)</td>
+	 <td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Iran(98.66K)</td>
+	 <td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>France(97.11K)</td>
+	 <td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Pakistan(88.97k)</td>
+</tr>	      
+		
+		
+<tr>		
+<td>Cassava</td> 		
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Nigeria(47.4m)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Thailand(30.1m)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Indonesia(24.9m)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Brazil(21.4m)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Angola(16.4m)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Ghana(15.9m)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Congo(14.6m)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Viet Nam(9.7m)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Cambodia(7.9m)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>India(7.2m)</td>
+</tr>	
+		
+		
+<tr>		
+<td>Soybean</td>		
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>USA(118m)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Brazil(98m)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Argentina(59m)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>India(15m)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>China(12m)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Paraguay(9m)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Canada(5m)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Ukraine(4m)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Bolivia(3.2m)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Russian(3.1m)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Uruguay(2.4m)</td>
+</tr>	
+		
+		
+<tr>		
+<td>Carrots and Turnips Produced</td>		
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>China(16.8m)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Uzbekistan(1.8m)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Russia(1.6m)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>USA(1.4m)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Ukraine(930k)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Poland(742k)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>UK(696k)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Japan(600k)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Germany(583k)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Turkey(568k)</td>
+</tr>	
+		
+		
+<tr>		
+<td>Cucumber</td> 		
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>China(56m)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Iran(2.2m)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Turkey(1.9m)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Russia(1.7m)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Mexico(1.7m)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Ukraine(985k)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Uzbekistan(857k)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>USA(700k)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Spain(643k)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Japan(550k)</td>
+</tr>	
+		
+		
+<tr>		
+<td>Ginger Production</td>		
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>India(1.1m)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Nigeria(522k)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>China(499k)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Indonesia(344k)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Nepal(276k)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Thailand(172k)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Cameroon(79.9k)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Bangladesh(77.6k)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Japan(62.8k)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Mali(38.6k)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Taiwan(28.1k)</td>
+</tr>	
+		
+<tr>		
+<td>Pumpkin, squash and gourd</td>		
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>China(7.9m)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>India(5.9m)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Russian(1.22m)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Ukraine(1.20m)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>USA(1.05m)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Mexico(678k)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Indonesia(604k)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Italy(588k)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Cuba(518k)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Turkey(499k)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Spain(476k)</td>
+</tr>	
+
+
+<tr>		
+<td>Rapeseed Production</td>		
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Canada(18.6m)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>China(13.5m)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>India(9.3m)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>France(3.5m)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Pakistan(3.3m)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Germany(2.8m)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Australia(2.4m)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Poland(2.3m)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Russia(2.1m)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>UK(1.8m)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>USA(1.6m)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Czech-Republic(1.2m)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Hungary(0.9m)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Romania(0.8m)</td>
+</tr>	
+		
+<tr>		
+<td>Safflower Production</td>		
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Kazakhstan(174k)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>India(109k)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>USA(95k)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Mexico(91k)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Argentina(49k)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Turkey(45k)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Russian(41k)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>China(32k)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Uzbekistan(25k)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Tanzania(13k)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Kyrgyzstan(12k)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Ethiopia(8k)</td>
+</tr>	
+
+<tr>		
+<td>Sunflower seed Production</td>		
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Ukraine(13.8m)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Russian(11.8m)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Argentina(3.8m)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>China(2.8m)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Romania(2.2m)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Bulgaria(1.8m)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Turkey(1.6m)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Hungary(1.5m)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>USA(1.)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>France(1.1m)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Tanzania(898k)</td>
+</tr>	
+		
+		
+<tr>		
+<td>Yams Production</td>		
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Nigeria(32.8m)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Ghana(6.9m)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Ivory Coast(5.8m)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Benin(2.7m)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Ethiopia(1.5m)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Togo(878k)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Cameroon(547k)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>African-Republic(480k)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Chad(440k)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Cuba(368k)</td>
+</tr>	
+		
+ <tr>		
+<td>Sugar Production</td> 		
+	    <td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Brazil(37.4m)</td>
+	    <td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>India(26.8m)</td>
+	    <td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>China(11.8m)</td>
+	    <td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Thailand(10.2m)</td>
+	    <td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>United States(7.6m)</td>
+	    <td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Pakistan(6.2m)</td>
+	    <td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Mexico(6.1m)</td>
+	    <td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Russia(5.4m)</td>
+	    <td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>France(4.6m)</td>
+	    <td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Australia(4.3m)</td>
+	    <td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Guatemala(2.7m)</td>
+	    <td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Colombia(2.3m)</td>
+	    <td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Philippines(2.2m)</td>
+	    <td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Ukraine(2.1m)</td>
+</tr>
+
+<tr>		
+<td>Sweet Potato</td> 		
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>China(70.9m)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Nigeria(3.89m)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Tanzania(3.40m)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Ethiopia(2.89m)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Indonesia(2.34m)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Uganda(1.88m)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Vietnam(1.48m)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>USA(1.34m)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>India(1.087m)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Rwanda(1.080m)</td>
+</tr>	
+
+
+<tr>		
+<td>Sesame Seed Production</td>		
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Myanmar(78.5m)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>India(75.5m)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Tanzania(66.8m)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Nigeria(58.9m)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>China(39.8m)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Ethiopia(29.9m)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Burkina Faso(24.8m)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>South Sudan(20.8m)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Chad(17.6m)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Uganda(14.4m)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Niger(8.24m)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Mozambique(6.59m)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Mexico(5.8m)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Mali(4.9m)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Cameroon(4.1m)</td>
+</tr>	
+ 		
+<tr>		
+<td>Okra Production</td>		
+   	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>India(5.8m)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Nigeria(1.9m)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Sudan(288k)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Mali(244k)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Pakistan(118k)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Côte-d'Ivoire(116k)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Cameroon(92k)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Ghana(62k)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Egypt(57k)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Malaysia(55k)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Saudi-Arabia(46k)</td>
+</tr>
+
+<tr>		
+<td>Apricots Production</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Turkey(676K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Iran(452k)</td>	
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Uzbekistan(356K)</td>	
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Algeria(285K)</td>	
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Italy(263K)</td>	
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Pakistan(189K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Morocco(159K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>France(155)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Ukraine(119K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Japan(106K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Egypt(96K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Spain(86K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Greece(82K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Syrian(75K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>USA(60K)</td>
+</tr>
+
+<tr>		
+<td>Olive</td>	
+	
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Spain(6.7M)</td>	
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Italy(2.8M)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Morocco(1.9M)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Turkey(1.6)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Greece(1.4)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Egypt(1.1)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Portugal(997K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Tunisia(876K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Algeria(868k)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Syria(844K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Argentina(325K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Jordan(214k)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Peru(190K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>USA(151K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Libya(140K)</td>
+    </tr>	
+	
+
+
+<tr>		
+<td>Pear Production</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>China(19.4M)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Argentina(905K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>USA(738K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Italy(701K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Turkey(472K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>South Africa(433K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>India(399K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Netherlands(374K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Spain(366K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Belgium(331K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Chile(299K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Japan(278K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Iran(254K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>South Korea(238K)</td>
+    </tr>	
+	
+
+
+	
+<tr>		
+<td>Banana Production</td>
+    <td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>India(29.1M)</td>	
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>China(13.3M)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Indonesia(7M)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Brazil(6.7M)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Ecuador(6.5M)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Philippines(5.8M)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Angola(3.8M)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Guatemala(3.7M)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Tanzania(3.5)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Rwanda(3.0M)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Costa Rica(2.4M)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Mexico(2.3M)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Colombia(2.0M)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Vietnam(1.9M)</td>
+    </tr>	
+	
+
+<tr>		
+<td>Mango,Mangosteen,Guava</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>India(25.6M)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Indonesia(3.2M)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>China(2.5M)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Mexico(2.3M)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Pakistan(2.2M)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Malawi(2.0M)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Brazil(1.9M)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Thailand(1.6M)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Egypt(1.4M)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Bangladesh(1.4M)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Vietnam(1.1M)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Nigeria(946M)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Kenya(867M)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Mali(814M)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Philippines(753M)</td>
+    </tr>	
+	
+<tr>		
+<td>Coconut Population</td> 
+    <td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>India(1,428M)</td>
+    <td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>China(1,425M)</td>
+    <td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>United States(339M)</td>
+    <td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Indonesia(277M)</td>
+    <td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Pakistan(240M)</td>
+    <td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Nigeria(223M)</td>
+    <td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Brazil(216M)</td>
+    <td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Bangladesh(172M)</td>
+    <td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Russia(144M)</td>
+    <td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Mexico(128M)</td>
+    <td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Ethiopia(126M)</td>
+    <td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Japan(123M)</td>
+    <td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Philippines(117M)</td>
+    <td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Egypt(112M)</td>
+    <td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Dr Congo(102M)</td>
+    <td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Vietnam(98M)</td>
+    <td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Iran(89M)</td>
+    </tr>	
+	
+
+
+
+<tr>		
+<td>Figs Production</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Turkey(305K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Egypt(167K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Algeria(131K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Iran(70K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Morocco(59K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Syria(43K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>USA(31K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Brazil(26K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Spain(25K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Tunisia(22K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Albania(20K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>India(14K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Japan(14K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>China(14K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Italy(11K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Libya(10K)</td>
+    </tr>	
+	
+
+	
+<tr>		
+<td>Grape Production</td>
+     <td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>China(14,8M)</td>	
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Italy(8.2M)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>United States of America(7.0M)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>France(6.2M)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Spain(5.9M)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Turkey(4.0M)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>India(2.5M)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Chile(2.4M)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Iran(2.4M)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>South Africa(2.0M)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Australia(1.7M)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Argentina(1.6M)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Egypt(1.6M)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Uzbekistan(1.5M)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Germany(1.2M)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Greece(990k)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Brazil(984k)</td>
+    </tr>	
+	
+<tr>		
+<td>Orange Production</td>
+    <td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Brazil(17.2M)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>China(8.5M)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>India(7.5M)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>United States of America(5.1M)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Mexico(4.6M)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Egypt(3.4M)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Spain(3.1M)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Indonesia(2.1M)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Iran(1.9M)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Turkey(1.8M)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Pakistan(1.5M)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Italy(1.4M)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>South Africa(1.3M)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Argentina(1.0M)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Greece(918k)</td>
+    </tr>	
+	
+ 
+
+<tr>		
+<td>Papaya Production</td>
+        <td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>India(5.6M)</td>
+		<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Brazil(1.4M)</td>
+		<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Mexico(951k)</td>	
+		<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Indonesia(904k)</td>	
+		<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Dominican Republic(863k)</td>	
+		<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Nigeria(836k)</td>	
+		<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Congo-Kinshasa(215k)</td>
+		<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Cuba(212k)</td>	
+		<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Colombia(188k)</td>	
+		<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Thailand(169k)</td>
+		<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Peru(169k)</td>
+		<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Philippines(162k)</td>
+		<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Venezuela(160k)</td>	
+		<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>China(156k)</td>
+        </tr>	
+	
+
+<tr>		
+<td>Peach & Nectarine Production</td>
+        <td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>China(14.4M)</td>
+		<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Spain(1.5M)</td>
+		<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Italy(1.4M)</td>
+		<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>United States of America(927K)</td>
+		<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Iran(863K)</td>
+		<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Greece(847K)</td>
+		<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Turkey(674K)</td>
+		<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Chile(337K)</td>
+		<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>India(287K)</td>
+		<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Egypt(266K)</td>
+		<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Argentina(248K)</td>
+		<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>South Korea(230K)</td>
+		<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Uzbekistan(226K)</td>
+		<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>France(207K)</td>
+		<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Brazil(191K)</td>
+		<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>South Africa(179K)</td>
+        </tr>	
+	
+<tr>		
+<td>Apple Production</td>
+        <td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>China(42.4M)</td>
+		<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>United States of America(4.9M)</td>
+		<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Turkey(3.6M)</td>
+		<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Poland(3.0M)</td>
+		<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>India(2.3M)</td>
+		<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Italy(2.3M)</td>
+		<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Iran(2.2M)</td>
+		<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Russian Federation(1.9M)</td>
+		<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>France(1.7M)</td>
+		<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Chile(1.6M)</td>
+		<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Brazil(1.2M)</td>
+		<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Ukraine(1.1M)</td>
+		<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Uzbekistan(1.1M)</td>
+		<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Germany(991K)</td>
+		<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>South Africa(891K)</td>
+		</tr>	
+	
+
+       
+<tr>		
+<td>Pineapple Production</td>
+    <td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Costa Rica(2.9M)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Brazil(2.6M)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Philippines(2.6M)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>China(2.0M)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>India(1.9M)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Thailand(1.8M)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Nigeria(1.5M)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Indonesia(1.3M)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Mexico(875K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Colombia(755K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Ghana(661K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Angola(644K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Vietnam(555K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Taiwan(527K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Peru(461K)</td>
+    </tr>	
+	
+
+<tr>		
+<td>Gooseberry Production</td>
+
+		<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Indonesia(18M)</td>
+		<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Philippines(15M)</td>
+		<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>India(11M)</td>
+		<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Brazil(2.9M)</td>
+		<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>SriLanka(2.1M)</td>
+		<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>VietNam(1,3M)</td>
+		<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Papua New Guinea(1,2M)</td>
+		<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Mexico(1,1M)</td>
+		<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Thailand(1,0M)</td>
+		<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Malaysia(624K)</td>
+		<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Tanzania(530K)</td>
+		<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Myanmar(510K)</td>
+		<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Vanuatu(395K)</td>
+		<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Solomon Islands(384K)</td>
+		<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Ghana(366K)</td>
+        </tr>	
+	
+
+	
+<tr>		
+<td>Lemon Production</td>
+    <td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>India(2.9M)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Mexico(2.4M)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>China(2.3M)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Argentina(1.6M)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Brazil(1.2M)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Spain(857K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Turkey(850K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>United States of America(822K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Iran(457K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Italy(379K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Egypt(341K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>South Africa(323K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Peru(282K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Sudan(270K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Syria(180K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Colombia(144K)</td>
+    </tr>	
+	
+
+
+<tr>		
+<td>Raspberry Production</td>
+	    <td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Russian (164K)</td>
+		<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>USA(137K)</td>
+		<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Poland(129K)</td>
+		<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Mexico(112K)</td>
+		<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Serbia(61K)</td>
+		<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Ukraine(31K)</td>
+		<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Bosnia and Herzegovina(22K)</td>
+		<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Chile(19K)</td>
+		<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Spain(17K)</td>
+		<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>United Kingdom(14K)</td>
+		<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Azerbaijan(12K)</td>
+		<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Canada(10K)</td>
+		<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Bulgaria(8K)</td>
+		<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Germany(5K)</td>
+		<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>France(4K)</td>
+		<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Norway(2.5K)</td>
+		<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Switzerland(2K)</td>
+        </tr>	
+		
+		
+
+<tr>		
+<td>Strawberry Production</td>
+    <td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>China(3.8M)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>United States of America(1.4M)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Mexico(468K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Egypt(464K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Turkey(415K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Spain(366K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Russian Federation(197K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Poland(196K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>South Korea(196K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Japan(159K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Germany(143K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Morocco(136K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Italy(131K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>United Kingdom(118K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Belarus(87K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Ukraine(61K)</td>
+    </tr>	
+	
+
+
+<tr>		
+<td>Kiwi Production</td>
+        <td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>China(2.3M)</td>
+		<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Italy(523k)</td>
+		<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>New Zealand(434k)</td>
+		<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Iran(294k)</td>
+		<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Chile(225k)</td>
+		<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Greece(182k)</td>
+		<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>France(65k)</td>
+		<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Turkey(43k)</td>
+		<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>United States of America(28k)</td>
+		<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Japan(25k)</td>
+		<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Spain(22k)</td>
+		<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Portugal(21k)</td>
+		<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>South Korea(9k)</td>
+		<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Israel(3k)</td>
+		<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Australia(2k)</td>
+		<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Montenegro (1k)</td>
+        </tr>	
+	
+        <tr>		
+        <td>currant Production</td>
+
+			<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Global(687.47K)</td>
+			<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Russia(436.90K)</td>
+			<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Poland(146.50K)</td>
+			<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Ukraine(25.79K)</td>
+			<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>United Kingdom(16.38K)</td>
+			<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Germany(11.97K)</td>
+			<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>France(11.40K)</td>
+			<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Netherlands(7.60K)</td>
+			<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Austria(4.73K)</td>
+			<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>New Zealand(4.46K)</td>
+            </tr>	
+	
+
+            <tr>		
+            <td>Dates Production</td>
+			
+		<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Egypt(1.6M)</td>
+		<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Saudi Arabia(1.5M)</td>	
+		<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Iran(1.3M)</td>	
+		<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Algeria(1.1M)</td>	
+		<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Iraq(639K)</td>	
+		<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Pakistan(483K)</td>
+		<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Oman(372K)</td>
+		<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>UAE(323K)</td>	
+		<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Tunisia(288K)</td>	
+		<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Libya(174K)</td>	
+		<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>China(172K)</td>	
+		<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Kuwait(105K)</td>	
+		<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Morocco(101K)</td>	
+		<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Yemen(78K)</td>
+		<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>United States(55K)</td>
+		<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Israel(43K)</td>
+		<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Turkey(41K)</td>
+		<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Qatar(25K)</td>
+		<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Jordan(23K)</td>
+        </tr>	
+	
+
+
+		<tr>		
+        <td>Cherry Production</td>
+
+		    <td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Turkey(599K)</td>
+			<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>USA(288K)</td>
+			<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Iran(220K)</td>
+			<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Chile(123K)</td>
+			<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Uzbekistan(95K)</td>
+			<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Italy(94K)</td>
+			<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Spain(94K)</td>
+			<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Romania(73K)</td>
+			<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Greece(71K)</td>
+			<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Syria(69K)</td>
+			<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Ukraine(63K)</td>
+			<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Poland(53K)</td>
+			<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Russian(46K)</td>
+			<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Bulgaria(38K)</td>
+			<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>China(37K)</td>
+            </tr>	
+	
+            <tr>		
+            <td>Avocado Production</td>
+
+    <td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Mexico(1.8M)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Dominican Republic(601k)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Peru(455k)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Colombia(309k)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Indonesia(304k)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Brazil(195k)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Kenya(176k)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>United States of America(172k)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Chile(137k)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>China(122k)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Guatemala(122k)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Israel(101k)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Haiti(93k)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Venezuela(90k)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Spain(88k)</td>
+    </tr>	
+	
+
+
+	<tr>		
+        <td>Quince Production</td>
+		<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Turkey(135K)</td>
+		<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>China(125K)</td>
+		<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Uzbekistan(80K)</td>
+		<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Morocco(46K)</td>
+		<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Iran(36K)</td>
+		<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Argentina(27K)</td>
+		<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Azerbaijan(27K)</td>
+		<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Spain(14K)</td>
+		<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Serbia(10K)</td>
+		<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Algeria(9K)</td>
+        </tr>	
+	
+	
+
+        <tr>		
+        <td>Watermelon Production</td>
+
+    <td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>China(79.2M)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Turkey(3.9M)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Iran(3.8M)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Brazil(2.0M)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Uzbekistan(1.9M)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Algeria(1.8M)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>United States of America(1.8M)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Russian Federation(1.7M)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Egypt(1.6M)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Mexico(1.4M)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Kazakhstan(1.3M)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Vietnam(1.1M)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Spain(969K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Afghanistan(862K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>South Korea(652K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Tajikistan(594K)</td>
+    </tr>	
+	
+
+
+    <tr>		
+    <td>Plum Production</td>
+
+    	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>China(6.6M)</td>
+		<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Romania(512K)</td>
+		<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Serbia(463K)</td>
+		<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>United States of America(392K)</td>
+		<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Turkey(297K)</td>
+		<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Chile(294K)</td>
+		<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Iran(269K)</td>
+		<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>India(261K)</td>
+		<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Spain(222K)</td>
+		<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Italy(220K)</td>
+		<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>France(211K)</td>
+		<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Ukraine(178K)</td>
+		<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Russian Federation(164K)</td>
+		<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Argentina(156K)</td>
+		<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Uzbekistan(134K)</td>
+		<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Bosnia and Herzegovina(131K)</td>
+        </tr>	
+	
+
+	
+        <tr>		
+        <td>Blueberry Production</td>
+
+    <td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>USA(269K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Canada(178K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Mexico(29K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Poland(14K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Germany(10K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>France(9K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>The Netherlands(7K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Portugal(6K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Spain(5K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Australia(3.9K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Russian Federation(3.2K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>New Zealand(3.1K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Peru(3K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Romania(2K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Italy(1.6K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Ukraine(1.2K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Uzbekistan(701)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Switzerland(416)</td>
+    </tr>	
+	</table>	
+
+
+    
+    <h3>Drinks</h3>
+    <table>
+    <tr>		
+    <td>Milk(Bafello) Production</td>
+
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>India(70M)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Pakistan(24M)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>China(3M)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Egypt(2M)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Nepal(1M)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Myanmar(309K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Italy(194K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Sri Lanka(65K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Iran(65K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Turkey(51K)</td>
+    </tr>	
+	
+
+    <tr>		
+    <td>Milk(Goat) Production</td>
+
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>India(5M)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Bangladesh(2M)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Sudan(1M)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Pakistan(801K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Mali(720K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>France(580K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Spain(471K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Turkey(415K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Somalia(400K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Greece(340K)</td>
+    </tr>	
+	
+
+    <tr>		
+    <td>Milk(Sheep) Production</td>
+
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Turkey(1,5M)</td>	
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>China(1,1M)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Greece(944K)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Syria(574K)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Spain(563K)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Italy(493K)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Romania(425K)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Algeria(421K)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Somalia(395K)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Iran(325K)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>France(321K)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>India(226K)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Mali(176K)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Afghanistan(171K)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Indonesia(167K)</td>
+</tr>	
+	
+<tr>		
+    <td>Milk(camel) Production</td>
+
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Kenya(1.12M)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Somalia(968.62K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Mali(271.00K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Ethiopia(243.43K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Saudi Arabia(135.93K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Niger(112.00K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Sudan(63.02K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>UAE(58.18K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Chad(32.64K)</td>
+    </tr>	
+	
+
+    <tr>		
+    <td>Milk(cow) Production</td>
+
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>India(102M)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>China(44.5M)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Russia(40M)</td> 
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Brazil(32M)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>New Zealand(29M)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>United Kingdom(22M)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Mexico(19M)</td> 
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Argentina(15M)</td> 
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Canada(13M)</td> 
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Australia (11M)</td> 
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Ukraine(9.2M)</td> 
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Belarus(8.9M)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Japan(8.2M)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>South Korea(7.1M)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Taiwa(2M)</td>
+</tr>	
+	
+
+
+
+	
+<tr>		
+        <td>Total Milk Production</td>
+
+
+
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>India(187M)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>United States of America(98M)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Pakistan(45M)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>China(35M)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Brazil(34M)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Germany(33M)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Russian Federation(30M)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>France(26M)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Turkey(22M)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>New Zealand(21M)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>United Kingdom(15M)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Poland(14M)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Italy(12M)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Mexico(11M)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>The Netherlands(10M)</td>
+	</tr>	
+		
+    </table>
+	
+    <h3>Drinks</h3>
+    <table>
+    <tr>		
+    <td>Tea Production</td>
+		<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>China(2M)</td>
+		<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>India(1.2M)</td>
+		<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Kenya(432M)</td>
+		<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Sri Lanka(340M)</td>
+		<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Vietnam(214M)</td>
+		<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Turkey(212M)</td>
+		<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Iran(160M)</td>
+		<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Indonesia(148M)</td>
+		<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Argentina(105M)</td>
+		<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Japan(84M)</td>
+		<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Thailand(75M)</td>
+		<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Bangladesh(64M)</td>
+		<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Malawi(54M)</td>
+		<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Uganda(53M)</td>
+		<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Burundi(41M)</td>
+        </tr>	
+	
+
+
+        <tr>		
+        <td>Coffee Production</td>
+
+    <td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Brazil(3.0M)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Vietnam(1.4M)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Colombia(745K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Indonesia(639K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Ethiopia(469K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Honduras(362K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>India(348K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Peru(277K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Guatemala(236K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Uganda(203K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Mexico(151K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Laos(136K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>China(114K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Nicaragua(112K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Côte-d'Ivoire(102K)</td>
+    </tr>	
+	
+
+
+    <tr>		
+    <td>Wine Production</td>
+
+     	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Italy(4.7M)</td>
+		<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Spain(4.6M)</td>
+		<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>France(4.2M)</td>
+		<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>United States of America(3.3M)</td>
+		<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>China(1.7M)</td>
+		<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Argentina(1.4M)</td>
+		<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Chile(1.2M)</td>
+		<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Australia(1.1M)</td>
+		<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>South Africa(1.1M)</td>
+		<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Germany(920K)</td>
+		<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Portugal(603K)</td>
+		<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Romania(378K)</td>
+		<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Greece(334K)</td>
+		<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Russian Federation(327K)</td>
+		<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>New Zealand(320K)</td>
+		<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Brazil(273K)</td>
+        </tr>	
+	
+     
+
+        <tr>		
+        <td>Beer Production</td>
+		
+			<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>China(49.7M)</td>
+			<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>United States of America(22.6M)</td>
+			<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Brazil(14M)</td>
+			<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Germany(8.7M)</td>
+			<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Mexico(8.5M)</td>
+			<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>United Kingdom(4.1M)</td>
+			<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Poland(3.9M)</td>
+			<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Spain(3.3M)</td>
+			<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>South Africa(3.1M)</td>
+			<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Japan(2.9M)</td>
+			<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Nigeria(2.7M)</td>
+			<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Ukraine(2.4M)</td>
+			<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>The Netherlands(2.3M)</td>
+			<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Thailand(2.2M)</td>
+			<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>South Korea(2M)</td></td>
+            </tr>	
+	
+        
+
+
+            <tr>		
+            <td>Meat camel Production</td>
+	
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Saudi Arabia(108K)</td>	
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Kenya(102K)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Somalia(47K)</td>	
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>United Arab Emirates(34K)</td>	
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Ethiopia(32K)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>China(28K)</td>	
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Mauritania(25K)</td>	
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Mali(20K)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Oman(16K)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Mongolia(12K)</td>	
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Niger(10K)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Egypt(8K)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Chad(7K)</td>	
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Kazakhstan(6.9K)</td>	
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Algeria(6.5K)</td>
+</tr>	
+	
+</table>
+<table>
+<tr>		
+        <td>Chicken Meat Production</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>United States(22.8)</td>	
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>China(21.1M)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Brazil(14.1M)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Russia(4.6M)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>India(4.2M)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Indonesia(3.5M)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Mexico(3.4M)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Poland(2.5M)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Japan(2.2M)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Iran(2.1M)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Argentina(2M)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Turkey(2M)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>United Kingdom(1.9M)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Myanmar(1.8M)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>South Africa(1.8M)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Thailand(1.7M)</td>
+</tr>	
+	
+
+<tr>		
+        <td>Beef meat Production</td>
+
+
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>United States(12,3)</td>	
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Brazil(10.2M)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>China(5.9M)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Argentina(3.1M)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Australia(2.3M)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Mexico(2.1M)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Russia(1.6M)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>France(1.4M)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Canada(1.3M)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Pakistan(1.1M)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Germany(1.1M)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Turkey(1M)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>South Africa(1M)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Uzbekistan(938K)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>United Kingdom(924K)</td>
+</tr>	
+	
+
+
+<tr>		
+        <td>Buffalo Meat Production</td>
+
+	
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>India(1.6M)</td>	
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Pakistan(1.0M)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>China(658K)</td>	
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Egypt(365K)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Nepal(188K)</td>	
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Philippines(101K)</td>	
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Vietnam(94K)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Myanmar(54K)</td>	
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Indonesia(23K)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Italy(21K)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Laos(20K)</td>	
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Thailand(17K)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Cambodia(6.8K)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Colombia(6.1)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Iraq(6K)</td>
+</tr>	
+	
+<tr>		
+        <td>Horse Meat Production</td>
+
+	
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>China(957K)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Kazakhstan(467K)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Mexico(194K)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>United States(136K)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Kyrgyzstan(99K)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Canada(88K)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Mongolia(87K)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Russia(64K)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Japan(54K)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Australia(37K)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Poland(35K)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Ireland(29K)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Italy(22K)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Chile(21K)</td>	
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Brazil(21K)</td>
+</tr>	
+	
+
+
+<tr>		
+        <td>Pork Production</td>
+
+
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>China(42M)</td>	
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>United States(12M)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Brazil(4M)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Russia(3.9M)</td>	
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Canada(2.6M)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Vietnam(2.4M)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Mexico(1.6M)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>South Korea(1.5M)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Philippines(1.4M)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Japan(1.2M)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Argentina(676K)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Ukraine(602k)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Chile(529K)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Colombia(410K)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Australia(380K)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Indonesia(324K)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>South Africa(265K)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Switzerland(220K)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Norway(130K)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Kazakhstan(86K)</td>
+</tr>	
+	
+
+<tr>		
+<td>Sheep Meat Production</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>China(16.6M)</td>	
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Australia(6.8M)</td>	
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>India(6.1M)</td>	
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Nigeria(4.3M)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Iran(3.9M)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>United Kingdom(3.4M)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Chad(3.4M)</td>	
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Turkey(3.3M)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Ethiopia(3.2M)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Mongolia(3.1M)</td>	
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Pakistan(3.0M)</td>	
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Algeria(2.9M)</td>	
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>New Zealand(2.6M)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Russia(2.2M)</td>	
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>South Africa(2,2M)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Morocco(2,0M)</td>
+</tr>	
+	
+
+<tr>		
+        <td>Rabbit Meat Production</td>
+
+	
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>China(461.3K)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Egypt(175.3K)</td>	
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Italy(173.8K)</td>	
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>France(168.0K)</td>	
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Czech Republic(152.5K)</td>		
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Spain(112.9K)</td>		
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>South Korea(33.1K)</td>	
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Russia(29.4K)</td>		
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Ukraine(27.6K)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Bulgaria(27.2K)</td>	
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Greece(24.9K)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Germany(23.2K)</td>	
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Venezuela(17.6K)</td>	
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Hungary(17.6K)</td>	
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Switzerland(15.2K)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Kenya(14.9K)</td>
+</tr>	
+	
+
+<tr>		
+        <td>Goat meat Production</td>
+
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Global(6.13M)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>China(2.31M)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>India(554.81K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Pakistan(504.00K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Nigeria(261.11K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Bangladesh(231.15K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Ethiopia(147.74K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Chad(132.30K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Mongolia(129.16K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Sudan(121.01K)</td>
+    </tr>	
+	
+
+
+    <tr>		
+    <td>Guinea Fowl and Goose Meat Production</td>
+
+
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>China(979K)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Poland(90K)</td>	
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Madagascar(89K)</td>	
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Hungary(73K)</td>	
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Egypt(54K)</td>	
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Germany(32K)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>United Kingdom(27K)</td>	
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Iran(13K)</td>	
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>France(12K)</td>	
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Israel(11K)</td>	
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Turkey(9K)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Austria(6K)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Canada(3K)</td>	
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Ireland(2.9K)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Laos(2K)</td>
+</tr>	
+	
+<tr>		
+        <td>Turkey Meat Production</td>
+
+
+
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>USA(2.63M)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Brazil(613K)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Germany(471K)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Poland(385K)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>France(317K)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Italy(300K)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Spain(212K)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Canada(165K)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>United Kingdom(152K)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Israel(94K)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Chile(84K)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Morocco(78K)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Hungary(77K)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Tunisia(76K)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Turkey(59K)</td>
+
+</tr>	
+	
+
+<tr>		
+        <td>Duck Meat Production</td>
+
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Austria(7,3k)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Brunei(6,0k)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Turkey(5,1k)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Germany(5,0k)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Fiji(4,7k)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Panama(4,4k)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Suriname(4,3k)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Spain(3,6k)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Indonesia(3,1k)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Norway(2,9k)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Egypt(2,6k)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Nepal(2,5k)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Croatia(2,4k)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>China(2,3k)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Philippines(2,1k)</td>
+</tr>	
+	
+</table>
+
+<table>
+<tr>		
+<td>Almond Production</td>
+	
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>USA(2.7M)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Spain(416K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Iran(321K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Morocco(212k)</td>	
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Syria(128K)</td>	
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Turkey(95K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Italy(74K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Australia(72K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Algeria(66K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Tunisia(61K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>China(47K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Libya(33K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Afghanistan(32K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Lebanon(31K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Chile(30k)</td>
+    </tr>	
+	
+
+
+	<tr>		
+        <td>Cashew Production</td>
+
+	
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>India(743K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Ivory Coast(492K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Vietnam(383K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Burundi(283K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Philippines(242K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Tanzania(225K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Benin(204K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Mali(167K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Guinea-Bissau(166K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Brazil(138K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Burkina Faso(136K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Indonesia(134K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Mozambique(107K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Nigeria(100K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Ghana(85K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Sri Lanka(35K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Guinea(21K)</td>
+	</tr>	
+	
+	
+	
+    <tr>		
+    <td>Brazil Nuts Production</td>
+
+
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Brazil(68K)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Bolivia(31K)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Ivory Coast(27K)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Peru(18K)</td>
+</tr>	
+	
+<tr>		
+        <td>Hazelnuts Production</td>
+	
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Turkey(776.0M)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Italy(98.5M)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Azerbaijan(53.7M)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>United States(39.9M)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Chile(35.0M)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>China(29.3M)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Georgia(24.0M)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Iran(16.1M)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Spain(12.3M)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>France(11.6M)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Poland(5,4M)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Kyrgyzstan(5,3M)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Serbia(4,9M)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Uzbekistan(4,8M)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Croatia(1,9M)</td>	
+</tr>	
+	
+
+
+<tr>		
+        <td>Chestnut Production</td>
+
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>China(1.8k)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Bolivia(84.8k)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Turkey(64.7k)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>South Korea(56.2k)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Italy(50.8k)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Greece(31.5k)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Portugal(26.7k)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Japan(16.5k)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Spain(16.1k)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>North Korea(12.5k)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>France(8.6k)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Albania(6K)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Chile(3K)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Bosnia and Herzegovina(1K)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Azerbaijan(728)</td>
+</tr>	
+	
+
+
+	
+<tr>		
+        <td>Peanut Production</td>
+
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>China(16.6M)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>India(6.8M)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Nigeria(3.8M)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>United States of America(2.5M)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Sudan(1.8M)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Myanmar(1.5M)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Chad(1.2M)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Argentina(1.0M)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Cameroon(747K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Senegal(719K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Brazil(564K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Tanzania(550K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Indonesia(504K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Niger(453K)</td>
+    </tr>	
+	
+
+
+	
+    <tr>		
+    <td>Pistachio Production</td>
+</td>
+    <td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>USA(421K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Turkey(310K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Iran(215K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Turkey(170K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>China(83K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Syria(56K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Greece(6.3K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Italy(3.6K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Tunisia(3.4K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Afghanistan(2.8K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Spain(2.4K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Madagascar(1.7K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Australia(1.3K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Jordan(967K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Kyrgyzstan(947K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Uzbekistan(873K)</td>
+    </tr>	
+	
+    <tr>		
+    <td>Sheanut Production</td>
+
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Nigeria(345K)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Mali(167K)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Burkina Faso(140K)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Ghana(33K)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Benin(14K)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Togo(13K)</td>
+</tr>	
+	
+<tr>		
+        <td>Walnut Production</td>
+
+	
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>China(2.52M)</td>	
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>United States(592K)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Iran(321K)</td>		
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Turkey(225K)</td>	
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Mexico(171K)</td>	
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Ukraine(125K)</td>	
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Chile(122K)</td>		
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Uzbekistan(50K)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Romania(49K)</td>		
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>France(34K)</td>	
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>India(34.1K)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Greece(31.0K)</td>	
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Egypt(24K)</td>	
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Germany(18.9K)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Argentina(18.4K)</td>
+</tr>	
+	
+</table>
+<table>
+<tr>		
+        <td>Black Pepper Production</td>
+
+	
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Ethiopia(374K)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Vietnam(264K)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Brazil(109K)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Indonesia(88K)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>India(66K)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Bulgaria(53K)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Tajikistan(47K)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Sri Lanka(41K)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>China(37K)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Malaysia(33K)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Mexico(9.3K)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Madagascar(4.5K)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Ghana(4.2K)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Rwanda(2.8K)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Cambodia(2.5K)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Thailand(2.2K)</td>
+</tr>	
+	
+
+
+<tr>		
+        <td>Chili Pepper Production</td>
+
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>India(1.70M)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Thailand(322.89K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>China(307.59K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Ethiopia(295.98K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Bangladesh(157.61K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Pakistan(141.54K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Myanmar[Burma](140.98K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Benin(108.93K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Ghana(108.23K)</td>
+    </tr>	
+	
+
+    <tr>		
+    <td>Cinnamon Production</td>
+
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Global(222.12K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Indonesia(91.24K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>China(72.53K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Vietnam(31.43K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>SriLanka(22.91K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Madagascar(3.67K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>EastTimor(120)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Grenada(82)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Dominica(56)</td>
+    <td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Seychelles(30)</td>
+    </tr>	
+	
+
+    <tr>		
+    <td>Cloves Production</td>
+
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Indonesia(133.60K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Madagascar(23.93K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Tanzania(8.60K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Comoros(6.80K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>SriLanka(6.71K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Kenya(2.06K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>China(1.29K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Malaysia(220.00)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Grenada(40.00)</td>
+    </tr>	
+	
+
+    <tr>		
+    <td>Ginger Production</td>
+	
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>India(1.78M)</td>	
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Nigeria(691.2K)</td>	
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>China(605.1K)</td>	
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Nepal(297.5K)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Indonesia(174.3K)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Thailand(166.9K)</td>	
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Cameroon(83.4K)</td>	
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Bangladesh(80.2K)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Japan(45.5K)</td>	
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Philippines(26.9K)</td>	
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Peru(25.8K)</td>	
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Taiwan(23.9K)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Mali(17.1K)</td>	
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Sri Lanka(15.6K)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Ethiopia(11.7K)</td>	
+</tr>	
+	
+<tr>		
+        <td>Whole Nutmeg Production</td>
+
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Indonesia(42.34K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>India(41.00K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Guatemala(38.61K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Nepal(9.55K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Sri Lanka(4.12K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Laos(3.05K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Bhutan(2.18K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Tanzania(721.00)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Grenada(656.00)</td>
+    <td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Honduras(456.00)</td>
+    </tr>	
+	
+
+
+    <tr>		
+    <td>Vanilla Production</td>
+
+		<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Madagascar(3,926K)</td>
+		<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Indonesia(2,304K)</td>
+		<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>China(885)</td>
+		<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Mexico(513)</td>
+		<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Papua New Guinea(502)</td>
+		<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Turkey(303)</td>
+		<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Uganda(211)</td>
+		<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Tonga(180)</td>
+		<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>French Polynesia(24)</td>
+		<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Réunion(21)</td>
+		<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Malawi(20)</td>
+		<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Comoros(15)</td>
+		<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Kenya(14)</td>
+		<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Guadeloupe(11)</td>
+		<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Zimbabwe(10)</td>
+        </tr>	
+	
+
+        <tr>		
+        <td>Garlic Production</td>
+
+		
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>China(23.3M)</td>	
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>India(2.9M)</td>	
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Bangladesh(466K)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>South Korea(387K)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Egypt(318K)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Spain(271K)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>United States(237K)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Algeria(223K)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Uzbekistan(216K)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Ukraine(215K)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Myanmar(208K)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Russia(202K)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Ethiopia(152K)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Argentina(147K)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Brazil(131K)</td>
+</tr>	
+
+</table>
+<h3>orther</h3>
+<table>
+<tr>		
+        <td>Caviar Production</td>
+
+	
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>China(79.0)</td>	
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Belarus(71.4)</td>	
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Germany(52.7)</td>	
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>United States(40.0)</td>	
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Japan(39.3)</td>	
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Italy(22.6)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>France(18.3)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Denmark(18.3)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Iceland(12.9)</td>	
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Indonesia(12.2)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Russia(12.2)</td>	
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Sweden(11.9)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Kazakhstan(7.1)</td>		
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Belgium(7.0)</td>	
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Netherlands(4.7)</td>
+</tr>	
+	
+
+<tr>		
+        <td>Cheese Production</td>
+
+
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>USA(6.317M)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Germany(2.338M)</td>	
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>France(1.679M)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Italy(1.133M)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Netherlands(931K)</td>	
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Russia(745K)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Poland(738K)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Egypt(626K)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Canada(606K)</td>	
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Denmark(464K)</td>	
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Argentina(444K)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>United Kingdom(410K)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>New Zealand(390K)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Australia(338K)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Spain(338K)</td>
+</tr>	
+	
+
+<tr>		
+        <td>Cocoa Beans Production</td>
+	
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Ivory Coast(2.18M)</td>		
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Ghana(811K)</td>	
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Indonesia(783K)</td>		
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Nigeria(350K)</td>		
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Ecuador(283K)</td>		
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Cameroon(280K)</td>	
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Brazil(259K)	</td>	
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Peru(137K)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Colombia(102K)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Dominican Republic(88K)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Papua New Guinea(45K)</td>	
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Uganda(35K)</td>	
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Mexico(28K)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>India(24K)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Venezuela(23K)</td>	
+</tr>	
+	
+
+<tr>		
+        <td>Chicken Egg Production</td>
+
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>China(31.3M)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>USA(8.45M)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>India(6.56M)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Indonesia(5.6M)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Brazil(4.5M)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Mexico(3.56M)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Japan(2.54M)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Russia(2.12M)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Turkey(1.2M)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Ukraine(953K)</td>
+</tr>	
+	
+<tr>		
+        <td>Duck Egg Production</td>
+
+
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>China(4.86M)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Thailand(400.00K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Indonesia(357.11K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Bangladesh(239.60K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Brazil(177.50K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Myanmar[Burma](55.00K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Philippines(50.48K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>South Korea(32.00K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Russia(26.37K)</td>
+    <td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Taiwan(15.21K)</td>	
+    </tr>	
+	
+
+	<tr>		
+        <td>Honey Production</td>
+
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>China(447.0K)</td>	
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Turkey(109.3K)</td>		
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Canada(80.3K)</td>		
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Argentina(78.9K)</td>	
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Iran(75.4K)</td>	
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>United States(71.1K)</td>	
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Ukraine(69.9K)</td>	
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>India(67.1K)</td>	
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Russia(63.5K)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Mexico(61.9K)</td>	
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Ethiopia(53.7K)</td>	
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Brazil(45.9K)</td>	
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Spain(34.8K)</td>	
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Tanzania(30.9K)</td>	
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Hungary(30.4K)</td>
+</tr>	
+	
+<tr>		
+        <td>Olive Oil Production</td>
+	
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Spain(1.68M)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Greece(323.4K)</td>		
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Italy(287.5K)</td>		
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Tunisia(258.5K)</td>	
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Turkey(172.7K)</td>	
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Morocco(168.5K)</td>		
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Syria(126.3K)</td>		
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Portugal(121.4K)</td>		
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Algeria(93.5K)</td>	
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Lebanon(62.6K)</td>		
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Argentina(32.4K)</td>	
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Egypt(31.2K)</td>		
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Palestine(24.7K)</td>		
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Chile(22.9K)</td>	
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Australia(22.4K)</td>
+</tr>	
+	
+
+<tr>		
+        <td>Tobacco Production</td>
+
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>China(2.80M)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>India(761K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Brazil(675K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>United States of America(285K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Indonesia(196K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Zimbabwe(172K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Zambia(124K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Pakistan(116K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Tanzania(102K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Argentina(93K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Mozambique(92K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Bangladesh(87K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Malawi(84K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>North Korea(82K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Turkey(70K)</td>
+    </tr>	
+	</table>
+
+
+
+    <h3>Non-food products</h3>
+    <h3>Fibers</h3>
+<table>
+<tr>		
+        <td>Abaca (manila) Production</td>
+
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Philippines</td>	
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Ecuador</td>	 
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Costa Rica</td>	 
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Indonesia</td>	 
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Equatorial Guinea</td>
+</tr>	
+	
+<tr>		
+        <td>Agave fibre Production</td>	 
+
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Colombia</td>	 
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Mexico</td>	 
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Nicaragua</td>	 
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Ecuador</td>	 
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Philippines</td>
+</tr>	
+	
+
+
+<tr>		
+        <td>Bast fibre Production</td>	 
+
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>India</td>	 
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Russia</td>	 
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>China</td>	 
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Cuba</td>	 
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Chile</td>
+</tr>	
+	
+
+<tr>		
+        <td>Cotton Production</td>
+
+    <td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>India(6.188M)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>China(6.178M)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>United States of America(3.593M)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Pakistan(2.374M)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Brazil(1.412M)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Uzbekistan(1.10M)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Australia(885K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Turkey(846K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Argentina(327K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Greece(308K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Mexico(302K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Burkina Faso(265K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Mali(232K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Turkmenistan(195K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Myanmar(168K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Côte d'Ivoire(132K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Tajikistan(123K)</td>
+    </tr>	
+	
+
+    <tr>		
+    <td>Flax Producing</td>
+
+	 <td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Canada(872K)</td>
+	 <td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Kazakhstan(419K)</td>
+	 <td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>China(387K)</td>
+	 <td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Russia(365K)</td>
+     <td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>USA(161K)</td>
+     <td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>India(141K)</td>
+     <td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>France(64K)</td>
+	 <td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Ukraine(25K)</td>
+     <td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Argentina(16K)</td>
+     <td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Italy(15K)</td>
+     </tr>	
+	
+
+     <tr>		
+     <td>Jute production</td>
+
+		<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>India(708k)</td>
+		<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Bangladesh(298k)</td>
+		<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>China(25k)</td>
+		<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Myanmar(9k)</td>
+		<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Uzbekistan(7k)</td> 
+		<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Nepal(6k)</td> 
+		<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>VietNam(5k)</td> 
+		<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Thailand(1.8k)</td>
+		<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Sudan(1.2k)</td>
+        <td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Egypt(821)</td>		
+        <td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Brazil(658)</td>		 	
+        <td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Zimbabwe(560)</td>	 	
+        <td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Cambodia(242)</td>	
+        <td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Bhutan(131)</td>	
+        <td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Peru(80)</td>	
+        </tr>	
+	
+
+        <tr>		
+        <td>Rubber-Net Production</td>
+
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Thailand(5.588M)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Indonesia(3.846M)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Vietnam(1.314M)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>India(1.149M)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>China(999K)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Malaysia(680K)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Philippines(440K)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Guatemala(427K)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Ivory Coast(392K)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Myanmar(286K)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Brazil(239K)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Nigeria(184K)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Sri Lanka(151K)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Liberia(82K)</td>
+</tr>	
+	
+
+<tr>		
+        <td>Silk Production</td>
+
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>China(423k)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>India(211K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Uzbekistan(18.8K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Iran(14.7K)</td>	
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Thailand(4.6K)</td>	
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Brazil(3.5K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Vietnam(2.9K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Romania(1K)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>North Korea(905)</td>	
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Afghanistan(679)</td>	
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Azerbaijan(514)</td>	
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Cambodia(158)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Egypt(119)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Kyrgyzstan(112)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Japan(110)</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Spain(79)</td>
+    </tr>	
+	
+
+
+	<tr>		
+        <td>Sisal Production</td>
+
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Brazil</td>	 
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Tanzania</td>	 
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Kenya</td>	 
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Madagascar</td>	 
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>China</td>
+    </tr>	
+	
+
+
+	<tr>		
+        <td>Wool Production</td>
+
+	 <td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>China(333.6K)</td>
+     <td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Australia(283.7K)</td>
+     <td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>New Zealand(151.1K)</td>
+	 <td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Turkey(79.7K)</td>
+	 <td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>United Kingdom And Northern Ireland(70.9K)</td>
+	 <td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Morocco(58.8K)</td>
+     <td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Iran(58.3K)</td>
+	 <td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Russia(51.6K)</td>
+     <td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>South Africa(47.2K)</td>
+	 <td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>India(45.8K)</td>
+     </tr>	
+	
+     </table>
+
+<table>
+
+<tr>		
+<td>Kapok Production</td>
+	
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Indonesia</td>	 
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Thailand</td>	 
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>India</td>
+    </tr>	
+	
+	<tr>		
+        <td>Ramie Production</td>
+
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>China</td>	 
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Laos</td>	 
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Taiwan</td>	 
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Brazil</td>	 
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Philippines</td>
+    </tr>	
+	
+   
+
+	<tr>		
+        <td>Wood fuel Production</td> 
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>India</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>China</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Taiwan</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Brazil</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Ethiopia</td>
+    <td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>DR Congo</td>
+    <td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Nigeria </td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Indonesia</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Ghana</td> 
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Uganda</td>
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Mixico</td>
+    </tr>	
+	
+	<tr>		
+        <td>Wood-based panels Production</td>
+	
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>China</td>	 
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>United States</td>	 
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Russia</td>	 
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Germany</td>	 
+	<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Canada</td>
+    </tr>	
+	
+
+	<tr>		
+        <td>Sawn Wood Production</td>
+	
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>China(90.2M)</td>		
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>United States(82.4M)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Russia(44.4M)</td>		
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Canada(42.4M)</td>		
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Germany(24.5M)</td>		
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Sweden(18.7M)</td>	
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Finland(11.3M)</td>	
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Austria(10.5M)</td>		
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Brazil(10.2M)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Japan(9.0M)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Turkey(8.3M)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Chile(8.1M)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>France(7.8M)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>India(6.8M)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Vietnam(6.0M)</td>
+</tr>	
+	
+
+<tr>		
+        <td>Paperboard & Packaging Paper Production</td>
+
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>China(68.4M)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>United States(48.0M)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Japan(12.1M)</td>	
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Germany(12.1M)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>India(10.0M)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>South Korea(7.1M)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Brazil(6.2M)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Sweden(5.9M)</td>	
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Russia(5.9M)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Indonesia(5.7M)</td>	
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Italy(4.5M)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>France(4.4M)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Finland(4.4M)</td>
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Mexico(3.9M)</td>	
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Spain(3.6M)</td>	
+</tr>	
+	
+ 
+
+<tr>		
+        <td>Pulp & Paper Production</td>
+	
+
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>USA(50.95M)</td>		
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Brazil(19.75M)</td>	
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>China(18.92M)</td>	
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Canada(16.23M)</td>		
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Finland(11.60M)</td>	
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Sweden(11.59M)</td>	
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Japan(8.39M)</td>	
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Russia(8.32M)</td>		
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Indonesia(8.18M)</td>	
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>India(6.12M)</td>	
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Chile(5.29M)</td>	
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Portugal(2.67M)</td>	
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Uruguay(2.61M)</td>		
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Germany(2.42M)</td>		
+<td class="text-center"><%=image_tag ("tn_rs-flag.gif"),:size => "30x20" %><br>Spain(1.76M)</td>	
+</tr>	
+</table>

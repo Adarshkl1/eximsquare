@@ -1,0 +1,2379 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+body {
+  overflow-y: hidden;
+  overflow-x: hidden; 
+  margin: 0;
+}
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  min-height: 0px;
+  margin-bottom: 0px;
+  border-width: 0px;
+
+}
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 5px 21px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.navbar a:hover {
+  background: #f1f1f1;
+  color: black;
+}
+.navbar a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+.main {
+  padding: 16px;
+  margin-bottom: 30px;
+}
+</style>
+
+</head>
+
+<body id="myPage">
+
+<div class="navbar w3-hide-small">
+  <a href="#Cereal">Cereal</a>
+  <a href="#Vegetables">Vegetables</a>
+  <a href="#Fruits">Fruits</a>
+  <a href="#Dairy">Dairy</a>
+  <a href="#Meats">Meat</a>
+  <a href="#Nuts">Nuts</a>
+  <a href="#Spices">Spices</a>
+  <a href="#Fiber">Fibers</a>
+  <a href="#Seafood">Seafood</a>
+</div>
+
+
+<div class="w3-display-container w3-animate-opacity">
+
+  <div class="mySlides w3-display-container w3-center">
+    <%=image_tag ("exim_square1.jpg"),style: "width:100%;max-height:500px;" %>
+    <div class="w3-display-topmiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <h3>Los Angeles</h3>
+      <p><b>We had the best time playing at Venice Beach!</b></p>   
+    </div>
+  </div>
+  
+  <div class="mySlides w3-display-container w3-center">
+    <%=image_tag ("exim_square2.jpg"),style: "width:100%;max-height:500px;" %>
+    <div class="w3-display-topmiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <h3>New York</h3>
+      <p><b>The atmosphere in New York is lorem ipsum.</b></p>    
+    </div>
+  </div>
+
+  <div class="w3-container w3-display-bottomleft w3-margin-bottom">  
+    <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-xlarge w3-theme w3-hover-teal" title="Go To W3.CSS"></button>
+  </div>
+
+</div>
+
+<div class="w3-light-grey" style="padding-top:22px">
+
+<div class="w3-container w3-col m6">
+<h5><b><i class="fa fa-dashboard"></i>Cereal</b></h5>
+</div>
+
+<table class="w3-table w3-hide-large w3-hide-medium">
+
+<tr>
+<td class="w3-center"><i><%=link_to(image_tag("barley.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x50",style: "width:60%;"),barley_path)%></i>
+<p><b><%=link_to"Barley",barley_path%></b></p></td>
+<td class="w3-center"><i><%=link_to(image_tag("buckwheat.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x50",style: "width:60%;"),buckwheat_path)%></i>
+<p><b><%=link_to"BuckWheat",buckwheat_path%></b></p></td>
+<td class="w3-center"><i><%=link_to(image_tag("corn.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x50",style: "width:60%;"),maize_path)%></i>
+<p><b><%=link_to"Maize(Corn)",maize_path%></b></p></td>
+</tr>
+
+<tr>
+<td class="w3-center"><i><%=link_to(image_tag("wheat.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x50",style: "width:60%;"),wheat_path)%></i>
+<p><b><%=link_to"Wheat",wheat_path%></b></p></td>
+<td class="w3-center"><i><%=link_to(image_tag("fonio.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x50",style: "width:60%;"),fonio_path)%></i>
+<p><b><%=link_to"Fonio",fonio_path%></b></p></td>
+<td class="w3-center"><i><%=link_to(image_tag("oat.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x50",style: "width:60%;"),oats_path)%></i>
+<p><b><%=link_to"Oat",oats_path%></b></p></td>
+</tr>
+
+<tr>
+<td class="w3-center"><i><%=link_to(image_tag("quinoa.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x50",style: "width:60%;"),quinoa_path)%></i>
+<p><b><%=link_to"Quinoa",quinoa_path%></b></p></td>
+<td class="w3-center"><i><%=link_to(image_tag("rye.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x50",style: "width:60%;"),rye_path)%></i>
+<p><b><%=link_to"Rye",rye_path%></b></p></td>
+<td class="w3-center"><i><%=link_to(image_tag("sorghum.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x50",style: "width:60%;"),sorghum_path)%></i>
+<p><b><%=link_to"Sorghum",sorghum_path%></b></p></td>
+</tr>
+
+<tr>
+<td class="w3-center"><i><%=link_to(image_tag("cotton.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x50",style: "width:60%;"),cotton_path)%></i>
+<p><b><%=link_to"Cotton",cotton_path%></b></p></td>
+<td class="w3-center"><i><%=link_to(image_tag("triticale.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x50",style: "width:60%;"),triticale_path)%></i>
+<p><b><%=link_to"Triticale",triticale_path%></b></p></td>
+<td class="w3-center"><i><%=link_to(image_tag("rice.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x50",style: "width:60%;"),rice_path)%></i>
+<p><b><%=link_to"Rice",rice_path%></b></p></td>
+</tr>
+
+<tr>
+<td class="w3-center"><i><%=link_to(image_tag("millet.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x50",style: "width:60%;"),millet_crop_path)%></i>
+<p><b><%=link_to"Millet",millet_crop_path%></b></p></td>
+<td class="w3-center"><i><%=link_to(image_tag("carary.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x50",style: "width:60%;"),canary_seed_path)%></i>
+<p><b><%=link_to"Carary",canary_seed_path%></b></p></td>
+</tr>
+
+
+</table>
+
+
+<div class="w3-container w3-col m6 w3-hide-large w3-hide-medium">
+<h5><b><i class="fa fa-dashboard"></i>Vegetables</b></h5>
+</div>
+
+<table class="w3-table w3-hide-large w3-hide-medium">
+
+<tr>
+<td class="w3-center"><i><%=link_to(image_tag("bitter_gourd-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x50",style: "width:60%;"),bitter_gourd_path)%></i>
+<p><b><%=link_to"Bitter Gourd",bitter_gourd_path%></b></p></td>
+<td class="w3-center"><i><%=link_to(image_tag("broccoli-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x50",style: "width:60%;"),broccoli_path)%></i>
+<p><b><%=link_to"Broccoli",broccoli_path%></b></p></td>
+<td class="w3-center"><i><%=link_to(image_tag("cabbages-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x50",style: "width:60%;"),cabbages_path)%></i>
+<p><b><%=link_to"Cabbage",cabbages_path%></b></p></td>
+</tr>
+
+<tr>
+<td class="w3-center"><i><%=link_to(image_tag("capsicums-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x50",style: "width:60%;"),capsicums_path)%></i>
+<p><b><%=link_to"Capsicum",capsicums_path%></b></p></td>
+<td class="w3-center"><i><%=link_to(image_tag("carrot-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x50",style: "width:60%;"),carrots_path)%></i>
+<p><b><%=link_to"Carrot",carrots_path%></b></p></td>
+<td class="w3-center"><i><%=link_to(image_tag("cassava-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x50",style: "width:60%;"),cassava_path)%></i>
+<p><b><%=link_to"Cassava",cassava_path%></b></p></td>
+</tr>
+
+<tr>
+<td class="w3-center"><i><%=link_to(image_tag("cauliflower-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x50",style: "width:60%;"),cauliflower_path)%></i>
+<p><b><%=link_to"Cauliflower",cauliflower_path%></b></p></td>
+<td class="w3-center"><i><%=link_to(image_tag("chickpea1-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x50",style: "width:60%;"),chickpea_path)%></i>
+<p><b><%=link_to"Chickpea",chickpea_path%></b></p></td>
+<td class="w3-center"><i><%=link_to(image_tag("chicory-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x50",style: "width:60%;"),chicory_path)%></i>
+<p><b><%=link_to"Chicory",chicory_path%></b></p></td>
+</tr>
+
+
+<tr>
+<td class="w3-center"><i><%=link_to(image_tag("cucumber-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x50",style: "width:60%;"),cucumber_path)%></i>
+<p><b><%=link_to"Cucumber",cucumber_path%></b></p></td>
+<td class="w3-center"><i><%=link_to(image_tag("drumstick1-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x50",style: "width:60%;"),drumstick_path)%></i>
+<p><b><%=link_to"Drumstick",drumstick_path%></b></p></td>
+<td class="w3-center"><i><%=link_to(image_tag("dry_beans-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x50",style: "width:60%;"),dry_bean_path)%></i>
+<p><b><%=link_to"Dry Bean",dry_bean_path%></b></p></td>
+</tr>
+
+<tr>
+<td class="w3-center"><i><%=link_to(image_tag("eggplant-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x50",style: "width:60%;"),eggplant_path)%></i>
+<p><b><%=link_to"Eggplant",eggplant_path%></b></p></td>
+<td class="w3-center"><i><%=link_to(image_tag("ginger-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x50",style: "width:60%;"),ginger_path)%></i>
+<p><b><%=link_to"Ginger",ginger_path%></b></p></td>
+<td class="w3-center"><i><%=link_to(image_tag("green_bean-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x50",style: "width:60%;"),green_bean_path)%></i>
+<p><b><%=link_to"Green Bean",green_bean_path%></b></p></td>
+</tr>
+
+<tr>
+<td class="w3-center"><i><%=link_to(image_tag("green_peas-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x50",style: "width:60%;"),green_peas_path)%></i>
+<p><b><%=link_to"Green Peas",green_peas_path%></b></p></td>
+<td class="w3-center"><i><%=link_to(image_tag("lentils-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x50",style: "width:60%;"),lentil_path)%></i>
+<p><b><%=link_to"Lentil",lentil_path%></b></p></td>
+<td class="w3-center"><i><%=link_to(image_tag("lettuce-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x50",style: "width:60%;"),lettuce_path)%></i>
+<p><b><%=link_to"Lettuce",lettuce_path%></b></p></td>
+</tr>
+
+<tr>
+<td class="w3-center"><i><%=link_to(image_tag("mushroom-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x50",style: "width:60%;"),mushroom_path)%></i>
+<p><b><%=link_to"Mushroom",mushroom_path%></b></p></td>
+<td class="w3-center"><i><%=link_to(image_tag("okra-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x50",style: "width:60%;"),okra_path)%></i>
+<p><b><%=link_to"Okra",okra_path%></b></p></td>
+<td class="w3-center"><i><%=link_to(image_tag("onion-min.png",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x50",style: "width:60%;"),onion_path)%></i>
+<p><b><%=link_to"Onion",onion_path%></b></p></td>
+</tr>
+
+<tr>
+<td class="w3-center"><i><%=link_to(image_tag("potato-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x50",style: "width:60%;"),potato_path)%></i>
+<p><b><%=link_to"Potato",potato_path%></b></p></td>
+<td class="w3-center"><i><%=link_to(image_tag("pulses-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x50",style: "width:60%;"),pulses_path)%></i>
+<p><b><%=link_to"Pulses",pulses_path%></b></p></td>
+<td class="w3-center"><i><%=link_to(image_tag("pumpkin-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x50",style: "width:60%;"),pumpkin_squash_gourd_path)%></i>
+<p><b><%=link_to"Pumpkin",pumpkin_squash_gourd_path%></b></p></td>
+</tr>
+
+
+<tr>
+<td class="w3-center"><i><%=link_to(image_tag("radish-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x50",style: "width:60%;"),radish_path)%></i>
+<p><b><%=link_to"Radish",radish_path%></b></p></td>
+<td class="w3-center"><i><%=link_to(image_tag("rapeseed_canola-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x50",style: "width:60%;"),rapeseed_canola_path)%></i>
+<p><b><%=link_to"Rapeseed canola",rapeseed_canola_path%></b></p></td>
+<td class="w3-center"><i><%=link_to(image_tag("ridge_gourd-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x50",style: "width:60%;"),ridge_Gourd_path)%></i>
+<p><b><%=link_to"Ridge Gourd",ridge_Gourd_path%></b></p></td>
+</tr>
+
+
+<tr>
+<td class="w3-center"><i><%=link_to(image_tag("sunflower_seed-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x50",style: "width:60%;"),sunflower_seed_path)%></i>
+<p><b><%=link_to"Sunflower Seeds",sunflower_seed_path%></b></p></td>
+<td class="w3-center"><i><%=link_to(image_tag("sunflower-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x50",style: "width:60%;"),sunflower_path)%></i>
+<p><b><%=link_to"Sunflower",sunflower_path%></b></p></td>
+<td class="w3-center"><i><%=link_to(image_tag("sesame-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x50",style: "width:60%;"),sesame_path)%></i>
+<p><b><%=link_to"Sesame",sesame_path%></b></p></td>
+</tr>
+
+<tr>
+<td class="w3-center"><i><%=link_to(image_tag("soybean-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x50",style: "width:60%;"),soybean_path)%></i>
+<p><b><%=link_to"Soybean",soybean_path%></b></p></td>
+<td class="w3-center"><i><%=link_to(image_tag("spinach-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x50",style: "width:60%;"),spinach_path)%></i>
+<p><b><%=link_to"Spinach",spinach_path%></b></p></td>
+<td class="w3-center"><i><%=link_to(image_tag("sugar_cane-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x50",style: "width:60%;"),sugar_cane_path)%></i>
+<p><b><%=link_to"Sugercane",sugar_cane_path%></b></p></td>
+</tr>
+
+<tr>
+<td class="w3-center"><i><%=link_to(image_tag("suger_beet-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x50",style: "width:60%;"),sugar_beet_beetroot_path)%></i>
+<p><b><%=link_to"Sugerbeet (Beetroot)",sugar_beet_beetroot_path%></b></p></td>
+<td class="w3-center"><i><%=link_to(image_tag("tomato-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x50",style: "width:60%;"),tomato_path)%></i>
+<p><b><%=link_to"Tomato",tomato_path%></b></p></td>
+<td class="w3-center"><i><%=link_to(image_tag("turnip-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x50",style: "width:60%;"),turnip_path)%></i>
+<p><b><%=link_to"Turnip",turnip_path%></b></p></td>
+</tr>
+
+<tr>
+<td class="w3-center"><i><%=link_to(image_tag("yam-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x50",style: "width:60%;"),yams_path)%></i>
+<p><b><%=link_to"Yam",yams_path%></b></p></td>
+</tr>
+
+</table>
+
+
+<div class="w3-container w3-col m6 w3-hide-large w3-hide-medium">
+<h5><b><i class="fa fa-dashboard"></i>Fruits</b></h5>
+</div>
+
+<table class="w3-table w3-hide-large w3-hide-medium">
+
+<tr>
+<td class="w3-center"><i><%=link_to(image_tag("apple-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x50",style: "width:60%;"),apple_path)%></i>
+<p><b><%=link_to"Apple",apple_path%></b></p></td>
+<td class="w3-center"><i><%=link_to(image_tag("apricot-min.jpg" ,class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x50",style: "width:60%;"),apricot_path)%></i>
+<p><b><%=link_to"Apricot" ,apricot_path%></b></p></td>
+<td class="w3-center"><i><%=link_to(image_tag("avocado-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x50",style: "width:60%;"),avocado_path)%></i>
+<p><b><%=link_to"Avocado",avocado_path%></b></p></td>
+</tr>
+
+<tr>
+<td class="w3-center"><i><%=link_to(image_tag("banana-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x50",style: "width:60%;"),banana_path)%></i>
+<p><b><%=link_to"Banana",banana_path%></b></p></td>
+<td class="w3-center"><i><%=link_to(image_tag("blackcurrant-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x50",style: "width:60%;"),black_currant_path)%></i>
+<p><b><%=link_to"Blackcurrant",black_currant_path%></b></p></td>
+<td class="w3-center"><i><%=link_to(image_tag("blackberry-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x50",style: "width:60%;"),blackberry_path)%></i>
+<p><b><%=link_to"Blackberry",blackberry_path%></b></p></td>
+</tr>
+
+<tr>
+<td class="w3-center"><i><%=link_to(image_tag("blueberry-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x50",style: "width:60%;"),blueberry_path)%></i>
+<p><b><%=link_to"Blueberry",blueberry_path%></b></p></td>
+<td class="w3-center"><i><%=link_to(image_tag("cherry-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x50",style: "width:60%;"),cherry_path)%></i>
+<p><b><%=link_to"Cherry",cherry_path%></b></p></td>
+<td class="w3-center"><i><%=link_to(image_tag("coconut-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x50",style: "width:60%;"),coconut_path)%></i>
+<p><b><%=link_to"Coconut",coconut_path%></b></p></td>
+</tr>
+
+<tr>
+<td class="w3-center"><i><%=link_to(image_tag("currant-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x50",style: "width:60%;"),currant_path)%></i>
+<p><b><%=link_to"Currant",currant_path%></b></p></td>
+<td class="w3-center"><i><%=link_to(image_tag("custard_apple-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x50",style: "width:60%;"),custard_apple_path)%></i>
+<p><b><%=link_to"CustardApple",custard_apple_path%></b></p></td>
+<td class="w3-center"><i><%=link_to(image_tag("date-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x50",style: "width:60%;"),date_path)%></i>
+<p><b><%=link_to"Date",date_path%></b></p></td>
+</tr>
+
+<tr>
+<td class="w3-center"><i><%=link_to(image_tag("dragon-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x50",style: "width:60%;"),dragon_fruit_path)%></i>
+<p><b><%=link_to"Dragonfruit",dragon_fruit_path%></b></p></td>
+<td class="w3-center"><i><%=link_to(image_tag("fig-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x50",style: "width:60%;"),fig_path)%></i>
+<p><b><%=link_to"Fig",fig_path%></b></p></td>
+<td class="w3-center"><i><%=link_to(image_tag("gooseberry-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x50",style: "width:60%;"),gooseberry_path)%></i>
+<p><b><%=link_to"Gooseberry",gooseberry_path%></b></p></td>
+</tr>
+
+<tr>
+<td class="w3-center"><i><%=link_to(image_tag("grape-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x50",style: "width:60%;"),grape_path)%></i>
+<p><b><%=link_to"Grape",grape_path%></b></p></td>
+<td class="w3-center"><i><%=link_to(image_tag("guava-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x50",style: "width:60%;"),guava_path)%></i>
+<p><b><%=link_to"Guava",guava_path%></b></p></td>
+<td class="w3-center"><i><%=link_to(image_tag("jackfruit-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x50",style: "width:60%;"),jackfruit_path)%></i>
+<p><b><%=link_to"Jackfruit",jackfruit_path%></b></p></td>
+</tr>
+
+<tr>
+<td class="w3-center"><i><%=link_to(image_tag("kiwi-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x50",style: "width:60%;"),kiwifruit_path)%></i>
+<p><b><%=link_to"kiwi",kiwifruit_path%></b></p></td>
+<td class="w3-center"><i><%=link_to(image_tag("lemon-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x50",style: "width:60%;"),lemons_path)%></i>
+<p><b><%=link_to"Leamon",lemons_path%></b></p></td>
+<td class="w3-center"><i><%=link_to(image_tag("mango-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x50",style: "width:60%;"),mango_path)%></i>
+<p><b><%=link_to"Mango",mango_path%></b></p></td>
+</tr>
+
+<tr>
+<td class="w3-center"><i><%=link_to(image_tag("mangosteen-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x50",style: "width:60%;"),mangosteen_path)%></i>
+<p><b><%=link_to"Mangosteen",mangosteen_path%></b></p></td>
+<td class="w3-center"><i><%=link_to(image_tag("muskmelon-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x50",style: "width:60%;"),muskmelon_path)%></i>
+<p><b><%=link_to"Muskmelon",muskmelon_path%></b></p></td>
+<td class="w3-center"><i><%=link_to(image_tag("olive-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x50",style: "width:60%;"),olive_path)%></i>
+<p><b><%=link_to"Olive",olive_path%></b></p></td>
+</tr>
+
+<tr>
+<td class="w3-center"><i><%=link_to(image_tag("orange-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x50",style: "width:60%;"),oranges_path)%></i>
+<p><b><%=link_to"Orange",oranges_path%></b></p></td>
+<td class="w3-center"><i><%=link_to(image_tag("papaya-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x50",style: "width:60%;"),papaya_path)%></i>
+<p><b><%=link_to"Papaya",papaya_path%></b></p></td>
+<td class="w3-center"><i><%=link_to(image_tag("passionfruit-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x50",style: "width:60%;"),passion_fruit_path)%></i>
+<p><b><%=link_to"Passionfruit",passion_fruit_path%></b></p></td>
+</tr>
+
+<tr>
+<td class="w3-center"><i><%=link_to(image_tag("peach-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x50",style: "width:60%;"),peach_path)%></i>
+<p><b><%=link_to"Peach",peach_path%></b></p></td>
+<td class="w3-center"><i><%=link_to(image_tag("pear-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x50",style: "width:60%;"),pear_path)%></i>
+<p><b><%=link_to"Pear",pear_path%></b></p></td>
+<td class="w3-center"><i><%=link_to(image_tag("pineapple-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x50",style: "width:60%;"),pineapple_path)%></i>
+<p><b><%=link_to"Pineapple",pineapple_path%></b></p></td>
+</tr>
+
+<tr>
+<td class="w3-center"><i><%=link_to(image_tag("plums-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x50",style: "width:60%;"),plums_path)%></i>
+<p><b><%=link_to"Plums",plums_path%></b></p></td>
+<td class="w3-center"><i><%=link_to(image_tag("pomegranate-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x50",style: "width:60%;"),pomegranate_path)%></i>
+<p><b><%=link_to"Pomegranate",pomegranate_path%></b></p></td>
+<td class="w3-center"><i><%=link_to(image_tag("quince-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x50",style: "width:60%;"),quince_path)%></i>
+<p><b><%=link_to"Quince",quince_path%></b></p></td>
+</tr>
+
+<tr>
+<td class="w3-center"><i><%=link_to(image_tag("raspberry-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x50",style: "width:60%;"),raspberry_path)%></i>
+<p><b><%=link_to"Raspberry",raspberry_path%></b></p></td>
+<td class="w3-center"><i><%=link_to(image_tag("strawberrie-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x50",style: "width:60%;"),strawberry_path)%></i>
+<p><b><%=link_to"Strawberrie",strawberry_path%></b></p></td>
+<td class="w3-center"><i><%=link_to(image_tag("watermelon-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x50",style: "width:60%;"),watermelon_path)%></i>
+<p><b><%=link_to"Watermelon",watermelon_path%></b></p></td>
+</tr>
+
+</table>
+
+
+<div class="w3-container w3-col m6 w3-hide-large w3-hide-medium">
+<h5><b><i class="fa fa-dashboard"></i>Meat</b></h5>
+</div>
+
+<table class="w3-table w3-hide-large w3-hide-medium">
+
+<tr>
+<td class="w3-center"><i><%=link_to(image_tag("beef-min.jpeg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x50",style: "width:70%;"),beef_path)%></i>
+<p><b><%=link_to"Beef Meat",beef_path%></b></p></td>
+<td class="w3-center"><i><%=link_to(image_tag("buffalo-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x50",style: "width:60%;"),buffalo_path)%></i>
+<p><b><%=link_to"Buffalo Meat",buffalo_path%></b></p></td>
+<td class="w3-center"><i><%=link_to(image_tag("camel-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x50",style: "width:60%;"),camel_path)%></i>
+<p><b><%=link_to"Camel Meat",camel_path%></b></p></td>
+</tr>
+
+<tr>
+<td class="w3-center"><i><%=link_to(image_tag("chicken-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x50",style: "width:70%;"),chicken_path)%></i>
+<p><b><%=link_to"Chicken",chicken_path%></b></p></td>
+<td class="w3-center"><i><%=link_to(image_tag("duck-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x50",style: "width:60%;"),duck_path)%></i>
+<p><b><%=link_to"Duck",duck_path%></b></p></td>
+<td class="w3-center"><i><%=link_to(image_tag("goat-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x50",style: "width:60%;"),goat_path)%></i>
+<p><b><%=link_to"Goat Meat",goat_path%></b></p></td>
+</tr>
+
+<tr>
+<td class="w3-center"><i><%=link_to(image_tag("goose-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x50",style: "width:70%;"),goose_path)%></i>
+<p><b><%=link_to"Goose",goose_path%></b></p></td>
+<td class="w3-center"><i><%=link_to(image_tag("guinea-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x50",style: "width:60%;"),guinea_path)%></i>
+<p><b><%=link_to"Guineafowl",guinea_path%></b></p></td>
+<td class="w3-center"><i><%=link_to(image_tag("horse-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x50",style: "width:60%;"),horse_path)%></i>
+<p><b><%=link_to"Horse Meat",horse_path%></b></p></td>
+</tr>
+
+<tr>
+<td class="w3-center"><i><%=link_to(image_tag("pork-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x50",style: "width:70%;"),pork_path)%></i>
+<p><b><%=link_to"Pork",pork_path%></b></p></td>
+<td class="w3-center"><i><%=link_to(image_tag("rabbit-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x50",style: "width:60%;"),rabbit_path)%></i>
+<p><b><%=link_to"Rabbit",rabbit_path%></b></p></td>
+<td class="w3-center"><i><%=link_to(image_tag("sheep-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x50",style: "width:60%;"),sheep_path)%></i>
+<p><b><%=link_to"Sheep Meat",sheep_path%></b></p></td>
+</tr>
+
+<tr>
+<td class="w3-center"><i><%=link_to(image_tag("turkey-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x50",style: "width:70%;"),turkey_path)%></i>
+<p><b><%=link_to"Turkey",turkey_path%></b></p></td>
+</tr>
+
+</table>
+
+
+<div class="w3-container w3-col m6 w3-hide-large w3-hide-medium">
+<h5><b><i class="fa fa-dashboard"></i>Dairy & Drinks</b></h5>
+</div>
+
+<table class="w3-table w3-hide-large w3-hide-medium">
+
+<tr>
+<td class="w3-center"><i><%=link_to(image_tag("beer-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x50",style: "width:80%;"),beer_path)%></i>
+<p><b><%=link_to"Beer",beer_path%></b></p></td>
+<td class="w3-center"><i><%=link_to(image_tag("buffalo-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x50",style: "width:60%;"),buffalo_milk_path)%></i>
+<p><b><%=link_to"Buffalo Milk",buffalo_milk_path%></b></p></td>
+<td class="w3-center"><i><%=link_to(image_tag("camel-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x50",style: "width:60%;"),camel_milk_path)%></i>
+<p><b><%=link_to"Camel Milk",camel_milk_path%></b></p></td>
+</tr>
+
+<tr>
+<td class="w3-center"><i><%=link_to(image_tag("coffee-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x50",style: "width:80%;"),coffee_path)%></i>
+<p><b><%=link_to"Coffee",coffee_path%></b></p></td>
+<td class="w3-center"><i><%=link_to(image_tag("cow-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x50",style: "width:60%;"),cow_milk_path)%></i>
+<p><b><%=link_to"Cow Milk",cow_milk_path%></b></p></td>
+<td class="w3-center"><i><%=link_to(image_tag("goat-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x50",style: "width:60%;"),goat_milk_path)%></i>
+<p><b><%=link_to"Goat Milk",goat_milk_path%></b></p></td>
+</tr>
+
+<tr>
+<td class="w3-center"><i><%=link_to(image_tag("milk-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x50",style: "width:80%;"),milk_path)%></i>
+<p><b><%=link_to"milk",milk_path%></b></p></td>
+<td class="w3-center"><i><%=link_to(image_tag("sheep-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x50",style: "width:60%;"),sheep_milk_path)%><i>
+<p><b><%=link_to"Sheep Milk",sheep_milk_path%></b></p></td>
+<td class="w3-center"><i><%=link_to(image_tag("tea-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x50",style: "width:60%;"),tea_path)%></i>
+<p><b><%=link_to"Pure Tea",tea_path%></b></p></td>
+</tr>
+
+<tr>
+<td class="w3-center"><i><i><%=link_to(image_tag("cheese-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x50",style: "width:60%;"),cheese_path)%></i>
+<p><b><%=link_to"Cheese",cheese_path%></b></p></td>
+<td class="w3-center"><i><i><%=link_to(image_tag("Cocoa-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x50",style: "width:60%;"),cocoa_path)%></i>
+<p><b><%=link_to"Cocoa",cocoa_path%></b></p></td>
+<td class="w3-center"><i><i><%=link_to(image_tag("yerba_mate-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x50",style: "width:60%;"),yerba_mate_path)%></i>
+<p><b><%=link_to"Yerba Mate",yerba_mate_path%></b></p></td>
+</tr>
+
+<tr>
+<td class="w3-center"><i><i><%=link_to(image_tag("egg-min.png",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x50",style: "width:60%;"),egg_path)%></i>
+<p><b><%=link_to"Egg",egg_path%></b></p></td>
+<td class="w3-center"><i><i><%=link_to(image_tag("honey-min.png",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x50",style: "width:60%;"),honey_path)%></i>
+<p><b><%=link_to"Honey",honey_path%></b></p></td>
+<td class="w3-center"><i><i><%=link_to(image_tag("olive_oil-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x50",style: "width:60%;"),olive_oil_path)%></i>
+<p><b><%=link_to"Olive Oil",olive_oil_path%></b></p></td>
+</tr>
+
+<tr>
+<td class="w3-center"><i><%=link_to(image_tag("wine-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x50",style: "width:80%;"),wine_path)%></i>
+<p><b><%=link_to"Wine",wine_path%></b></p></td>
+<td class="w3-center"><i><i><%=link_to(image_tag("tobacco-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x50",style: "width:60%;"),tobacco_path)%></i>
+<p><b><%=link_to"Tobacco",tobacco_path%></b></p></td>
+</tr>
+
+</table>
+
+
+
+<div class="w3-container w3-col m6 w3-hide-large w3-hide-medium">
+<h5><b><i class="fa fa-dashboard"></i>Fiber</b></h5>
+</div>
+
+<table class="w3-table w3-hide-large w3-hide-medium">
+
+<tr>
+<td class="w3-center"><i><%=link_to(image_tag("fiber-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x50",style: "width:60%;"),fiber_path)%></i>
+<p><b><%=link_to"Fiber",fiber_path%></b></p></td>
+<td class="w3-center"><i><%=link_to(image_tag("Abaca_fiber-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x50",style: "width:60%;"),abaca_fiber_path)%></i>
+<p><b><%=link_to"Abaca Fiber",abaca_fiber_path%></b></p></td>
+<td class="w3-center"><i><%=link_to(image_tag("Agave_fiber-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x50",style: "width:60%;"),agave_fiber_path)%></i>
+<p><b><%=link_to"Agave Fiber",agave_fiber_path%></b></p></td>
+</tr>
+
+<tr>
+<td class="w3-center"><i><%=link_to(image_tag("Bast_fiber-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x50",style: "width:60%;"),bast_fiber_path)%></i>
+<p><b><%=link_to"Bast Fiber",bast_fiber_path%></b></p></td>
+<td class="w3-center"><i><%=link_to(image_tag("Flax_fiber-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x50",style: "width:60%;"),flax_fiber_path)%></i>
+<p><b><%=link_to"Flax Fiber",flax_fiber_path%></b></p></td>
+<td class="w3-center"><i><%=link_to(image_tag("jute_fiber-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x50",style: "width:60%;"),jute_fiber_path)%></i>
+<p><b><%=link_to"Jute Fiber",jute_fiber_path%></b></p></td>
+</tr>
+
+<tr>
+<td class="w3-center"><i><%=link_to(image_tag("kapok_fiber-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x50",style: "width:60%;"),kapok_fiber_path)%></i>
+<p><b><%=link_to"Kapok Fiber",kapok_fiber_path%></b></p></td>
+<td class="w3-center"><i><%=link_to(image_tag("ramie_fiber-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x50",style: "width:60%;"),ramie_fiber_path)%></i>
+<p><b><%=link_to"Ramie Fiber",ramie_fiber_path%></b></p></td>
+<td class="w3-center"><i><%=link_to(image_tag("rubber-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x50",style: "width:60%;"),rubber_fiber_path)%></i>
+<p><b><%=link_to"Rubber",rubber_fiber_path%></b></p></td>
+</tr>
+
+<tr>
+<td class="w3-center"><i><%=link_to(image_tag("silk-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x50",style: "width:60%;"),silk_fiber_path)%></i>
+<p><b><%=link_to"Silk",silk_fiber_path%></b></p></td>
+<td class="w3-center"><i><%=link_to(image_tag("sisal_fiber-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x50",style: "width:60%;"),sisal_fiber_path)%></i>
+<p><b><%=link_to"Sisal Fiber",sisal_fiber_path%></b></p></td>
+<td class="w3-center"><i><%=link_to(image_tag("wool-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x50",style: "width:60%;"),wool_path)%></i>
+<p><b><%=link_to"Wool",wool_path%></b></p></td>
+</tr>
+
+</table>
+
+<div class="w3-container w3-col m6 w3-hide-large w3-hide-medium">
+<h5><b><i class="fa fa-dashboard"></i>Seafood</b></h5>
+</div>
+
+<table class="w3-table w3-hide-large w3-hide-medium">
+
+<tr>
+<td class="w3-center"><i><%=link_to(image_tag("fish-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x50",style: "width:60%;"),fish_path)%></i>
+<p><b><%=link_to"Fish",fish_path%></b></p></td>
+<td class="w3-center"><i><%=link_to(image_tag("oysters-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x50",style: "width:60%;"),oyster_path)%></i>
+<p><b><%=link_to"Sheep Milk",oyster_path%></b></p></td>
+<td class="w3-center"><i><%=link_to(image_tag("sea_weed-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x50",style: "width:60%;"),seaweed_path)%></i>
+<p><b><%=link_to"Sheep Milk",seaweed_path%></b></p></td>
+</tr>
+
+<tr>
+<td class="w3-center"><i><%=link_to(image_tag("caviar-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x50",style: "width:60%;"),caviar_path)%></i>
+<p><b><%=link_to"Caviar",caviar_path%></b></p></td>
+<td class="w3-center"><i><%=link_to(image_tag("crab-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x50",style: "width:60%;"),crab_path)%></i>
+<p><b><%=link_to"Crab",crab_path%></b></p></td>
+<td class="w3-center"><i><%=link_to(image_tag("lobsters-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x50",style: "width:60%;"),lobsters_path)%></i>
+<p><b><%=link_to"Lobsters",lobsters_path%></b></p></td>
+</tr>
+
+<tr>
+<td class="w3-center"><i><%=link_to(image_tag("Clam-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x50",style: "width:60%;"),clam_path)%></i>
+<p><b><%=link_to"Clam",clam_path%></b></p></td>
+<td class="w3-center"><i><%=link_to(image_tag("oysters-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x50",style: "width:60%;"),oyster_path)%></i>
+<p><b><%=link_to"Oyster",oyster_path%></b></p></td>
+<td class="w3-center"><i><%=link_to(image_tag("Octopus-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x50",style: "width:60%;"),octopus_path)%></i>
+<p><b><%=link_to"Octopus",octopus_path%></b></p></td>
+</tr>
+
+<tr>
+<td class="w3-center"><i><%=link_to(image_tag("squid-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x50",style: "width:60%;"),squid_path)%></i>
+<p><b><%=link_to"Squid",squid_path%></b></p></td>
+<td class="w3-center"><i><%=link_to(image_tag("shrimps-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x50",style: "width:60%;"),shrimps_path)%></i>
+<p><b><%=link_to"Shrimps",shrimps_path%></b></p></td>
+</tr>
+
+</table>
+
+
+<div class="w3-container w3-col m6 w3-hide-large w3-hide-medium">
+<h5><b><i class="fa fa-dashboard"></i>Nut</b></h5>
+</div>
+
+<table class="w3-table w3-hide-large w3-hide-medium">
+
+<tr>
+<td class="w3-center"><i><%=link_to(image_tag("almonds-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x50",style: "width:60%;"),almonds_path)%></i>
+<p><b><%=link_to"Almond",almonds_path%></b></p></td>
+<td class="w3-center"><i><%=link_to(image_tag("brazil_nuts-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x50",style: "width:60%;"),brazil_nuts_path)%></i>
+<p><b><%=link_to"Brazilnut",brazil_nuts_path%></b></p></td>
+<td class="w3-center"><i><%=link_to(image_tag("cashew-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x50",style: "width:60%;"),cashews_path)%></i>
+<p><b><%=link_to"Cashew",cashews_path%></b></p></td>
+</tr>
+
+<tr>
+<td class="w3-center"><i><%=link_to(image_tag("chestnuts-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x50",style: "width:60%;"),chestnuts_path)%></i>
+<p><b><%=link_to"Chestnut",chestnuts_path%></b></p></td>
+<td class="w3-center"><i><%=link_to(image_tag("filberts-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x50",style: "width:60%;"),filberts_path)%></i>
+<p><b><%=link_to"Filbert",filberts_path%></b></p></td>
+<td class="w3-center"><i><%=link_to(image_tag("hazelnuts-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x50",style: "width:60%;"),hazelnuts_path)%></i>
+<p><b><%=link_to"Hazelnut",hazelnuts_path%></b></p></td>
+</tr>
+
+<tr>
+<td class="w3-center"><i><%=link_to(image_tag("macadamia_nuts-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x50",style: "width:60%;"),macadamia_nuts_path)%></i>
+<p><b><%=link_to"Macadamian",macadamia_nuts_path%></b></p></td>
+<td class="w3-center"><i><%=link_to(image_tag("peanut-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x50",style: "width:60%;"),peanuts_path)%></i>
+<p><b><%=link_to"Peanut",peanuts_path%></b></p></td>
+<td class="w3-center"><i><%=link_to(image_tag("pecans-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x50",style: "width:60%;"),pecans_path)%></i>
+<p><b><%=link_to"Pecans",pecans_path%></b></p></td>
+</tr>
+
+<tr>
+<td class="w3-center"><i><%=link_to(image_tag("pinenuts-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x50",style: "width:60%;"),pine_nuts_path)%></i>
+<p><b><%=link_to"Pinenut",pine_nuts_path%></b></p></td>
+<td class="w3-center"><i><%=link_to(image_tag("pistachios-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x50",style: "width:60%;"),pistachios_path)%></i>
+<p><b><%=link_to"Pistachios",pistachios_path%></b></p></td>
+<td class="w3-center"><i><%=link_to(image_tag("sheanut-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x50",style: "width:60%;"),sheanut_path)%></i>
+<p><b><%=link_to"Sheanut",sheanut_path%></b></p></td>
+</tr>
+
+<tr>
+<td class="w3-center"><i><%=link_to(image_tag("walnuts-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x50",style: "width:60%;"),walnuts_path)%></i>
+<p><b><%=link_to"Walnut",walnuts_path%></b></p></td>
+</tr>
+
+</table>
+
+<div class="w3-container w3-col m6 w3-hide-large w3-hide-medium">
+<h5><b><i class="fa fa-dashboard"></i>Spices</b></h5>
+</div>
+
+<table class="w3-table w3-hide-large w3-hide-medium">
+<tr>
+
+<td class="w3-center"><i><%=link_to(image_tag("anise_star-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x50",style: "width:60%;"),anise_star_path)%></i>
+<p><b><%=link_to"Anise Star",anise_star_path%></b></p></td>
+<td class="w3-center"><i><%=link_to(image_tag("bay_leaves-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x50",style: "width:60%;"),bay_leaves_path)%></i>
+<p><b><%=link_to"Bay Leaves",bay_leaves_path%></b></p></td>
+<td class="w3-center"><i><%=link_to(image_tag("black_pepper.png",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x50",style: "width:60%;"),black_pepper_path)%></i>
+<p><b><%=link_to"Black Pepper",black_pepper_path%></b></p></td>
+</tr>
+
+<tr>
+<td class="w3-center"><i><%=link_to(image_tag("cardamom-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x50",style: "width:60%;"),cardamom_path)%></i>
+<p><b><%=link_to"Cardamom",cardamom_path%></b></p></td>
+<td class="w3-center"><i><%=link_to(image_tag("chili_pepper-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x50",style: "width:60%;"),chili_pepper_path)%></i>
+<p><b><%=link_to"Chili Pepper",chili_pepper_path%></b></p></td>
+<td class="w3-center"><i><%=link_to(image_tag("cinnamon-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x50",style: "width:60%;"),cinnamon_path)%></i>
+<p><b><%=link_to"Cinnamon",cinnamon_path%></b></p></td>
+</tr>
+
+<tr>
+<td class="w3-center"><i><%=link_to(image_tag("cloves-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x50",style: "width:60%;"),cloves_path)%></i>
+<p><b><%=link_to"Cloves",cloves_path%></b></p></td>
+<td class="w3-center"><i><%=link_to(image_tag("coriander-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x50",style: "width:60%;"),coriander_path)%></i>
+<p><b><%=link_to"Coriander",coriander_path%></b></p></td>
+<td class="w3-center"><i><%=link_to(image_tag("cumin-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x50",style: "width:60%;"),cumin_path)%></i>
+<p><b><%=link_to"Cumin",cumin_path%></b></p></td>
+</tr>
+
+<tr>
+<td class="w3-center"><i><%=link_to(image_tag("fennel-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x50",style: "width:60%;"),fennel_path)%></i>
+<p><b><%=link_to"Fennel",fennel_path%></b></p></td>
+<td class="w3-center"><i><%=link_to(image_tag("fenugreek-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x50",style: "width:60%;"),fenugreek_path)%></i>
+<p><b><%=link_to"Fenugreek",fenugreek_path%></b></p></td>
+<td class="w3-center"><i><%=link_to(image_tag("ginger-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x50",style: "width:60%;"),ginger_path)%></i>
+<p><b><%=link_to"Ginger",ginger_path%></b></p></td>
+</tr>
+
+<tr>
+<td class="w3-center"><i><%=link_to(image_tag("mace-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x50",style: "width:60%;"),mace_path)%></i>
+<p><b><%=link_to"Mace",mace_path%></b></p></td>
+<td class="w3-center"><i><%=link_to(image_tag("mustard_seeds-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x50",style: "width:60%;"),mustard_seeds_path)%></i>
+<p><b><%=link_to"Mustard Seed",mustard_seeds_path%></b></p></td>
+<td class="w3-center"><i><%=link_to(image_tag("nutmeg-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x50",style: "width:60%;"),nutmeg_path)%></i>
+<p><b><%=link_to"Nutmeg",nutmeg_path%></b></p></td>
+</tr>
+
+<tr>
+<td class="w3-center"><i><%=link_to(image_tag("oregano-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x50",style: "width:60%;"),oregano_path)%></i>
+<p><b><%=link_to"Oregano",oregano_path%></b></p></td>
+<td class="w3-center"><i><%=link_to(image_tag("paprika-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x50",style: "width:60%;"),paprika_path)%></i>
+<p><b><%=link_to"Paprika",paprika_path%></b></p></td>
+<td class="w3-center"><i><%=link_to(image_tag("peppermint-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x50",style: "width:60%;"),peppermint_path)%></i>
+<p><b><%=link_to"Peppermint",peppermint_path%></b></p></td>
+</tr>
+
+<tr>
+<td class="w3-center"><i><%=link_to(image_tag("Rosemary-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x50",style: "width:60%;"),rosemary_path)%></i>
+<p><b><%=link_to"Rosemary",rosemary_path%></b></p></td>
+<td class="w3-center"><i><%=link_to(image_tag("saffron-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x50",style: "width:60%;"),saffron_path)%></i>
+<p><b><%=link_to"Saffron",saffron_path%></b></p></td>
+<td class="w3-center"><i><%=link_to(image_tag("thyme-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x50",style: "width:60%;"),thyme_path)%></i>
+<p><b><%=link_to"Thyme",thyme_path%></b></p></td>
+</tr>
+
+<tr>
+<td class="w3-center"><i><%=link_to(image_tag("turmeric-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x50",style: "width:60%;"),turmeric_path)%></i>
+<p><b><%=link_to"Turmeric",turmeric_path%></b></p></td>
+<td class="w3-center"><i><%=link_to(image_tag("vanilla-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x50",style: "width:60%;"),vanilla_path)%></i>
+<p><b><%=link_to"Vanilla",vanilla_path%></b></p></td>
+</tr>
+</table>
+
+
+
+
+<div id="Cereal">
+
+<div class="cerals w3-hide-small">
+
+<div class="w3-row-padding w3-margin-bottom">
+<div class="w3-col m2">
+<div class="w3-container w3-padding-16">
+<div class="w3-center">
+<i><%=link_to(image_tag("barley.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x120",style: "width:70%;"),barley_path)%></i>
+<h4><b><%=link_to"Barley",barley_path%></b></h4>
+</div>
+</div>
+</div>
+<div class="w3-col m2">
+<div class="w3-container w3-padding-16">
+<div class="w3-center">
+<i><%=link_to(image_tag("buckwheat.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x120",style: "width:70%;"),buckwheat_path)%></i>
+<h4><b><%=link_to"BuckWheat",buckwheat_path%></b></h4>
+</div>
+</div>
+</div>
+<div class="w3-col m2">
+<div class="w3-container w3-padding-16">
+<div class="w3-center">
+<i><%=link_to(image_tag("corn.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x120",style: "width:70%;"),maize_path)%></i>
+<h4><b><%=link_to"Maize(Corn)",maize_path%></b></h4>
+</div>
+</div>
+</div>
+<div class="w3-col m2">
+<div class="w3-container w3-padding-16">
+<div class="w3-center">
+<i><%=link_to(image_tag("wheat.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x120",style: "width:70%;"),wheat_path)%></i>
+<h4><b><%=link_to"Wheat",wheat_path%></b></h4>
+</div>
+</div>
+</div>
+<div class="w3-col m2">
+<div class="w3-container w3-padding-16">
+<div class="w3-center">
+<i><%=link_to(image_tag("fonio.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x120",style: "width:70%;"),fonio_path)%></i>
+<h4><b><%=link_to"Fonio",fonio_path%></b></h4>
+</div>
+</div>
+</div>
+<div class="w3-col m2">
+<div class="w3-container w3-padding-16">
+<div class="w3-center">
+<i><%=link_to(image_tag("oat.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x120",style: "width:70%;"),oats_path)%></i>
+<h4><b><%=link_to"Oat",oats_path%></b></h4>
+</div>
+</div>
+</div>
+</div>
+
+<div class="w3-row-padding w3-margin-bottom">
+<div class="w3-col m2">
+<div class="w3-container w3-padding-16">
+<div class="w3-center">
+<i><%=link_to(image_tag("quinoa.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x120",style: "width:70%;"),quinoa_path)%></i>
+<h4><b><%=link_to"Quinoa",quinoa_path%></b></h4>
+</div>
+</div>
+</div>
+<div class="w3-col m2">
+<div class="w3-container w3-padding-16">
+<div class="w3-center">
+<i><%=link_to(image_tag("rye.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x120",style: "width:70%;"),rye_path)%></i>
+<h4><b><%=link_to"Rye",rye_path%></b></h4>
+</div>
+</div>
+</div>
+<div class="w3-col m2">
+<div class="w3-container w3-padding-16">
+<div class="w3-center">
+<i><%=link_to(image_tag("sorghum.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x120",style: "width:70%;"),sorghum_path)%></i>
+<h4><b><%=link_to"Sorghum",sorghum_path%></b></h4>
+</div>
+</div>
+</div>
+<div class="w3-col m2">
+<div class="w3-container w3-padding-16">
+<div class="w3-center">
+<i><%=link_to(image_tag("cotton.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x120",style: "width:70%;"),cotton_path)%></i>
+<h4><b><%=link_to"Cotton",cotton_path%></b></h4>
+</div>
+</div>
+</div>
+<div class="w3-col m2">
+<div class="w3-container w3-padding-16">
+<div class="w3-center">
+<i><%=link_to(image_tag("Triticale.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x120",style: "width:70%;"),triticale_path)%></i>
+<h4><b><%=link_to"Triticale",triticale_path%></b></h4>
+</div>
+</div>
+</div>
+<div class="w3-col m2">
+<div class="w3-container w3-padding-16">
+<div class="w3-center">
+<i><%=link_to(image_tag("rice.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x120",style: "width:70%;"),rice_path)%></i>
+<h4><b><%=link_to"Rice",rice_path%></b></h4>
+</div>
+</div>
+</div>
+</div>
+
+<div class="w3-row-padding w3-margin-bottom">
+<div class="w3-col m2">
+<div class="w3-container w3-padding-16">
+<div class="w3-center">
+<i><%=link_to(image_tag("millet.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x120",style: "width:70%;"),millet_crop_path)%></i>
+<h4><b><%=link_to"Millet",millet_crop_path%></b></h4>
+</div>
+</div>
+</div>
+<div class="w3-col m2">
+<div class="w3-container w3-padding-16">
+<div class="w3-center">
+<i><%=link_to(image_tag("carary.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x120",style: "width:70%;"),canary_seed_path)%></i>
+<h4><b><%=link_to"Carary",canary_seed_path%></b></h4>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+
+<div id="Vegetables">
+<div class="cerals w3-hide-small">
+
+<div class="w3-container w3-col m6">
+<h5><b><i class="fa fa-dashboard"></i>Vegetables</b></h5>
+</div>
+
+<div class="w3-row-padding w3-margin-bottom">
+<div class="w3-col m2">
+<div class="w3-container w3-padding-16">
+<div class="w3-center">
+<i><%=link_to(image_tag("bitter_gourd-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x120",style: "width:70%;"),bitter_gourd_path)%></i>
+<h4><b><%=link_to"Bitter Gourd",bitter_gourd_path%></b></h4>
+</div>
+</div>
+</div>
+<div class="w3-col m2">
+<div class="w3-container w3-padding-16">
+<div class="w3-center">
+<i><%=link_to(image_tag("broccoli-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x120",style: "width:70%;"),broccoli_path)%></i>
+<h4><b><%=link_to"Broccoli",broccoli_path%></b></h4>
+</div>
+</div>
+</div>
+<div class="w3-col m2">
+<div class="w3-container w3-padding-16">
+<div class="w3-center">
+<i><%=link_to(image_tag("cabbages-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x120",style: "width:70%;"),cabbages_path)%></i>
+<h4><b><%=link_to"Cabbage",cabbages_path%></b></h4>
+</div>
+</div>
+</div>
+<div class="w3-col m2">
+<div class="w3-container w3-padding-16">
+<div class="w3-center">
+<i><%=link_to(image_tag("capsicums-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x120",style: "width:70%;"),capsicums_path)%></i>
+<h4><b><%=link_to"Capsicum",capsicums_path%></b></h4>
+</div>
+</div>
+</div>
+<div class="w3-col m2">
+<div class="w3-container w3-padding-16">
+<div class="w3-center">
+<i><%=link_to(image_tag("carrot-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x120",style: "width:70%;"),carrots_path)%></i>
+<h4><b><%=link_to"Carrot",carrots_path%></b></h4>
+</div>
+</div>
+</div>
+<div class="w3-col m2">
+<div class="w3-container w3-padding-16">
+<div class="w3-center">
+<i><%=link_to(image_tag("cassava-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x120",style: "width:70%;"),cassava_path)%></i>
+<h4><b><%=link_to"Cassava",cassava_path%></b></h4>
+</div>
+</div>
+</div>
+</div>
+
+<div class="w3-row-padding w3-margin-bottom">
+<div class="w3-col m2">
+<div class="w3-container w3-padding-16">
+<div class="w3-center">
+<i><%=link_to(image_tag("cauliflower-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x120",style: "width:70%;"),cauliflower_path)%></i>
+<h4><b><%=link_to"Cauliflower",cauliflower_path%></b></h4>
+</div>
+</div>
+</div>
+<div class="w3-col m2">
+<div class="w3-container w3-padding-16">
+<div class="w3-center">
+<i><%=link_to(image_tag("chickpea1-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x120",style: "width:70%;"),chickpea_path)%></i>
+<h4><b><%=link_to"Chickpea",chickpea_path%></b></h4>
+</div>
+</div>
+</div>
+<div class="w3-col m2">
+<div class="w3-container w3-padding-16">
+<div class="w3-center">
+<i><%=link_to(image_tag("chicory-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x120",style: "width:70%;"),chicory_path)%></i>
+<h4><b><%=link_to"Chicory",chicory_path%></b></h4>
+</div>
+</div>
+</div>
+<div class="w3-col m2">
+<div class="w3-container w3-padding-16">
+<div class="w3-center">
+<i><%=link_to(image_tag("cucumber-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x120",style: "width:70%;"),cucumber_path)%></i>
+<h4><b><%=link_to"Cucumber",cucumber_path%></b></h4>
+</div>
+</div>
+</div>
+<div class="w3-col m2">
+<div class="w3-container w3-padding-16">
+<div class="w3-center">
+<i><%=link_to(image_tag("drumstick1-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x120",style: "width:70%;"),drumstick_path)%></i>
+<h4><b><%=link_to"Drumstick",drumstick_path%></b></h4>
+</div>
+</div>
+</div>
+<div class="w3-col m2">
+<div class="w3-container w3-padding-16">
+<div class="w3-center">
+<i><%=link_to(image_tag("dry_beans-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x120",style: "width:70%;"),dry_bean_path)%></i>
+<h4><b><%=link_to"Dry Bean",dry_bean_path%></b></h4>
+</div>
+</div>
+</div>
+</div>
+
+<div class="w3-row-padding w3-margin-bottom">
+<div class="w3-col m2">
+<div class="w3-container w3-padding-16">
+<div class="w3-center">
+<i><%=link_to(image_tag("eggplant-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x120",style: "width:70%;"),eggplant_path)%></i>
+<h4><b><%=link_to"Eggplant",eggplant_path%></b></h4>
+</div>
+</div>
+</div>
+<div class="w3-col m2">
+<div class="w3-container w3-padding-16">
+<div class="w3-center">
+<i><%=link_to(image_tag("ginger-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x120",style: "width:70%;"),ginger_path)%></i>
+<h4><b><%=link_to"Ginger",ginger_path%></b></h4>
+</div>
+</div>
+</div>
+<div class="w3-col m2">
+<div class="w3-container w3-padding-16">
+<div class="w3-center">
+<i><%=link_to(image_tag("green_bean-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x120",style: "width:70%;"),green_bean_path)%></i>
+<h4><b><%=link_to"Green Bean",green_bean_path%></b></h4>
+</div>
+</div>
+</div>
+<div class="w3-col m2">
+<div class="w3-container w3-padding-16">
+<div class="w3-center">
+<i><%=link_to(image_tag("green_peas-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x120",style: "width:70%;"),green_peas_path)%></i>
+<h4><b><%=link_to"Green Peas",green_peas_path%></b></h4>
+</div>
+</div>
+</div>
+<div class="w3-col m2">
+<div class="w3-container w3-padding-16">
+<div class="w3-center">
+<i><%=link_to(image_tag("lentils-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x120",style: "width:70%;"),lentil_path)%></i>
+<h4><b><%=link_to"Lentil",lentil_path%></b></h4>
+</div>
+</div>
+</div>
+<div class="w3-col m2">
+<div class="w3-container w3-padding-16">
+<div class="w3-center">
+<i><%=link_to(image_tag("lettuce-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x120",style: "width:70%;"),lettuce_path)%></i>
+<h4><b><%=link_to"Lettuce",lettuce_path%></b></h4>
+</div>
+</div>
+</div>
+</div>
+
+<div class="w3-row-padding w3-margin-bottom">
+<div class="w3-col m2">
+<div class="w3-container w3-padding-16">
+<div class="w3-center">
+<i><%=link_to(image_tag("mushroom-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x120",style: "width:70%;"),mushroom_path)%></i>
+<h4><b><%=link_to"Mushroom",mushroom_path%></b></h4>
+</div>
+</div>
+</div>
+<div class="w3-col m2">
+<div class="w3-container w3-padding-16">
+<div class="w3-center">
+<i><%=link_to(image_tag("okra-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x120",style: "width:70%;"),okra_path)%></i>
+<h4><b><%=link_to"Okra(Ladys_finger)",okra_path%></b></h4>
+</div>
+</div>
+</div>
+<div class="w3-col m2">
+<div class="w3-container w3-padding-16">
+<div class="w3-center">
+<i><%=link_to(image_tag("onion-min.png",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x120",style: "width:70%;"),onion_path)%></i>
+<h4><b><%=link_to"Onion",onion_path%></b></h4>
+</div>
+</div>
+</div>
+<div class="w3-col m2">
+<div class="w3-container w3-padding-16">
+<div class="w3-center">
+<i><%=link_to(image_tag("potato-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x120",style: "width:70%;"),potato_path)%></i>
+<h4><b><%=link_to"Potato",potato_path%></b></h4>
+</div>
+</div>
+</div>
+<div class="w3-col m2">
+<div class="w3-container w3-padding-16">
+<div class="w3-center">
+<i><%=link_to(image_tag("pulses-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x120",style: "width:70%;"),pulses_path)%></i>
+<h4><b><%=link_to"Pulses",pulses_path%></b></h4>
+</div>
+</div>
+</div>
+<div class="w3-col m2">
+<div class="w3-container w3-padding-16">
+<div class="w3-center">
+<i><%=link_to(image_tag("pumpkin-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x120",style: "width:70%;"),pumpkin_squash_gourd_path)%></i>
+<h4><b><%=link_to"Pumpkin(Squash Gourd)",pumpkin_squash_gourd_path%></b></h4>
+</div>
+</div>
+</div>
+</div>
+
+<div class="w3-row-padding w3-margin-bottom">
+<div class="w3-col m2">
+<div class="w3-container w3-padding-16">
+<div class="w3-center">
+<i><%=link_to(image_tag("radish-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x120",style: "width:70%;"),radish_path)%></i>
+<h4><b><%=link_to"Radish",radish_path%></b></h4>
+</div>
+</div>
+</div>
+<div class="w3-col m2">
+<div class="w3-container w3-padding-16">
+<div class="w3-center">
+<i><%=link_to(image_tag("rapeseed_canola-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x120",style: "width:70%;"),rapeseed_canola_path)%></i>
+<h4><b><%=link_to"Rapeseed canola",rapeseed_canola_path%></b></h4>
+</div>
+</div>
+</div>
+<div class="w3-col m2">
+<div class="w3-container w3-padding-16">
+<div class="w3-center">
+<i><%=link_to(image_tag("ridge_gourd-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x120",style: "width:70%;"),ridge_Gourd_path)%></i>
+<h4><b><%=link_to"Ridge Gourd",ridge_Gourd_path%></b></h4>
+</div>
+</div>
+</div>
+<div class="w3-col m2">
+<div class="w3-container w3-padding-16">
+<div class="w3-center">
+<i><%=link_to(image_tag("sunflower_seed-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x120",style: "width:70%;"),sunflower_seed_path)%></i>
+<h4><b><%=link_to"Sunflower Seed",sunflower_seed_path%></b></h4>
+</div>
+</div>
+</div>
+<div class="w3-col m2">
+<div class="w3-container w3-padding-16">
+<div class="w3-center">
+<i><%=link_to(image_tag("sunflower-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x120",style: "width:70%;"),sunflower_path)%></i>
+<h4><b><%=link_to"Sunflower",sunflower_path%></b></h4>
+</div>
+</div>
+</div>
+<div class="w3-col m2">
+<div class="w3-container w3-padding-16">
+<div class="w3-center">
+<i><%=link_to(image_tag("sesame-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x120",style: "width:70%;"),sesame_path)%></i>
+<h4><b><%=link_to"Sesame",sesame_path%></b></h4>
+</div>
+</div>
+</div>
+</div>
+
+<div class="w3-row-padding w3-margin-bottom">
+<div class="w3-col m2">
+<div class="w3-container w3-padding-16">
+<div class="w3-center">
+<i><%=link_to(image_tag("soybean-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x120",style: "width:70%;"),soybean_path)%></i>
+<h4><b><%=link_to"Soybean",soybean_path%></b></h4>
+</div>
+</div>
+</div>
+<div class="w3-col m2">
+<div class="w3-container w3-padding-16">
+<div class="w3-center">
+<i><%=link_to(image_tag("spinach-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x120",style: "width:70%;"),spinach_path)%></i>
+<h4><b><%=link_to"Spinach",spinach_path%></b></h4>
+</div>
+</div>
+</div>
+<div class="w3-col m2">
+<div class="w3-container w3-padding-16">
+<div class="w3-center">
+<i><%=link_to(image_tag("sugar_cane-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x120",style: "width:70%;"),sugar_cane_path)%></i>
+<h4><b><%=link_to"Sugarcane",sugar_cane_path%></b></h4>
+</div>
+</div>
+</div>
+<div class="w3-col m2">
+<div class="w3-container w3-padding-16">
+<div class="w3-center">
+<i><%=link_to(image_tag("suger_beet-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x120",style: "width:70%;"),sugar_beet_beetroot_path)%></i>
+<h4><b><%=link_to"Sugarbeet (Beetroot)",sugar_beet_beetroot_path%></b></h4>
+</div>
+</div>
+</div>
+<div class="w3-col m2">
+<div class="w3-container w3-padding-16">
+<div class="w3-center">
+<i><%=link_to(image_tag("tomato-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x120",style: "width:70%;"),tomato_path)%></i>
+<h4><b><%=link_to"Tomato",tomato_path%></b></h4>
+</div>
+</div>
+</div>
+<div class="w3-col m2">
+<div class="w3-container w3-padding-16">
+<div class="w3-center">
+<i><%=link_to(image_tag("turnip-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x120",style: "width:70%;"),turnip_path)%></i>
+<h4><b><%=link_to"Turnip",turnip_path%></b></h4>
+</div>
+</div>
+</div>
+</div>
+
+<div class="w3-row-padding w3-margin-bottom">
+<div class="w3-col m2">
+<div class="w3-container w3-padding-16">
+<div class="w3-center">
+<i><%=link_to(image_tag("yam-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x120",style: "width:70%;"),yams_path)%></i>
+<h4><b><%=link_to"Yam",yams_path%></b></h4>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+
+<div id="Fruits">
+<div class="cerals w3-hide-small">
+
+<div class="w3-container w3-col m6">
+<h5><b><i class="fa fa-dashboard"></i>Fruits</b></h5>
+</div>
+
+<div class="w3-row-padding w3-margin-bottom">
+<div class="w3-col m2">
+<div class="w3-container w3-padding-16">
+<div class="w3-center">
+<i><%=link_to(image_tag("apple-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x120",style: "width:70%;"),apple_path)%></i>
+<h4><b><%=link_to"Apple",apple_path%></b></h4>
+</div>
+</div>
+</div>
+<div class="w3-col m2">
+<div class="w3-container w3-padding-16">
+<div class="w3-center">
+<i><%=link_to(image_tag("apricot-min.jpg" ,class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x120",style: "width:70%;"),apricot_path)%></i>
+<h4><b><%=link_to"Apricot" ,apricot_path%></b></h4>
+</div>
+</div>
+</div>
+<div class="w3-col m2">
+<div class="w3-container w3-padding-16">
+<div class="w3-center">
+<i><%=link_to(image_tag("avocado-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x120",style: "width:70%;"),avocado_path)%></i>
+<h4><b><%=link_to"Avocado",avocado_path%></b></h4>
+</div>
+</div>
+</div>
+<div class="w3-col m2">
+<div class="w3-container w3-padding-16">
+<div class="w3-center">
+<i><%=link_to(image_tag("banana-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x120",style: "width:70%;"),banana_path)%></i>
+<h4><b><%=link_to"Banana",banana_path%></b></h4>
+</div>
+</div>
+</div>
+<div class="w3-col m2">
+<div class="w3-container w3-padding-16">
+<div class="w3-center">
+<i><%=link_to(image_tag("blackcurrant-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x120",style: "width:70%;"),black_currant_path)%></i>
+<h4><b><%=link_to"Blackcurrant",black_currant_path%></b></h4>
+</div>
+</div>
+</div>
+<div class="w3-col m2">
+<div class="w3-container w3-padding-16">
+<div class="w3-center">
+<i><%=link_to(image_tag("blackberry-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x120",style: "width:70%;"),blackberry_path)%></i>
+<h4><b><%=link_to"Blackberry",blackberry_path%></b></h4>
+</div>
+</div>
+</div>
+</div>
+
+<div class="w3-row-padding w3-margin-bottom">
+<div class="w3-col m2">
+<div class="w3-container w3-padding-16">
+<div class="w3-center">
+<i><%=link_to(image_tag("blueberry-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x120",style: "width:70%;"),blueberry_path)%></i>
+<h4><b><%=link_to"Blueberry",blueberry_path%></b></h4>
+</div>
+</div>
+</div>
+<div class="w3-col m2">
+<div class="w3-container w3-padding-16">
+<div class="w3-center">
+<i><%=link_to(image_tag("cherry-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x120",style: "width:70%;"),cherry_path)%></i>
+<h4><b><%=link_to"Cherry",cherry_path%></b></h4>
+</div>
+</div>
+</div>
+<div class="w3-col m2">
+<div class="w3-container w3-padding-16">
+<div class="w3-center">
+<i><%=link_to(image_tag("coconut-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x120",style: "width:70%;"),coconut_path)%></i>
+<h4><b><%=link_to"Coconut",coconut_path%></b></h4>
+</div>
+</div>
+</div>
+<div class="w3-col m2">
+<div class="w3-container w3-padding-16">
+<div class="w3-center">
+<i><%=link_to(image_tag("currant-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x120",style: "width:70%;"),currant_path)%></i>
+<h4><b><%=link_to"Currant",currant_path%></b></h4>
+</div>
+</div>
+</div>
+<div class="w3-col m2">
+<div class="w3-container w3-padding-16">
+<div class="w3-center">
+<i><%=link_to(image_tag("custard_apple-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x120",style: "width:70%;"),custard_apple_path)%></i>
+<h4><b><%=link_to"CustardApple",custard_apple_path%></b></h4>
+</div>
+</div>
+</div>
+<div class="w3-col m2">
+<div class="w3-container w3-padding-16">
+<div class="w3-center">
+<i><%=link_to(image_tag("date-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x120",style: "width:70%;"),date_path)%></i>
+<h4><b><%=link_to"Date",date_path%></b></h4>
+</div>
+</div>
+</div>
+</div>
+
+<div class="w3-row-padding w3-margin-bottom">
+<div class="w3-col m2">
+<div class="w3-container w3-padding-16">
+<div class="w3-center">
+<i><%=link_to(image_tag("dragon-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x120",style: "width:70%;"),dragon_fruit_path)%></i>
+<h4><b><%=link_to"Dragonfruit",dragon_fruit_path%></b></h4>
+</div>
+</div>
+</div>
+<div class="w3-col m2">
+<div class="w3-container w3-padding-16">
+<div class="w3-center">
+<i><%=link_to(image_tag("fig-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x120",style: "width:70%;"),fig_path)%></i>
+<h4><b><%=link_to"Fig",fig_path%></b></h4>
+</div>
+</div>
+</div>
+<div class="w3-col m2">
+<div class="w3-container w3-padding-16">
+<div class="w3-center">
+<i><%=link_to(image_tag("gooseberry-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x120",style: "width:70%;"),gooseberry_path)%></i>
+<h4><b><%=link_to"Gooseberry",gooseberry_path%></b></h4>
+</div>
+</div>
+</div>
+<div class="w3-col m2">
+<div class="w3-container w3-padding-16">
+<div class="w3-center">
+<i><%=link_to(image_tag("grape-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x120",style: "width:70%;"),grape_path)%></i>
+<h4><b><%=link_to"Grape",grape_path%></b></h4>
+</div>
+</div>
+</div>
+<div class="w3-col m2">
+<div class="w3-container w3-padding-16">
+<div class="w3-center">
+<i><%=link_to(image_tag("guava-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x120",style: "width:70%;"),guava_path)%></i>
+<h4><b><%=link_to"Guava",guava_path%></b></h4>
+</div>
+</div>
+</div>
+<div class="w3-col m2">
+<div class="w3-container w3-padding-16">
+<div class="w3-center">
+<i><%=link_to(image_tag("jackfruit-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x120",style: "width:70%;"),jackfruit_path)%></i>
+<h4><b><%=link_to"Jackfruit",jackfruit_path%></b></h4>
+</div>
+</div>
+</div>
+</div>
+
+<div class="w3-row-padding w3-margin-bottom">
+<div class="w3-col m2">
+<div class="w3-container w3-padding-16">
+<div class="w3-center">
+<i><%=link_to(image_tag("kiwi-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x120",style: "width:70%;"),kiwifruit_path)%></i>
+<h4><b><%=link_to"kiwi",kiwifruit_path%></b></h4>
+</div>
+</div>
+</div>
+<div class="w3-col m2">
+<div class="w3-container w3-padding-16">
+<div class="w3-center">
+<i><%=link_to(image_tag("lemon-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x120",style: "width:70%;"),lemons_path)%></i>
+<h4><b><%=link_to"Leamon",lemons_path%></b></h4>
+</div>
+</div>
+</div>
+<div class="w3-col m2">
+<div class="w3-container w3-padding-16">
+<div class="w3-center">
+<i><%=link_to(image_tag("mango-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x120",style: "width:70%;"),mango_path)%></i>
+<h4><b><%=link_to"Mango",mango_path%></b></h4>
+</div>
+</div>
+</div>
+<div class="w3-col m2">
+<div class="w3-container w3-padding-16">
+<div class="w3-center">
+<i><%=link_to(image_tag("mangosteen-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x120",style: "width:70%;"),mangosteen_path)%></i>
+<h4><b><%=link_to"Mangosteen",mangosteen_path%></b></h4>
+</div>
+</div>
+</div>
+<div class="w3-col m2">
+<div class="w3-container w3-padding-16">
+<div class="w3-center">
+<i><%=link_to(image_tag("muskmelon-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x120",style: "width:70%;"),muskmelon_path)%></i>
+<h4><b><%=link_to"Muskmelon",muskmelon_path%></b></h4>
+</div>
+</div>
+</div>
+<div class="w3-col m2">
+<div class="w3-container w3-padding-16">
+<div class="w3-center">
+<i><%=link_to(image_tag("olive-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x120",style: "width:70%;"),olive_path)%></i>
+<h4><b><%=link_to"Olive",olive_path%></b></h4>
+</div>
+</div>
+</div>
+</div>
+
+<div class="w3-row-padding w3-margin-bottom">
+<div class="w3-col m2">
+<div class="w3-container w3-padding-16">
+<div class="w3-center">
+<i><%=link_to(image_tag("orange-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x120",style: "width:70%;"),oranges_path)%></i>
+<h4><b><%=link_to"Orange",oranges_path%></b></h4>
+</div>
+</div>
+</div>
+<div class="w3-col m2">
+<div class="w3-container w3-padding-16">
+<div class="w3-center">
+<i><%=link_to(image_tag("papaya-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x120",style: "width:70%;"),papaya_path)%></i>
+<h4><b><%=link_to"Papaya",papaya_path%></b></h4>
+</div>
+</div>
+</div>
+<div class="w3-col m2">
+<div class="w3-container w3-padding-16">
+<div class="w3-center">
+<i><%=link_to(image_tag("passionfruit-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x120",style: "width:70%;"),passion_fruit_path)%></i>
+<h4><b><%=link_to"Passionfruit",passion_fruit_path%></b></h4>
+</div>
+</div>
+</div>
+<div class="w3-col m2">
+<div class="w3-container w3-padding-16">
+<div class="w3-center">
+<i><%=link_to(image_tag("peach-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x120",style: "width:70%;"),peach_path)%></i>
+<h4><b><%=link_to"Peach",peach_path%></b></h4>
+</div>
+</div>
+</div>
+<div class="w3-col m2">
+<div class="w3-container w3-padding-16">
+<div class="w3-center">
+<i><%=link_to(image_tag("pear-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x120",style: "width:70%;"),pear_path)%></i>
+<h4><b><%=link_to"Pear",pear_path%></b></h4>
+</div>
+</div>
+</div>
+<div class="w3-col m2">
+<div class="w3-container w3-padding-16">
+<div class="w3-center">
+<i><%=link_to(image_tag("pineapple-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x120",style: "width:70%;"),pineapple_path)%></i>
+<h4><b><%=link_to"Pineapple",pineapple_path%></b></h4>
+</div>
+</div>
+</div>
+</div>
+
+<div class="w3-row-padding w3-margin-bottom">
+<div class="w3-col m2">
+<div class="w3-container w3-padding-16">
+<div class="w3-center">
+<i><%=link_to(image_tag("plums-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x120",style: "width:70%;"),plums_path)%></i>
+<h4><b><%=link_to"Plums",plums_path%></b></h4>
+</div>
+</div>
+</div>
+<div class="w3-col m2">
+<div class="w3-container w3-padding-16">
+<div class="w3-center">
+<i><%=link_to(image_tag("pomegranate-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x120",style: "width:70%;"),pomegranate_path)%></i>
+<h4><b><%=link_to"Pomegranate",pomegranate_path%></b></h4>
+</div>
+</div>
+</div>
+<div class="w3-col m2">
+<div class="w3-container w3-padding-16">
+<div class="w3-center">
+<i><%=link_to(image_tag("quince-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x120",style: "width:70%;"),quince_path)%></i>
+<h4><b><%=link_to"Quince",quince_path%></b></h4>
+</div>
+</div>
+</div>
+<div class="w3-col m2">
+<div class="w3-container w3-padding-16">
+<div class="w3-center">
+<i><%=link_to(image_tag("raspberry-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x120",style: "width:70%;"),raspberry_path)%></i>
+<h4><b><%=link_to"Raspberry",raspberry_path%></b></h4>
+</div>
+</div>
+</div>
+<div class="w3-col m2">
+<div class="w3-container w3-padding-16">
+<div class="w3-center">
+<i><%=link_to(image_tag("strawberrie-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x120",style: "width:70%;"),strawberry_path)%></i>
+<h4><b><%=link_to"Strawberrie",strawberry_path%></b></h4>
+</div>
+</div>
+</div>
+<div class="w3-col m2">
+<div class="w3-container w3-padding-16">
+<div class="w3-center">
+<i><%=link_to(image_tag("watermelon-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x120",style: "width:70%;"),watermelon_path)%></i>
+<h4><b><%=link_to"Watermelon",watermelon_path%></b></h4>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+
+<div id="Meats">
+<div class="cerals w3-hide-small">
+
+<div class="w3-container w3-col m6">
+<h5><b><i class="fa fa-dashboard"></i>Meat</b></h5>
+</div>
+
+<div class="w3-row-padding w3-margin-bottom">
+<div class="w3-col m2">
+<div class="w3-container w3-padding-16">
+<div class="w3-center">
+<i><%=link_to(image_tag("beef-min.jpeg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x120",style: "width:70%;"),beef_path)%></i>
+<h4><b><%=link_to"Beef Meat",beef_path%></b></h4>
+</div>
+</div>
+</div>
+<div class="w3-col m2">
+<div class="w3-container w3-padding-16">
+<div class="w3-center">
+<i><%=link_to(image_tag("buffalo-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x120",style: "width:70%;"),buffalo_path)%></i>
+<h4><b><%=link_to"Buffalo Meat",buffalo_path%></b></h4>
+</div>
+</div>
+</div>
+<div class="w3-col m2">
+<div class="w3-container w3-padding-16">
+<div class="w3-center">
+<i><%=link_to(image_tag("camel-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x120",style: "width:70%;"),camel_path)%></i>
+<h4><b><%=link_to"Camel Meat",camel_path%></b></h4>
+</div>
+</div>
+</div>
+<div class="w3-col m2">
+<div class="w3-container w3-padding-16">
+<div class="w3-center">
+<i><%=link_to(image_tag("chicken-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x120",style: "width:70%;"),chicken_path)%></i>
+<h4><b><%=link_to"Chicken",chicken_path%></b></h4>
+</div>
+</div>
+</div>
+<div class="w3-col m2">
+<div class="w3-container w3-padding-16">
+<div class="w3-center">
+<i><%=link_to(image_tag("duck-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x120",style: "width:70%;"),duck_path)%></i>
+<h4><b><%=link_to"Duck",duck_path%></b></h4>
+</div>
+</div>
+</div>
+<div class="w3-col m2">
+<div class="w3-container w3-padding-16">
+<div class="w3-center">
+<i><%=link_to(image_tag("goat-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x120",style: "width:70%;"),goat_path)%></i>
+<h4><b><%=link_to"Goat Meat",goat_path%></b></h4>
+</div>
+</div>
+</div>
+</div>
+
+<div class="w3-row-padding w3-margin-bottom">
+<div class="w3-col m2">
+<div class="w3-container w3-padding-16">
+<div class="w3-center">
+<i><%=link_to(image_tag("goose-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x120",style: "width:70%;"),goose_path)%></i>
+<h4><b><%=link_to"Goose",goose_path%></b></h4>
+</div>
+</div>
+</div>
+<div class="w3-col m2">
+<div class="w3-container w3-padding-16">
+<div class="w3-center">
+<i><%=link_to(image_tag("guinea-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x120",style: "width:70%;"),guinea_path)%></i>
+<h4><b><%=link_to"Guineafowl",guinea_path%></b></h4>
+</div>
+</div>
+</div>
+<div class="w3-col m2">
+<div class="w3-container w3-padding-16">
+<div class="w3-center">
+<i><%=link_to(image_tag("horse-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x120",style: "width:70%;"),horse_path)%></i>
+<h4><b><%=link_to"Horse Meat",horse_path%></b></h4>
+</div>
+</div>
+</div>
+<div class="w3-col m2">
+<div class="w3-container w3-padding-16">
+<div class="w3-center">
+<i><%=link_to(image_tag("pork-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x120",style: "width:70%;"),pork_path)%></i>
+<h4><b><%=link_to"Pork",pork_path%></b></h4>
+</div>
+</div>
+</div>
+<div class="w3-col m2">
+<div class="w3-container w3-padding-16">
+<div class="w3-center">
+<i><%=link_to(image_tag("rabbit-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x120",style: "width:70%;"),rabbit_path)%></i>
+<h4><b><%=link_to"Rabbit",rabbit_path%></b></h4>
+</div>
+</div>
+</div>
+<div class="w3-col m2">
+<div class="w3-container w3-padding-16">
+<div class="w3-center">
+<i><%=link_to(image_tag("sheep-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x120",style: "width:70%;"),sheep_path)%></i>
+<h4><b><%=link_to"Sheep Meat",sheep_path%></b></h4>
+</div>
+</div>
+</div>
+</div>
+
+<div class="w3-row-padding w3-margin-bottom">
+<div class="w3-col m2">
+<div class="w3-container w3-padding-16">
+<div class="w3-center">
+<i><%=link_to(image_tag("turkey-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x120",style: "width:70%;"),turkey_path)%></i>
+<h4><b><%=link_to"Turkey",turkey_path%></b></h4>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+<div id="Dairy">
+<div class="cerals w3-hide-small">
+
+<div class="w3-container w3-col m6">
+<h5><b><i class="fa fa-dashboard"></i>Dairy & Drinks</b></h5>
+</div>
+
+<div class="w3-row-padding w3-margin-bottom">
+<div class="w3-col m2">
+<div class="w3-container w3-padding-16">
+<div class="w3-center">
+<i><%=link_to(image_tag("beer-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x120",style: "width:70%;"),beer_path)%></i>
+<h4><b><%=link_to"Beer",beer_path%></b></h4>
+</div>
+</div>
+</div>
+<div class="w3-col m2">
+<div class="w3-container w3-padding-16">
+<div class="w3-center">
+<i><%=link_to(image_tag("buffalo-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x120",style: "width:70%;"),buffalo_milk_path)%></i>
+<h4><b><%=link_to"Buffalo Milk",buffalo_milk_path%></b></h4>
+</div>
+</div>
+</div>
+<div class="w3-col m2">
+<div class="w3-container w3-padding-16">
+<div class="w3-center">
+<i><%=link_to(image_tag("camel-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x120",style: "width:70%;"),camel_milk_path)%></i>
+<h4><b><%=link_to"Camel Milk",camel_milk_path%></b></h4>
+</div>
+</div>
+</div>
+<div class="w3-col m2">
+<div class="w3-container w3-padding-16">
+<div class="w3-center">
+<i><%=link_to(image_tag("coffee-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x120",style: "width:70%;"),coffee_path)%></i>
+<h4><b><%=link_to"Coffee",coffee_path%></b></h4>
+</div>
+</div>
+</div>
+<div class="w3-col m2">
+<div class="w3-container w3-padding-16">
+<div class="w3-center">
+<i><%=link_to(image_tag("cow-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x120",style: "width:70%;"),cow_milk_path)%></i>
+<h4><b><%=link_to"Cow Milk",cow_milk_path%></b></h4>
+</div>
+</div>
+</div>
+<div class="w3-col m2">
+<div class="w3-container w3-padding-16">
+<div class="w3-center">
+<i><%=link_to(image_tag("goat-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x120",style: "width:70%;"),goat_milk_path)%></i>
+<h4><b><%=link_to"Goat Milk",goat_milk_path%></b></h4>
+</div>
+</div>
+</div>
+</div>
+
+<div class="w3-row-padding w3-margin-bottom">
+<div class="w3-col m2">
+<div class="w3-container w3-padding-16">
+<div class="w3-center">
+<i><%=link_to(image_tag("cheese-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x120",style: "width:70%;"),cheese_path)%></i>
+<h4><b><%=link_to"Cheese",cheese_path%></b></h4>
+</div>
+</div>
+</div>
+<div class="w3-col m2">
+<div class="w3-container w3-padding-16">
+<div class="w3-center">
+<i><%=link_to(image_tag("Cocoa-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x120",style: "width:70%;"),cocoa_path)%></i>
+<h4><b><%=link_to"Cocoa",cocoa_path%></b></h4>
+</div>
+</div>
+</div>
+<div class="w3-col m2">
+<div class="w3-container w3-padding-16">
+<div class="w3-center">
+<i><%=link_to(image_tag("yerba_mate-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x120",style: "width:70%;"),yerba_mate_path)%></i>
+<h4><b><%=link_to"Yerba Mate",yerba_mate_path%></b></h4>
+</div>
+</div>
+</div>
+<div class="w3-col m2">
+<div class="w3-container w3-padding-16">
+<div class="w3-center">
+<i><%=link_to(image_tag("egg-min.png",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x120",style: "width:70%;"),egg_path)%></i>
+<h4><b><%=link_to"Egg",egg_path%></b></h4>
+</div>
+</div>
+</div>
+<div class="w3-col m2">
+<div class="w3-container w3-padding-16">
+<div class="w3-center">
+<i><%=link_to(image_tag("honey-min.png",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x120",style: "width:70%;"),honey_path)%></i>
+<h4><b><%=link_to"Honey",honey_path%></b></h4>
+</div>
+</div>
+</div>
+<div class="w3-col m2">
+<div class="w3-container w3-padding-16">
+<div class="w3-center">
+<i><%=link_to(image_tag("olive_oil-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x120",style: "width:70%;"),olive_oil_path)%></i>
+<h4><b><%=link_to"Olive Oil",olive_oil_path%></b></h4>
+</div>
+</div>
+</div>
+</div> 
+
+
+<div class="w3-row-padding w3-margin-bottom">
+<div class="w3-col m2">
+<div class="w3-container w3-padding-16">
+<div class="w3-center">
+<i><%=link_to(image_tag("milk-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x120",style: "width:70%;"),milk_path)%></i>
+<h4><b><%=link_to"milk",milk_path%></b></h4>
+</div>
+</div>
+</div>
+<div class="w3-col m2">
+<div class="w3-container w3-padding-16">
+<div class="w3-center">
+<i><%=link_to(image_tag("sheep-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x120",style: "width:70%;"),sheep_milk_path)%></i>
+<h4><b><%=link_to"Sheep Milk",sheep_milk_path%></b></h4>
+</div>
+</div>
+</div>
+<div class="w3-col m2">
+<div class="w3-container w3-padding-16">
+<div class="w3-center">
+<i><%=link_to(image_tag("tea-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x120",style: "width:70%;"),tea_path)%></i>
+<h4><b><%=link_to"Tea",tea_path%></b></h4>
+</div>
+</div>
+</div>
+<div class="w3-col m2">
+<div class="w3-container w3-padding-16">
+<div class="w3-center">
+<i><%=link_to(image_tag("wine-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x120",style: "width:70%;"),wine_path)%></i>
+<h4><b><%=link_to"Wine",wine_path%></b></h4>
+</div>
+</div>
+</div>
+<div class="w3-col m2">
+<div class="w3-container w3-padding-16">
+<div class="w3-center">
+<i><%=link_to(image_tag("tobacco-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x120",style: "width:70%;"),tobacco_path)%></i>
+<h4><b><%=link_to"Tobacco",tobacco_path%></b></h4>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+<div id="Nuts">
+<div class="cerals w3-hide-small">
+
+<div class="w3-container w3-col m6">
+<h5><b><i class="fa fa-dashboard"></i>Nuts</b></h5>
+</div>
+
+<div class="w3-row-padding w3-margin-bottom">
+<div class="w3-col m2">
+<div class="w3-container w3-padding-16">
+<div class="w3-center">
+<i><%=link_to(image_tag("almonds-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x120",style: "width:70%;"),almonds_path)%></i>
+<h4><b><%=link_to"Almond",almonds_path%></b></h4>
+</div>
+</div>
+</div>
+<div class="w3-col m2">
+<div class="w3-container w3-padding-16">
+<div class="w3-center">
+<i><%=link_to(image_tag("brazil_nuts-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x120",style: "width:70%;"),brazil_nuts_path)%></i>
+<h4><b><%=link_to"Brazilnut",brazil_nuts_path%></b></h4>
+</div>
+</div>
+</div>
+<div class="w3-col m2">
+<div class="w3-container w3-padding-16">
+<div class="w3-center">
+<i><%=link_to(image_tag("cashew-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x120",style: "width:70%;"),cashews_path)%></i>
+<h4><b><%=link_to"Cashew",cashews_path%></b></h4>
+</div>
+</div>
+</div>
+<div class="w3-col m2">
+<div class="w3-container w3-padding-16">
+<div class="w3-center">
+<i><%=link_to(image_tag("chestnuts-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x120",style: "width:70%;"),chestnuts_path)%></i>
+<h4><b><%=link_to"Chestnut",chestnuts_path%></b></h4>
+</div>
+</div>
+</div>
+<div class="w3-col m2">
+<div class="w3-container w3-padding-16">
+<div class="w3-center">
+<i><%=link_to(image_tag("filberts-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x120",style: "width:70%;"),filberts_path)%></i>
+<h4><b><%=link_to"Filbert",filberts_path%></b></h4>
+</div>
+</div>
+</div>
+<div class="w3-col m2">
+<div class="w3-container w3-padding-16">
+<div class="w3-center">
+<i><%=link_to(image_tag("hazelnuts-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x120",style: "width:70%;"),hazelnuts_path)%></i>
+<h4><b><%=link_to"Hazelnut",hazelnuts_path%></b></h4>
+</div>
+</div>
+</div>
+</div>
+
+<div class="w3-row-padding w3-margin-bottom">
+<div class="w3-col m2">
+<div class="w3-container w3-padding-16">
+<div class="w3-center">
+<i><%=link_to(image_tag("macadamia_nuts-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x120",style: "width:70%;"),macadamia_nuts_path)%></i>
+<h4><b><%=link_to"Macadamianut",macadamia_nuts_path%></b></h4>
+</div>
+</div>
+</div>
+<div class="w3-col m2">
+<div class="w3-container w3-padding-16">
+<div class="w3-center">
+<i><%=link_to(image_tag("peanut-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x120",style: "width:70%;"),peanuts_path)%></i>
+<h4><b><%=link_to"Peanut",peanuts_path%></b></h4>
+</div>
+</div>
+</div>
+<div class="w3-col m2">
+<div class="w3-container w3-padding-16">
+<div class="w3-center">
+<i><%=link_to(image_tag("pecans-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x120",style: "width:70%;"),pecans_path)%></i>
+<h4><b><%=link_to"Pecans",pecans_path%></b></h4>
+</div>
+</div>
+</div>
+<div class="w3-col m2">
+<div class="w3-container w3-padding-16">
+<div class="w3-center">
+<i><%=link_to(image_tag("pinenuts-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x120",style: "width:70%;"),pine_nuts_path)%></i>
+<h4><b><%=link_to"Pinenut",pine_nuts_path%></b></h4>
+</div>
+</div>
+</div>
+<div class="w3-col m2">
+<div class="w3-container w3-padding-16">
+<div class="w3-center">
+<i><%=link_to(image_tag("pistachios-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x120",style: "width:70%;"),pistachios_path)%></i>
+<h4><b><%=link_to"Pistachios",pistachios_path%></b></h4>
+</div>
+</div>
+</div>
+<div class="w3-col m2">
+<div class="w3-container w3-padding-16">
+<div class="w3-center">
+<i><%=link_to(image_tag("sheanut-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x120",style: "width:70%;"),sheanut_path)%></i>
+<h4><b><%=link_to"Sheanut",sheanut_path%></b></h4>
+</div>
+</div>
+</div>
+</div>
+
+<div class="w3-row-padding w3-margin-bottom">
+<div class="w3-col m2">
+<div class="w3-container w3-padding-16">
+<div class="w3-center">
+<i><%=link_to(image_tag("walnuts-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x120",style: "width:70%;"),walnuts_path)%></i>
+<h4><b><%=link_to"Walnut",walnuts_path%></b></h4>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+<div id="Spices">
+<div class="cerals w3-hide-small">
+
+<div class="w3-container w3-col m6">
+<h5><b><i class="fa fa-dashboard"></i>Spices</b></h5>
+</div>
+
+<div class="w3-row-padding w3-margin-bottom">
+<div class="w3-col m2">
+<div class="w3-container w3-padding-16">
+<div class="w3-center">
+<i><%=link_to(image_tag("anise_star-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x120",style: "width:70%;"),anise_star_path)%></i>
+<h4><b><%=link_to"Anise Star",anise_star_path%></b></h4>
+</div>
+</div>
+</div>
+<div class="w3-col m2">
+<div class="w3-container w3-padding-16">
+<div class="w3-center">
+<i><%=link_to(image_tag("bay_leaves-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x120",style: "width:70%;"),bay_leaves_path)%></i>
+<h4><b><%=link_to"Bay Leaves",bay_leaves_path%></b></h4>
+</div>
+</div>
+</div>
+<div class="w3-col m2">
+<div class="w3-container w3-padding-16">
+<div class="w3-center">
+<i><%=link_to(image_tag("black_pepper.png",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x120",style: "width:70%;"),black_pepper_path)%></i>
+<h4><b><%=link_to"Black Pepper",black_pepper_path%></b></h4>
+</div>
+</div>
+</div>
+<div class="w3-col m2">
+<div class="w3-container w3-padding-16">
+<div class="w3-center">
+<i><%=link_to(image_tag("cardamom-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x120",style: "width:70%;"),cardamom_path)%></i>
+<h4><b><%=link_to"Cardamom",cardamom_path%></b></h4>
+</div>
+</div>
+</div>
+<div class="w3-col m2">
+<div class="w3-container w3-padding-16">
+<div class="w3-center">
+<i><%=link_to(image_tag("chili_pepper-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x120",style: "width:70%;"),chili_pepper_path)%></i>
+<h4><b><%=link_to"Chili Pepper",chili_pepper_path%></b></h4>
+</div>
+</div>
+</div>
+<div class="w3-col m2">
+<div class="w3-container w3-padding-16">
+<div class="w3-center">
+<i><%=link_to(image_tag("cinnamon-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x120",style: "width:70%;"),cinnamon_path)%></i>
+<h4><b><%=link_to"Cinnamon",cinnamon_path%></b></h4>
+</div>
+</div>
+</div>
+</div>
+
+<div class="w3-row-padding w3-margin-bottom">
+<div class="w3-col m2">
+<div class="w3-container w3-padding-16">
+<div class="w3-center">
+<i><%=link_to(image_tag("cloves-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x120",style: "width:70%;"),cloves_path)%></i>
+<h4><b><%=link_to"Cloves",cloves_path%></b></h4>
+</div>
+</div>
+</div>
+<div class="w3-col m2">
+<div class="w3-container w3-padding-16">
+<div class="w3-center">
+<i><%=link_to(image_tag("coriander-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x120",style: "width:70%;"),coriander_path)%></i>
+<h4><b><%=link_to"Coriander",coriander_path%></b></h4>
+</div>
+</div>
+</div>
+<div class="w3-col m2">
+<div class="w3-container w3-padding-16">
+<div class="w3-center">
+<i><%=link_to(image_tag("cumin-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x120",style: "width:70%;"),cumin_path)%></i>
+<h4><b><%=link_to"Cumin",cumin_path%></b></h4>
+</div>
+</div>
+</div>
+<div class="w3-col m2">
+<div class="w3-container w3-padding-16">
+<div class="w3-center">
+<i><%=link_to(image_tag("fennel-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x120",style: "width:70%;"),fennel_path)%></i>
+<h4><b><%=link_to"Fennel",fennel_path%></b></h4>
+</div>
+</div>
+</div>
+<div class="w3-col m2">
+<div class="w3-container w3-padding-16">
+<div class="w3-center">
+<i><%=link_to(image_tag("fenugreek-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x120",style: "width:70%;"),fenugreek_path)%></i>
+<h4><b><%=link_to"Fenugreek",fenugreek_path%></b></h4>
+</div>
+</div>
+</div>
+<div class="w3-col m2">
+<div class="w3-container w3-padding-16">
+<div class="w3-center">
+<i><%=link_to(image_tag("ginger-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x120",style: "width:70%;"),ginger_path)%></i>
+<h4><b><%=link_to"Ginger",ginger_path%></b></h4>
+</div>
+</div>
+</div>
+</div>
+
+<div class="w3-row-padding w3-margin-bottom">
+<div class="w3-col m2">
+<div class="w3-container w3-padding-16">
+<div class="w3-center">
+<i><%=link_to(image_tag("mace-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x120",style: "width:70%;"),mace_path)%></i>
+<h4><b><%=link_to"Mace",mace_path%></b></h4>
+</div>
+</div>
+</div>
+<div class="w3-col m2">
+<div class="w3-container w3-padding-16">
+<div class="w3-center">
+<i><%=link_to(image_tag("mustard_seeds-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x120",style: "width:70%;"),mustard_seeds_path)%></i>
+<h4><b><%=link_to"Mustard Seed",mustard_seeds_path%></b></h4>
+</div>
+</div>
+</div>
+<div class="w3-col m2">
+<div class="w3-container w3-padding-16">
+<div class="w3-center">
+<i><%=link_to(image_tag("nutmeg-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x120",style: "width:70%;"),nutmeg_path)%></i>
+<h4><b><%=link_to"Nutmeg",nutmeg_path%></b></h4>
+</div>
+</div>
+</div>
+<div class="w3-col m2">
+<div class="w3-container w3-padding-16">
+<div class="w3-center">
+<i><%=link_to(image_tag("oregano-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x120",style: "width:70%;"),oregano_path)%></i>
+<h4><b><%=link_to"Oregano",oregano_path%></b></h4>
+</div>
+</div>
+</div>
+<div class="w3-col m2">
+<div class="w3-container w3-padding-16">
+<div class="w3-center">
+<i><%=link_to(image_tag("paprika-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x120",style: "width:70%;"),paprika_path)%></i>
+<h4><b><%=link_to"Paprika",paprika_path%></b></h4>
+</div>
+</div>
+</div>
+<div class="w3-col m2">
+<div class="w3-container w3-padding-16">
+<div class="w3-center">
+<i><%=link_to(image_tag("peppermint-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x120",style: "width:70%;"),peppermint_path)%></i>
+<h4><b><%=link_to"Peppermint",peppermint_path%></b></h4>
+</div>
+</div>
+</div>
+</div>
+
+<div class="w3-row-padding w3-margin-bottom">
+<div class="w3-col m2">
+<div class="w3-container w3-padding-16">
+<div class="w3-center">
+<i><%=link_to(image_tag("Rosemary-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x120",style: "width:70%;"),rosemary_path)%></i>
+<h4><b><%=link_to"Rosemary",rosemary_path%></b></h4>
+</div>
+</div>
+</div>
+<div class="w3-col m2">
+<div class="w3-container w3-padding-16">
+<div class="w3-center">
+<i><%=link_to(image_tag("saffron-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x120",style: "width:70%;"),saffron_path)%></i>
+<h4><b><%=link_to"Saffron",saffron_path%></b></h4>
+</div>
+</div>
+</div>
+<div class="w3-col m2">
+<div class="w3-container w3-padding-16">
+<div class="w3-center">
+<i><%=link_to(image_tag("thyme-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x120",style: "width:70%;"),thyme_path)%></i>
+<h4><b><%=link_to"Thyme",thyme_path%></b></h4>
+</div>
+</div>
+</div>
+<div class="w3-col m2">
+<div class="w3-container w3-padding-16">
+<div class="w3-center">
+<i><%=link_to(image_tag("turmeric-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x120",style: "width:70%;"),turmeric_path)%></i>
+<h4><b><%=link_to"Turmeric",turmeric_path%></b></h4>
+</div>
+</div>
+</div>
+<div class="w3-col m2">
+<div class="w3-container w3-padding-16">
+<div class="w3-center">
+<i><%=link_to(image_tag("vanilla-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x120",style: "width:70%;"),vanilla_path)%></i>
+<h4><b><%=link_to"Vanilla",vanilla_path%></b></h4>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+
+
+
+<div id="Fiber">
+<div class="cerals w3-hide-small">
+
+<div class="w3-container w3-col m6 w3-hide-small">
+<h5><b><i class="fa fa-dashboard"></i>Fiber</b></h5>
+</div>
+
+<div class="w3-row-padding w3-margin-bottom">
+<div class="w3-col m2">
+<div class="w3-container w3-padding-16">
+<div class="w3-center">
+<i><%=link_to(image_tag("fiber-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x120",style: "width:70%;"),fiber_path)%></i>
+<h4><b><%=link_to"Fiber",fiber_path%></b></h4>
+</div>
+</div>
+</div>
+<div class="w3-col m2">
+<div class="w3-container w3-padding-16">
+<div class="w3-center">
+<i><%=link_to(image_tag("Abaca_fiber-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x120",style: "width:70%;"),abaca_fiber_path)%></i>
+<h4><b><%=link_to"Abaca Fiber",abaca_fiber_path%></b></h4>
+</div>
+</div>
+</div>
+<div class="w3-col m2">
+<div class="w3-container w3-padding-16">
+<div class="w3-center">
+<i><%=link_to(image_tag("Agave_fiber-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x120",style: "width:70%;"),agave_fiber_path)%></i>
+<h4><b><%=link_to"Agave Fiber",agave_fiber_path%></b></h4>
+</div>
+</div>
+</div>
+<div class="w3-col m2">
+<div class="w3-container w3-padding-16">
+<div class="w3-center">
+<i><%=link_to(image_tag("Bast_fiber-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x120",style: "width:70%;"),bast_fiber_path)%></i>
+<h4><b><%=link_to"Bast Fiber",bast_fiber_path%></b></h4>
+</div>
+</div>
+</div>
+<div class="w3-col m2">
+<div class="w3-container w3-padding-16">
+<div class="w3-center">
+<i><%=link_to(image_tag("Flax_fiber-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x120",style: "width:70%;"),flax_fiber_path)%></i>
+<h4><b><%=link_to"Flax Fiber",flax_fiber_path%></b></h4>
+</div>
+</div>
+</div>
+<div class="w3-col m2">
+<div class="w3-container w3-padding-16">
+<div class="w3-center">
+<i><%=link_to(image_tag("jute_fiber-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x120",style: "width:70%;"),jute_fiber_path)%></i>
+<h4><b><%=link_to"Jute Fiber",jute_fiber_path%></b></h4>
+</div>
+</div>
+</div>
+</div>
+
+<div class="w3-row-padding w3-margin-bottom">
+<div class="w3-col m2">
+<div class="w3-container w3-padding-16">
+<div class="w3-center">
+<i><%=link_to(image_tag("kapok_fiber-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x120",style: "width:70%;"),kapok_fiber_path)%></i>
+<h4><b><%=link_to"Kapok Fiber",kapok_fiber_path%></b></h4>
+</div>
+</div>
+</div>
+<div class="w3-col m2">
+<div class="w3-container w3-padding-16">
+<div class="w3-center">
+<i><%=link_to(image_tag("ramie_fiber-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x120",style: "width:70%;"),ramie_fiber_path)%></i>
+<h4><b><%=link_to"Ramie Fiber",ramie_fiber_path%></b></h4>
+</div>
+</div>
+</div>
+<div class="w3-col m2">
+<div class="w3-container w3-padding-16">
+<div class="w3-center">
+<i><%=link_to(image_tag("rubber-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x120",style: "width:70%;"),rubber_fiber_path)%></i>
+<h4><b><%=link_to"Rubber",rubber_fiber_path%></b></h4>
+</div>
+</div>
+</div>
+<div class="w3-col m2">
+<div class="w3-container w3-padding-16">
+<div class="w3-center">
+<i><%=link_to(image_tag("silk-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x120",style: "width:70%;"),silk_fiber_path)%></i>
+<h4><b><%=link_to"Silk",silk_fiber_path%></b></h4>
+</div>
+</div>
+</div>
+<div class="w3-col m2">
+<div class="w3-container w3-padding-16">
+<div class="w3-center">
+<i><%=link_to(image_tag("sisal_fiber-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x120",style: "width:70%;"),sisal_fiber_path)%></i>
+<h4><b><%=link_to"Sisal Fiber",sisal_fiber_path%></b></h4>
+</div>
+</div>
+</div>
+<div class="w3-col m2">
+<div class="w3-container w3-padding-16">
+<div class="w3-center">
+<i><%=link_to(image_tag("wool-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x120",style: "width:70%;"),wool_path)%></i>
+<h4><b><%=link_to"Wool",wool_path%></b></h4>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+<div id="Seafood">
+<div class="cerals w3-hide-small">
+
+<div class="w3-container w3-col m6 w3-hide-small">
+<h5><b><i class="fa fa-dashboard"></i>Seafood</b></h5>
+</div>
+
+<div class="w3-row-padding w3-margin-bottom">
+<div class="w3-col m2">
+<div class="w3-container w3-padding-16">
+<div class="w3-center">
+<i><%=link_to(image_tag("fish-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x120",style: "width:70%;"),fish_path)%></i>
+<h4><b><%=link_to"Fish",fish_path%></b></h4>
+</div>
+</div>
+</div>
+<div class="w3-col m2">
+<div class="w3-container w3-padding-16">
+<div class="w3-center">
+<i><%=link_to(image_tag("sea_weed-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x120",style: "width:70%;"),seaweed_path)%></i>
+<h4><b><%=link_to"Sea Weed",seaweed_path%></b></h4>
+</div>
+</div>
+</div>
+<div class="w3-col m2">
+<div class="w3-container w3-padding-16">
+<div class="w3-center">
+<i><%=link_to(image_tag("caviar-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x120",style: "width:70%;"),caviar_path)%></i>
+<h4><b><%=link_to"Caviar",caviar_path%></b></h4>
+</div>
+</div>
+</div>  
+<div class="w3-col m2">
+<div class="w3-container w3-padding-16">
+<div class="w3-center">
+<i><%=link_to(image_tag("crab-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x120",style: "width:70%;"),crab_path)%></i>
+<h4><b><%=link_to"Crab",crab_path%></b></h4>
+</div>
+</div>
+</div>
+<div class="w3-col m2">
+<div class="w3-container w3-padding-16">
+<div class="w3-center">
+<i><%=link_to(image_tag("lobsters-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x120",style: "width:70%;"),lobsters_path)%></i>
+<h4><b><%=link_to"Lobsters",lobsters_path%></b></h4>
+</div>
+</div>
+</div>
+<div class="w3-col m2">
+<div class="w3-container w3-padding-16">
+<div class="w3-center">
+<i><%=link_to(image_tag("Clam-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x120",style: "width:70%;"),clam_path)%></i>
+<h4><b><%=link_to"Clam",clam_path%></b></h4>
+</div>
+</div>
+</div>
+</div>
+ 
+<div class="w3-row-padding w3-margin-bottom">
+<div class="w3-col m2">
+<div class="w3-container w3-padding-16">
+<div class="w3-center">
+<i><%=link_to(image_tag("oysters-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x120",style: "width:70%;"),oyster_path)%></i>
+<h4><b><%=link_to"Oyster",oyster_path%></b></h4>
+</div>
+</div>
+</div>
+<div class="w3-col m2">
+<div class="w3-container w3-padding-16">
+<div class="w3-center">
+<i><%=link_to(image_tag("Octopus-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x120",style: "width:70%;"),octopus_path)%></i>
+<h4><b><%=link_to"Octopus",octopus_path%></b></h4>
+</div>
+</div>
+</div>
+<div class="w3-col m2">
+<div class="w3-container w3-padding-16">
+<div class="w3-center">
+<i><%=link_to(image_tag("squid-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x120",style: "width:70%;"),squid_path)%></i>
+<h4><b><%=link_to"Squid",squid_path%></b></h4>
+</div>
+</div>
+</div>
+<div class="w3-col m2">
+<div class="w3-container w3-padding-16">
+<div class="w3-center">
+<i><%=link_to(image_tag("shrimps-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x120",style: "width:70%;"),shrimps_path)%></i>
+<h4><b><%=link_to"Shrimps",shrimps_path%></b></h4>
+</div>
+</div>
+</div>
+</div>  
+
+</div>
+</div>
+
+
+</div>
+
+
+
+</br>
+</br>
+<!-- Image of location/map -->
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-32 w3-theme-d1 w3-center">
+  <h4>Follow Us</h4>
+  <a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Facebook"><i class="fa fa-facebook"></i></a>
+  <a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Twitter"><i class="fa fa-twitter"></i></a>
+  <a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Google +"><i class="fa fa-google-plus"></i></a>
+  <a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Google +"><i class="fa fa-instagram"></i></a>
+  <a class="w3-button w3-large w3-teal w3-hide-small" href="javascript:void(0)" title="Linkedin"><i class="fa fa-linkedin"></i></a>
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+
+  <div style="position:relative;bottom:100px;z-index:1;" class="w3-tooltip w3-right">
+    <span class="w3-text w3-padding w3-teal w3-hide-small">Go To Top</span>   
+    <a class="w3-button w3-theme" href="#myPage"><span class="w3-xlarge">
+    <i class="fa fa-chevron-circle-up"></i></span></a>
+  </div>
+</footer>
+
+<script>
+// Script for side navigation
+function w3_open() {
+  var x = document.getElementById("mySidebar");
+  x.style.width = "300px";
+  x.style.paddingTop = "10%";
+  x.style.display = "block";
+}
+
+// Automatic Slideshow - change image every 4 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 4000);    
+}
+
+// Close side navigation
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+
+// Used to toggle the menu on smaller screens when clicking on the menu button
+function openNav() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
+
+</body>
+</html>

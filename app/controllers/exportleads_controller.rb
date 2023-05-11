@@ -1,0 +1,2 @@
+class ExportleadsController < ApplicationController
+end
