@@ -8,6 +8,7 @@ resources :vegetables
 resources :profiles
 resources :news
 resources :exportleads
+resources :connect_buyers
 get '/barley' => 'homes#barley'
 get '/buckwheat' =>'homes#buckwheat'
 get '/canary_seed' =>'homes#canary_seed'

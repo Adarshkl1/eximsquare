@@ -51,6 +51,7 @@ gem 'dotenv-rails'
 gem "font-awesome-rails"
 gem 'jquery-rails'
 gem 'byebug', '~> 9.0', '>= 9.0.5'
+gem 'pagy', '~> 0.6.0'
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
 # gem "image_processing", "~> 1.2"
 

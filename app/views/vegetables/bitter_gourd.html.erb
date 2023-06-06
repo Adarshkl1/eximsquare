@@ -13,6 +13,12 @@
     width: 0.285714em;
     text-align: center;
 }
+
+.newsdata {
+height: 860px;
+overflow-y: scroll;
+}
+
 </style>
 </head>
 <body id="myPage">
@@ -66,7 +72,7 @@ From a strategic standpoint, the potential export opportunities for bitter gourd
         <th>Percentage</th>
       </tr>
     </thead>
-<tr><td><tr><td>USA </td><td>19.9%</td></tr>
+<tr><td>USA </td><td>19.9%</td></tr>
 <tr><td>United Arab Emirates </td><td>13.7%</td></tr>
 <tr><td>Saudi Arabia </td><td>12.1%</td></tr>
 <tr><td>Canada </td><td>6.9%</td></tr>
@@ -98,7 +104,7 @@ From a strategic standpoint, the potential export opportunities for bitter gourd
         <th>Percentage</th>
       </tr>
     </thead>
-<tr><td><tr><td>India </td><td>44.4%</td></tr>
+<tr><td>India </td><td>44.4%</td></tr>
 <tr><td>Pakistan </td><td>11.2%</td></tr>
 <tr><td>Indonesia </td><td>8.9%</td></tr>
 <tr><td>Malaysia </td><td>6.0%</td></tr>
@@ -120,6 +126,24 @@ From a strategic standpoint, the potential export opportunities for bitter gourd
 <tr><td>Myanmar </td><td>0.4%</td></tr>
 </table>
 </div>
+
+ <div class="newsdata w3-col m2 w3-hide-small w3-hide-medium">
+ <div class="w3-container">
+ <div class="w3-panel w3-card w3-white w3-padding-16">
+ <h5 class="w3-center"><b>News</b></h5>
+ <%@exportnews.each do |exportnew|%>
+    <div class="w3-card w3-round w3-light-grey">
+        <div class="w3-container w3-padding">
+            <p class="textline"><%=exportnew.title.capitalize%></p>
+            </i><%= link_to 'View', "#{exportnew.link}",:target => '_blank', class: " w3-button w3-theme-d1 w3-margin-bottom"%></i>
+        </div>
+    </div>
+    </br>
+  <%end%>
+</div>
+</div>
+</div>
+
 </div>
 
 <div class="w3-row">

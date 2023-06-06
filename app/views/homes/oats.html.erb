@@ -12,6 +12,10 @@
     width: 0.285714em;
     text-align: center;
 }
+.newsdata {
+height: 860px;
+overflow-y: scroll;
+}
 </style>
 </head>
 <body id="myPage">
@@ -121,6 +125,24 @@ From a strategic perspective, the potential export opportunities for oats can be
 <tr><td>Netherlands </td><td> 0.4%</td></tr>
 </table>
 </div>
+
+ <div class="newsdata w3-col m2 w3-hide-small w3-hide-medium">
+ <div class="w3-container">
+ <div class="w3-panel w3-card w3-white w3-padding-16">
+ <h5 class="w3-center"><b>News</b></h5>
+ <%@exportnews.each do |exportnew|%>
+    <div class="w3-card w3-round w3-light-grey">
+        <div class="w3-container w3-padding">
+            <p class="textline"><%=exportnew.title.capitalize%></p>
+            </i><%= link_to 'Source', "#{exportnew.link}",:target => '_blank', class: " w3-button w3-theme-d1 w3-margin-bottom"%></i>
+        </div>
+    </div>
+    </br>
+  <%end%>
+</div>
+</div>
+</div>
+
 </div>
 
 <div class="w3-row">
@@ -606,7 +628,7 @@ From a strategic perspective, the potential export opportunities for oats can be
 </div>
 
 <div class="w3-row">
-<div class="w3-container w3-panel col-md-6 col-md-offset-3 w3-center">
+<div class="w3-container w3-panel w3-col m4  w3-center">
   <table class="w3-table-all">
     <thead>
         <tr><th colspan="2"><div class="w3-center">Oats crop Export companies</div></th></tr>
@@ -647,11 +669,10 @@ From a strategic perspective, the potential export opportunities for oats can be
 <div class="w3-panel w3-card w3-white w3-padding-16">Sustainable Agriculture Practices: Oats are considered a sustainable crop, as they can grow in a variety of climates and soil types, and often require fewer chemical inputs compared to other cereal crops. This focus on sustainability is driving demand for oats among environmentally conscious consumers.</div>
 <div class="w3-panel w3-card w3-white w3-padding-16">Diversification of Oat Products: The growing consumer interest in oats has led to the diversification of oat-based products, such as granola bars, oat-based yogurts, and even skincare products using oat extracts.</div>
 <div class="w3-panel w3-card w3-white w3-padding-16">Organic and Non-GMO Demand: As consumers become more interested in organic and non-GMO food products, the demand for organically grown and non-GMO oats is increasing, driving growth in this segment of the market.</div>
-
+<div class="w3-panel w3-card w3-white w3-padding-16">Oat Milk Boom: The rapid growth of oat milk as a popular plant-based milk alternative has driven increased demand for oats, creating new opportunities for oat producers and processors.</div>
 </div>
 <div class="w3-container w3-col m16 w3-center">
 
-<div class="w3-panel w3-card w3-white w3-padding-16">Oat Milk Boom: The rapid growth of oat milk as a popular plant-based milk alternative has driven increased demand for oats, creating new opportunities for oat producers and processors.</div>
 <div class="w3-panel w3-card w3-white w3-padding-16">Research and Development: There is ongoing research and development to improve oat varieties, focusing on aspects such as yield, disease resistance, and nutritional content. These advancements can help boost oat production and make it more resilient to the challenges posed by climate change.</div>
 <div class="w3-panel w3-card w3-white w3-padding-16">Market Expansion and Export Potential: As the popularity of oats continues to grow, there is potential for the expansion of the oat market beyond its traditional growing regions in North America and Europe. This could create new opportunities for producers and exporters, as well as contribute to the development of a more diversified global food system.</div>
 <div class="w3-panel w3-card w3-white w3-padding-16">Animal Feed and Industrial Uses: In addition to their use in human food products, oats are also used as animal feed and in various industrial applications. As demand for sustainable feed alternatives grows, oats may become an increasingly important feed ingredient for livestock.</div>

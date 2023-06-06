@@ -12,6 +12,10 @@
     width: 0.285714em;
     text-align: center;
 }
+.newsdata {
+height: 860px;
+overflow-y: scroll;
+}
 </style>
 </head>
 <body id="myPage">
@@ -121,6 +125,24 @@ The total area used for sugar beet cultivation in 2022 was 6.5 million hectares,
 <tr><td>Estonia </td><td> 0.6%</td></tr>
 </table>
 </div>
+
+ <div class="newsdata w3-col m2 w3-hide-small w3-hide-medium">
+ <div class="w3-container">
+ <div class="w3-panel w3-card w3-white w3-padding-16">
+ <h5 class="w3-center"><b>News</b></h5>
+ <%@exportnews.each do |exportnew|%>
+    <div class="w3-card w3-round w3-light-grey">
+        <div class="w3-container w3-padding">
+            <p class="textline"><%=exportnew.title.capitalize%></p>
+            </i><%= link_to 'Source', "#{exportnew.link}",:target => '_blank', class: " w3-button w3-theme-d1 w3-margin-bottom"%></i>
+        </div>
+    </div>
+    </br>
+  <%end%>
+</div>
+</div>
+</div>
+
 </div>
 
 <div class="w3-row">
@@ -576,16 +598,16 @@ The total area used for sugar beet cultivation in 2022 was 6.5 million hectares,
         <th>Country</th>
       </tr>
     </thead>
-<tr><td>Cargill </td><td> United States</td></tr>
-<tr><td>Archer Daniels Midland </td><td> United States</td></tr>
+<tr><td>Cargill </td><td>USA</td></tr>
+<tr><td>Archer Daniels Midland </td><td>USA</td></tr>
 <tr><td>Louis Dreyfus Company </td><td> Netherlands</td></tr>
-<tr><td>Bunge </td><td> United States</td></tr>
+<tr><td>Bunge </td><td>USA</td></tr>
 <tr><td>Glencore Agriculture </td><td> Switzerland</td></tr>
 <tr><td>Wilmar International </td><td> Singapore</td></tr>
 <tr><td>COFCO International </td><td> Switzerland</td></tr>
 <tr><td>Olam International </td><td> Singapore</td></tr>
 <tr><td>Sime Darby Plantation </td><td> Malaysia</td></tr>
-<tr><td>China National Chemical Corporation-</td></tr>China</td></tr>
+<tr><td>China National Chemical Corporation-</td><td>China</td></tr>
 <tr><td>Marubeni Corporation </td><td> Japan</td></tr>
 <tr><td>Sumitomo Corporation </td><td> Japan</td></tr>
 <tr><td>Mitsui & Co. </td><td> Japan</td></tr>
@@ -622,11 +644,11 @@ The total area used for sugar beet cultivation in 2022 was 6.5 million hectares,
 <tr><td>Cristal Union </td><td> France</td></tr>
 <tr><td>Raffinerie Tirlemontoise </td><td> Belgium</td></tr>
 <tr><td>Saint Louis Sucre </td><td> France</td></tr>
-<tr><td>American Crystal Sugar Company </td><td> United States</td></tr>
-<tr><td>Michigan Sugar Company </td><td> United States</td></tr>
-<tr><td>Western Sugar Cooperative </td><td> United States</td></tr>
-<tr><td>Imperial Sugar Company </td><td> United States</td></tr>
-<tr><td>American Sugar Refining </td><td> United States</td></tr>
+<tr><td>American Crystal Sugar Company </td><td>USA</td></tr>
+<tr><td>Michigan Sugar Company </td><td>USA</td></tr>
+<tr><td>Western Sugar Cooperative </td><td>USA</td></tr>
+<tr><td>Imperial Sugar Company </td><td>USA</td></tr>
+<tr><td>American Sugar Refining </td><td>USA</td></tr>
 <tr><td>Tongaat Hulett Sugar </td><td> South Africa</td></tr>
 <tr><td>Illovo Sugar </td><td> South Africa</td></tr>
 <tr><td>Biosev </td><td> Brazil</td></tr>

@@ -12,6 +12,10 @@
     width: 0.285714em;
     text-align: center;
 }
+.newsdata {
+height: 860px;
+overflow-y: scroll;
+}
 </style>
 </head>
 <body id="myPage">
@@ -121,6 +125,24 @@ From a strategic standpoint, the potential export opportunities for millet can b
 <tr><td>Zimbabwe </td><td> 0.5%</td></tr>
 </table>
 </div>
+
+ <div class="newsdata w3-col m2 w3-hide-small w3-hide-medium">
+ <div class="w3-container">
+ <div class="w3-panel w3-card w3-white w3-padding-16">
+ <h5 class="w3-center"><b>News</b></h5>
+ <%@exportnews.each do |exportnew|%>
+    <div class="w3-card w3-round w3-light-grey">
+        <div class="w3-container w3-padding">
+            <p class="textline"><%=exportnew.title.capitalize%></p>
+            </i><%= link_to 'Source', "#{exportnew.link}",:target => '_blank', class: " w3-button w3-theme-d1 w3-margin-bottom"%></i>
+        </div>
+    </div>
+    </br>
+  <%end%>
+</div>
+</div>
+</div>
+
 </div>
 
 <div class="w3-row">
@@ -646,9 +668,9 @@ From a strategic standpoint, the potential export opportunities for millet can b
 <div class="w3-panel w3-card w3-white w3-padding-16">Sustainable Agriculture Practices: Millets require less water and fewer chemical inputs compared to other cereal crops, making them a more sustainable option for agricultural production. This focus on sustainability is driving demand for millets among environmentally conscious consumers.</div>
 <div class="w3-panel w3-card w3-white w3-padding-16">Plant-Based Food Trends: As the demand for plant-based foods grows, millet-based products like millet flour, snacks, and beverages are becoming increasingly popular as ingredients in various food products.</div>
 <div class="w3-panel w3-card w3-white w3-padding-16">Organic and Non-GMO Demand: With the increasing consumer interest in organic and non-GMO food products, the demand for organically grown and non-GMO millets is on the rise. This trend is likely to boost the production and trade of organic and non-GMO millet varieties.</div>
+<div class="w3-panel w3-card w3-white w3-padding-16">Diversification of Millet Products: With growing consumer interest in millets, there is potential for further diversification of millet-based products, such as breakfast cereals, energy bars, and pasta.</div>
 </div>
 <div class="w3-container w3-col m16 w3-center">
-<div class="w3-panel w3-card w3-white w3-padding-16">Diversification of Millet Products: With growing consumer interest in millets, there is potential for further diversification of millet-based products, such as breakfast cereals, energy bars, and pasta.</div>
 <div class="w3-panel w3-card w3-white w3-padding-16">Research and Development: There is a growing interest in research and development to improve millet varieties, focusing on aspects such as yield, disease resistance, and adaptability to various environmental conditions. These advancements can help boost millet production and make it more resilient to the challenges posed by climate change.</div>
 <div class="w3-panel w3-card w3-white w3-padding-16">Market Expansion and Export Potential: As awareness of millet's nutritional benefits grows, there is potential for the expansion of the millet market beyond its traditional growing regions in Africa and Asia. This could create new opportunities for producers and exporters, as well as contribute to the development of a more diversified global food system.</div>
 <div class="w3-panel w3-card w3-white w3-padding-16">Food Security and Rural Development: Millets play a crucial role in ensuring food security and supporting rural livelihoods in many developing countries. Efforts to promote millet cultivation and consumption can contribute to improved food security, nutrition, and economic development in these regions.</div>

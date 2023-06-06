@@ -12,6 +12,10 @@
     width: 0.285714em;
     text-align: center;
 }
+.newsdata {
+height: 860px;
+overflow-y: scroll;
+}
 </style>
 </head>
 <body id="myPage">
@@ -118,9 +122,26 @@
 <tr><td>Brazil </td><td> 0.1%</td></tr>
 <tr><td>Japan </td><td> 0.1%</td></tr>
 <tr><td>United Arab Emirates </td><td> 0.1%</td></tr>
-
 </table>
 </div>
+
+ <div class="newsdata w3-col m2 w3-hide-small w3-hide-medium">
+ <div class="w3-container">
+ <div class="w3-panel w3-card w3-white w3-padding-16">
+ <h5 class="w3-center"><b>News</b></h5>
+ <%@exportnews.each do |exportnew|%>
+    <div class="w3-card w3-round w3-light-grey">
+        <div class="w3-container w3-padding">
+            <p class="textline"><%=exportnew.title.capitalize%></p>
+            </i><%= link_to 'Source', "#{exportnew.link}",:target => '_blank', class: " w3-button w3-theme-d1 w3-margin-bottom"%></i>
+        </div>
+    </div>
+    </br>
+  <%end%>
+</div>
+</div>
+</div>
+
 </div>
 
 <div class="w3-row">
@@ -653,13 +674,12 @@
 <div class="w3-panel w3-card w3-white w3-padding-16">Emerging markets: Emerging markets such as India and Southeast Asia are showing increased demand for pecans, creating new opportunities for import/export trade.</div>
 <div class="w3-panel w3-card w3-white w3-padding-16">Quality and safety standards: Meeting quality and safety standards is critical for successful import/export trade in the pecan market.</div>
 <div class="w3-panel w3-card w3-white w3-padding-16">Branding and marketing: Effective branding and marketing strategies can help to increase the demand for imported pecans and their products in certain markets.</div>
-<div class="w3-panel w3-card w3-white w3-padding-16">Trade agreements: Trade agreements such as the Comprehensive and Progressive Agreement for Trans-Pacific Partnership (CPTPP) and the USA-Mexico-Canada Agreement (USMCA) can impact the import/export of pecans.</div>
-<div class="w3-panel w3-card w3-white w3-padding-16">Health benefits: Pecans are known for their health benefits, such as their high levels of healthy fats and antioxidants, which can increase their popularity in certain markets.</div>
-
-
 </div>
 
-
+<div class="w3-container w3-col m12 w3-center">
+<div class="w3-panel w3-card w3-white w3-padding-16">Trade agreements: Trade agreements such as the Comprehensive and Progressive Agreement for Trans-Pacific Partnership (CPTPP) and the USA-Mexico-Canada Agreement (USMCA) can impact the import/export of pecans.</div>
+<div class="w3-panel w3-card w3-white w3-padding-16">Health benefits: Pecans are known for their health benefits, such as their high levels of healthy fats and antioxidants, which can increase their popularity in certain markets.</div>
+</div>
 
 
 </div>

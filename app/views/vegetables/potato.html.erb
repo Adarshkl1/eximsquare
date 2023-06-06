@@ -12,6 +12,10 @@
     width: 0.285714em;
     text-align: center;
 }
+.newsdata {
+height: 860px;
+overflow-y: scroll;
+}
 </style>
 </head>
 <body id="myPage">
@@ -123,6 +127,24 @@ Growth rate of potato crop by last year: The global potato market witnessed a gr
 <tr><td>India </td><td>0.9%</td></tr>
 </table>
 </div>
+
+ <div class="newsdata w3-col m2 w3-hide-small w3-hide-medium">
+ <div class="w3-container">
+ <div class="w3-panel w3-card w3-white w3-padding-16">
+ <h5 class="w3-center"><b>News</b></h5>
+ <%@exportnews.each do |exportnew|%>
+    <div class="w3-card w3-round w3-light-grey">
+        <div class="w3-container w3-padding">
+            <p class="textline"><%=exportnew.title.capitalize%></p>
+            </i><%= link_to 'Source', "#{exportnew.link}",:target => '_blank', class: " w3-button w3-theme-d1 w3-margin-bottom"%></i>
+        </div>
+    </div>
+    </br>
+  <%end%>
+</div>
+</div>
+</div>
+
 </div>
 
 <div class="w3-row">
@@ -653,13 +675,12 @@ Growth rate of potato crop by last year: The global potato market witnessed a gr
 <div class="w3-panel w3-card w3-white w3-padding-16">Focus on Sustainability and Environmental Impact: There is a growing focus on sustainability and reducing the environmental impact of potato production, which is driving changes in farming practices.</div>
 <div class="w3-panel w3-card w3-white w3-padding-16">Increasing Use of Potatoes in the Food Industry: Potatoes are used in a wide range of food products, from snacks to ready meals, and their use in the food industry is growing.</div>
 <div class="w3-panel w3-card w3-white w3-padding-16">Growing Demand in Emerging Markets: Emerging markets, particularly in Asia and Africa, are driving growth in the potato market, as demand for potatoes in these regions continues to increase.</div>
-
-</div>
-
-<div class="w3-container w3-col m16 w3-center">
-<div class="w3-panel w3-card w3-white w3-padding-16">Increasing Use of Potatoes in Medical Applications: Potatoes have been found to have medicinal properties, including anti-inflammatory and antioxidant effects, which is driving interest in their use in medical applications.</div>
 <div class="w3-panel w3-card w3-white w3-padding-16">Innovation in Potato-Based Products: Innovation in potato-based products, such as using potatoes as a substitute for wheat flour, is driving growth in the market as consumers seek healthier and more sustainable options.</div>
+<div class="w3-panel w3-card w3-white w3-padding-16">Increasing Use of Potatoes in Medical Applications: Potatoes have been found to have medicinal properties, including anti-inflammatory and antioxidant effects, which is driving interest in their use in medical applications.</div>
+
 </div>
+
+
 
 
 </div>

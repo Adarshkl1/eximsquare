@@ -12,6 +12,10 @@
     width: 0.285714em;
     text-align: center;
 }
+.newsdata {
+height: 860px;
+overflow-y: scroll;
+}
 </style>
 </head>
 <body id="myPage">
@@ -121,6 +125,24 @@ Despite these risks, the potential for Sisal fiber exports offers strategic valu
 <tr><td>Haiti </td><td> 0.4%</td></tr>
 </table>
 </div>
+
+ <div class="newsdata w3-col m2 w3-hide-small w3-hide-medium">
+ <div class="w3-container">
+ <div class="w3-panel w3-card w3-white w3-padding-16">
+ <h5 class="w3-center"><b>News</b></h5>
+ <%@exportnews.each do |exportnew|%>
+    <div class="w3-card w3-round w3-light-grey">
+        <div class="w3-container w3-padding">
+            <p class="textline"><%=exportnew.title.capitalize%></p>
+            </i><%= link_to 'Source', "#{exportnew.link}",:target => '_blank', class: " w3-button w3-theme-d1 w3-margin-bottom"%></i>
+        </div>
+    </div>
+    </br>
+  <%end%>
+</div>
+</div>
+</div>
+
 </div>
 
 
@@ -170,12 +192,12 @@ Despite these risks, the potential for Sisal fiber exports offers strategic valu
 <div class="w3-panel w3-card w3-white w3-padding-16">Focus on fair trade and ethical sourcing: Companies are investing in fair trade and ethical sourcing practices to ensure the social and economic well-being of Sisal fiber farmers and communities.</div>
 <div class="w3-panel w3-card w3-white w3-padding-16">Regulatory changes and trade policies: Changes in trade policies and regulations can have a significant impact on the import-export Sisal fiber business, leading to shifts in supply and demand for certain types of Sisal fiber products.</div>
 <div class="w3-panel w3-card w3-white w3-padding-16">Emergence of new Sisal fiber processing technologies: New Sisal fiber processing technologies are emerging, leading to the development of new Sisal fiber products and production methods.</div>
-<div class="w3-panel w3-card w3-white w3-padding-16">Increased focus on product traceability: Consumers are increasingly interested in knowing the origin and journey of their products, leading to an increased focus on product traceability in the Sisal fiber import-export business.</div>
-<div class="w3-panel w3-card w3-white w3-padding-16">Health benefits: Sisal fiber is known for its health benefits, including its potential to aid digestion and promote overall gut health, leading to increased demand for Sisal fiber products in the health and wellness industry.</div>
-
 </div>
 
-
+<div class="w3-container w3-col m12 ">
+<div class="w3-panel w3-card w3-white w3-padding-16">Increased focus on product traceability: Consumers are increasingly interested in knowing the origin and journey of their products, leading to an increased focus on product traceability in the Sisal fiber import-export business.</div>
+<div class="w3-panel w3-card w3-white w3-padding-16">Health benefits: Sisal fiber is known for its health benefits, including its potential to aid digestion and promote overall gut health, leading to increased demand for Sisal fiber products in the health and wellness industry.</div>
+</div>
 
 </div>
 

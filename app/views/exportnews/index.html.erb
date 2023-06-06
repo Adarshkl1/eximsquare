@@ -4,3 +4,317 @@
 <p><%=exportnew.source%></p>
 <p><%=exportnew.title%></p>
 <%end%>
+
+
+
+<% if exportnew.product == "barley"%>
+<td class="w3-center"><i><%=link_to(image_tag("barley.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "20x40",style: "width:9%;"),barley_path)%></i>
+<% elsif exportnew.product == "buckwheat"%>
+<td class="w3-center"><i><%=link_to(image_tag("buckwheat.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "20x40",style: "width:9%;"),buckwheat_path)%></i>
+<% elsif exportnew.product == "maize"%>
+<td class="w3-center"><i><%=link_to(image_tag("corn.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "20x40",style: "width:9%;"),maize_path)%></i>
+<% elsif exportnew.product == "Wheat"%>
+<td class="w3-center"><i><%=link_to(image_tag("wheat.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "20x40",style: "width:9%;"),wheat_path)%></i>
+<% elsif exportnew.product == "fonio"%>
+<td class="w3-center"><i><%=link_to(image_tag("fonio.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "20x40",style: "width:9%;"),fonio_path)%></i>
+<% elsif exportnew.product == "oats"%>
+<td class="w3-center"><i><%=link_to(image_tag("oat.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "20x40",style: "width:9%;"),oats_path)%></i>
+<% elsif exportnew.product == "quinoa"%>
+<td class="w3-center"><i><%=link_to(image_tag("quinoa.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "20x40",style: "width:9%;"),quinoa_path)%></i>
+<% elsif exportnew.product == "Rye"%>
+<td class="w3-center"><i><%=link_to(image_tag("rye.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "20x40",style: "width:9%;"),rye_path)%></i>
+<% elsif exportnew.product == "sorghum"%>
+<td class="w3-center"><i><%=link_to(image_tag("sorghum.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "20x40",style: "width:9%;"),sorghum_path)%></i>
+<% elsif exportnew.product == "cotton"%>
+<td class="w3-center"><i><%=link_to(image_tag("cotton.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "20x40",style: "width:9%;"),cotton_path)%></i>
+<% elsif exportnew.product == "triticale"%>
+<td class="w3-center"><i><%=link_to(image_tag("triticale.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "20x40",style: "width:9%;"),triticale_path)%></i>
+<% elsif exportnew.product == "rice"%>
+<td class="w3-center"><i><%=link_to(image_tag("rice.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "20x40",style: "width:9%;"),rice_path)%></i>
+<% elsif exportnew.product == "millet crop"%>
+<td class="w3-center"><i><%=link_to(image_tag("millet.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "20x40",style: "width:9%;"),millet_crop_path)%></i>
+<% elsif exportnew.product == "canary seed"%>
+<td class="w3-center"><i><%=link_to(image_tag("carary.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "20x40",style: "width:9%;"),canary_seed_path)%></i>
+<% elsif exportnew.product == "bitter_gourd"%>
+<td class="w3-center"><i><%=link_to(image_tag("bitter_gourd-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "20x40",style: "width:9%;"),bitter_gourd_path)%></i>
+<% elsif exportnew.product == "broccoli"%>
+<td class="w3-center"><i><%=link_to(image_tag("broccoli-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "20x40",style: "width:9%;"),broccoli_path)%></i>
+<% elsif exportnew.product == "cabbages"%>
+<td class="w3-center"><i><%=link_to(image_tag("cabbages-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "20x40",style: "width:9%;"),cabbages_path)%></i>
+<% elsif exportnew.product == "carrots"%>
+<td class="w3-center"><i><%=link_to(image_tag("carrot-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "20x40",style: "width:9%;"),carrots_path)%></i>
+<% elsif exportnew.product == "cauliflower"%>
+<td class="w3-center"><i><%=link_to(image_tag("cauliflower-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "20x40",style: "width:9%;"),cauliflower_path)%></i>
+<% elsif exportnew.product == "chickpea"%>
+<td class="w3-center"><i><%=link_to(image_tag("chickpea1-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "20x40",style: "width:9%;"),chickpea_path)%></i>
+<% elsif exportnew.product == "chicory"%>
+<td class="w3-center"><i><%=link_to(image_tag("chicory-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "20x40",style: "width:9%;"),chicory_path)%></i>
+<% elsif exportnew.product == "cucumber"%>
+<td class="w3-center"><i><%=link_to(image_tag("cucumber-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "20x40",style: "width:9%;"),cucumber_path)%></i>
+<% elsif exportnew.product == "drumstick"%>
+<td class="w3-center"><i><%=link_to(image_tag("drumstick1-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "20x40",style: "width:9%;"),drumstick_path)%></i>
+<% elsif exportnew.product == "dry bean"%>
+<td class="w3-center"><i><%=link_to(image_tag("dry_beans-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "20x40",style: "width:9%;"),dry_bean_path)%></i>
+<% elsif exportnew.product == "Eggplant"%>
+<td class="w3-center"><i><%=link_to(image_tag("eggplant-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "20x40",style: "width:9%;"),eggplant_path)%></i>
+<% elsif exportnew.product == "ginger"%>
+<td class="w3-center"><i><%=link_to(image_tag("ginger-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "20x40",style: "width:9%;"),ginger_path)%></i>
+<% elsif exportnew.product == "Green Beans"%>
+<td class="w3-center"><i><%=link_to(image_tag("green_bean-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "20x40",style: "width:9%;"),green_bean_path)%></i>
+<% elsif exportnew.product == "Green peas"%>
+<td class="w3-center"><i><%=link_to(image_tag("green_peas-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "20x40",style: "width:9%;"),green_peas_path)%></i>
+<% elsif exportnew.product == "lentil"%>
+<td class="w3-center"><i><%=link_to(image_tag("lentils-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "20x40",style: "width:9%;"),lentil_path)%></i>
+<% elsif exportnew.product == "lettuce"%>
+<td class="w3-center"><i><%=link_to(image_tag("lettuce-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "20x40",style: "width:9%;"),lettuce_path)%></i>
+<% elsif exportnew.product == "mushroom"%>
+<td class="w3-center"><i><%=link_to(image_tag("mushroom-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "20x40",style: "width:9%;"),mushroom_path)%></i>
+<% elsif exportnew.product == "okra"%>
+<td class="w3-center"><i><%=link_to(image_tag("okra-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "20x40",style: "width:9%;"),okra_path)%></i>
+<% elsif exportnew.product == "onion"%>
+<td class="w3-center"><i><%=link_to(image_tag("onion-min.png",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "20x40",style: "width:9%;"),onion_path)%></i>
+<% elsif exportnew.product == "potato"%>
+<td class="w3-center"><i><%=link_to(image_tag("potato-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "20x40",style: "width:9%;"),potato_path)%></i>
+<% elsif exportnew.product == "pulses"%>
+<td class="w3-center"><i><%=link_to(image_tag("pulses-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "20x40",style: "width:9%;"),pulses_path)%></i>
+<% elsif exportnew.product == "pumpkin squash gourd"%>
+<td class="w3-center"><i><%=link_to(image_tag("pumpkin-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "20x40",style: "width:9%;"),pumpkin_squash_gourd_path)%></i>
+<% elsif exportnew.product == "rapeseed canola"%>
+<td class="w3-center"><i><%=link_to(image_tag("rapeseed_canola-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "20x40",style: "width:9%;"),rapeseed_canola_path)%></i>
+<% elsif exportnew.product == "ridge_Gourd"%>
+<td class="w3-center"><i><%=link_to(image_tag("ridge_gourd-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "20x40",style: "width:9%;"),ridge_Gourd_path)%></i>
+<% elsif exportnew.product == "sunflower"%>
+<td class="w3-center"><i><%=link_to(image_tag("sunflower_seed-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "20x40",style: "width:9%;"),sunflower_seed_path)%></i>
+<% elsif exportnew.product == "sesame"%>
+<td class="w3-center"><i><%=link_to(image_tag("sesame-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "20x40",style: "width:9%;"),sesame_path)%></i>
+<% elsif exportnew.product == "Soybean"%>
+<td class="w3-center"><i><%=link_to(image_tag("soybean-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "20x40",style: "width:9%;"),soybean_path)%></i>
+<% elsif exportnew.product == "Spinach"%>
+<td class="w3-center"><i><%=link_to(image_tag("spinach-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "20x40",style: "width:9%;"),spinach_path)%></i>
+<% elsif exportnew.product == "sugarcane"%>
+<td class="w3-center"><i><%=link_to(image_tag("sugar_cane-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "20x40",style: "width:9%;"),sugar_cane_path)%></i>
+<% elsif exportnew.product == "sugar beet beetroot"%>
+<td class="w3-center"><i><%=link_to(image_tag("suger_beet-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "20x40",style: "width:9%;"),sugar_beet_beetroot_path)%></i>
+<% elsif exportnew.product == "tomato"%>
+<td class="w3-center"><i><%=link_to(image_tag("tomato-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "20x40",style: "width:9%;"),tomato_path)%></i>
+<% elsif exportnew.product == "turnip"%>
+<td class="w3-center"><i><%=link_to(image_tag("turnip-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "20x40",style: "width:9%;"),turnip_path)%></i>
+<% elsif exportnew.product == "yam"%>
+<td class="w3-center"><i><%=link_to(image_tag("yam-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "20x40",style: "width:9%;"),yams_path)%></i>
+<% elsif exportnew.product == "apple"%>
+<td class="w3-center"><i><%=link_to(image_tag("apple-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "20x40",style: "width:9%;"),apple_path)%></i>
+<% elsif exportnew.product == "apricot"%>
+<td class="w3-center"><i><%=link_to(image_tag("apricot-min.jpg" ,class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "20x40",style: "width:9%;"),apricot_path)%></i>
+<% elsif exportnew.product == "avocado"%>
+<td class="w3-center"><i><%=link_to(image_tag("avocado-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "20x40",style: "width:9%;"),avocado_path)%></i>
+<% elsif exportnew.product == "banana"%>
+<td class="w3-center"><i><%=link_to(image_tag("banana-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "20x40",style: "width:9%;"),banana_path)%></i>
+<% elsif exportnew.product == "black_currant"%>
+<td class="w3-center"><i><%=link_to(image_tag("blackcurrant-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "20x40",style: "width:9%;"),black_currant_path)%></i>
+<% elsif exportnew.product == "blackberry"%>
+<td class="w3-center"><i><%=link_to(image_tag("blackberry-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "20x40",style: "width:9%;"),blackberry_path)%></i>
+<% elsif exportnew.product == "blueberry"%>
+<td class="w3-center"><i><%=link_to(image_tag("blueberry-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "20x40",style: "width:9%;"),blueberry_path)%></i>
+<% elsif exportnew.product == "cherry"%>
+<td class="w3-center"><i><%=link_to(image_tag("cherry-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "20x40",style: "width:9%;"),cherry_path)%></i>
+<% elsif exportnew.product == "coconut"%>
+<td class="w3-center"><i><%=link_to(image_tag("coconut-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "20x40",style: "width:9%;"),coconut_path)%></i>
+<% elsif exportnew.product == "currant"%>
+<td class="w3-center"><i><%=link_to(image_tag("currant-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "20x40",style: "width:9%;"),currant_path)%></i>
+<% elsif exportnew.product == "custard apple"%>
+<td class="w3-center"><i><%=link_to(image_tag("custard_apple-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "20x40",style: "width:9%;"),custard_apple_path)%></i>
+<% elsif exportnew.product == "dragon fruit"%>
+<td class="w3-center"><i><%=link_to(image_tag("dragon-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "20x40",style: "width:9%;"),dragon_fruit_path)%></i>
+<% elsif exportnew.product == "fig"%>
+<td class="w3-center"><i><%=link_to(image_tag("fig-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "20x40",style: "width:9%;"),fig_path)%></i>
+<% elsif exportnew.product == "gooseberry"%>
+<td class="w3-center"><i><%=link_to(image_tag("gooseberry-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "20x40",style: "width:9%;"),gooseberry_path)%></i>
+<% elsif exportnew.product == "grape"%>
+<td class="w3-center"><i><%=link_to(image_tag("grape-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "20x40",style: "width:9%;"),grape_path)%></i>
+<% elsif exportnew.product == "guava"%>
+<td class="w3-center"><i><%=link_to(image_tag("guava-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "20x40",style: "width:9%;"),guava_path)%></i>
+<% elsif exportnew.product == "jackfruit"%>
+<td class="w3-center"><i><%=link_to(image_tag("jackfruit-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "20x40",style: "width:9%;"),jackfruit_path)%></i>
+<% elsif exportnew.product == "kiwifruit"%>
+<td class="w3-center"><i><%=link_to(image_tag("kiwi-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "20x40",style: "width:9%;"),kiwifruit_path)%></i>
+<% elsif exportnew.product == "lemons"%>
+<td class="w3-center"><i><%=link_to(image_tag("lemon-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "20x40",style: "width:9%;"),lemons_path)%></i>
+<% elsif exportnew.product == "mango"%>
+<td class="w3-center"><i><%=link_to(image_tag("mango-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "20x40",style: "width:9%;"),mango_path)%></i>
+<% elsif exportnew.product == "mangosteen"%>
+<td class="w3-center"><i><%=link_to(image_tag("mangosteen-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "20x40",style: "width:9%;"),mangosteen_path)%></i>
+<% elsif exportnew.product == "muskmelon"%>
+<td class="w3-center"><i><%=link_to(image_tag("muskmelon-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "20x40",style: "width:9%;"),muskmelon_path)%></i>
+<% elsif exportnew.product == "olive"%>
+<td class="w3-center"><i><%=link_to(image_tag("olive-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "20x40",style: "width:9%;"),olive_path)%></i>
+<% elsif exportnew.product == "oranges"%>
+<td class="w3-center"><i><%=link_to(image_tag("orange-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "20x40",style: "width:9%;"),oranges_path)%></i>
+<% elsif exportnew.product == "papaya"%>
+<td class="w3-center"><i><%=link_to(image_tag("papaya-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "20x40",style: "width:9%;"),papaya_path)%></i>
+<% elsif exportnew.product == "pear"%>
+<td class="w3-center"><i><%=link_to(image_tag("pear-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "20x40",style: "width:9%;"),pear_path)%></i>
+<% elsif exportnew.product == "pineapple"%>
+<td class="w3-center"><i><%=link_to(image_tag("pineapple-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "20x40",style: "width:9%;"),pineapple_path)%></i>
+<% elsif exportnew.product == "Plums"%>
+<td class="w3-center"><i><%=link_to(image_tag("plums-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "20x40",style: "width:9%;"),plums_path)%></i>
+<% elsif exportnew.product == "pomegranate"%>
+<td class="w3-center"><i><%=link_to(image_tag("pomegranate-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "20x40",style: "width:9%;"),pomegranate_path)%></i>
+<% elsif exportnew.product == "quince"%>
+<td class="w3-center"><i><%=link_to(image_tag("quince-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "20x40",style: "width:9%;"),quince_path)%></i>
+<% elsif exportnew.product == "raspberry"%>
+<td class="w3-center"><i><%=link_to(image_tag("raspberry-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "20x40",style: "width:9%;"),raspberry_path)%></i>
+<% elsif exportnew.product == "strawberry"%>
+<td class="w3-center"><i><%=link_to(image_tag("strawberrie-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "20x40",style: "width:9%;"),strawberry_path)%></i>
+<% elsif exportnew.product == "watermelon"%>
+<td class="w3-center"><i><%=link_to(image_tag("watermelon-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "20x40",style: "width:9%;"),watermelon_path)%></i>
+<% elsif exportnew.product == "beef meat"%>
+<td class="w3-center"><i><%=link_to(image_tag("beef-min.jpeg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "20x40",style: "width:70%;"),beef_path)%></i>
+<% elsif exportnew.product == "buffalo meat"%>
+<td class="w3-center"><i><%=link_to(image_tag("buffalo-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "20x40",style: "width:9%;"),buffalo_path)%></i>
+<% elsif exportnew.product == "camel meat"%>
+<td class="w3-center"><i><%=link_to(image_tag("camel-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "20x40",style: "width:9%;"),camel_path)%></i>
+<% elsif exportnew.product == "chicken meat"%>
+<td class="w3-center"><i><%=link_to(image_tag("chicken-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "20x40",style: "width:70%;"),chicken_path)%></i>
+<% elsif exportnew.product == "duck meat"%>
+<td class="w3-center"><i><%=link_to(image_tag("duck-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "20x40",style: "width:9%;"),duck_path)%></i>
+<% elsif exportnew.product == "goat Meat"%>
+<td class="w3-center"><i><%=link_to(image_tag("goat-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "20x40",style: "width:9%;"),goat_path)%></i>
+<% elsif exportnew.product == "goose meat"%>
+<td class="w3-center"><i><%=link_to(image_tag("goose-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "20x40",style: "width:70%;"),goose_path)%></i>
+<% elsif exportnew.product == "guinea meat"%>
+<td class="w3-center"><i><%=link_to(image_tag("guinea-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "20x40",style: "width:9%;"),guinea_path)%></i>
+<% elsif exportnew.product == "horse meat"%>
+<td class="w3-center"><i><%=link_to(image_tag("horse-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "20x40",style: "width:9%;"),horse_path)%></i>
+<% elsif exportnew.product == "pork meat"%>
+<td class="w3-center"><i><%=link_to(image_tag("pork-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "20x40",style: "width:70%;"),pork_path)%></i>
+<% elsif exportnew.product == "rabbit meat"%>
+<td class="w3-center"><i><%=link_to(image_tag("rabbit-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "20x40",style: "width:9%;"),rabbit_path)%></i>
+<% elsif exportnew.product == "sheep meat"%>
+<td class="w3-center"><i><%=link_to(image_tag("sheep-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "20x40",style: "width:9%;"),sheep_path)%></i>
+<% elsif exportnew.product == "turkey meat"%>
+<td class="w3-center"><i><%=link_to(image_tag("turkey-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "20x40",style: "width:70%;"),turkey_path)%></i>
+<% elsif exportnew.product == "beer"%>
+<td class="w3-center"><i><%=link_to(image_tag("beer-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "20x40",style: "width:80%;"),beer_path)%></i>
+<% elsif exportnew.product == "buffalo milk"%>
+<td class="w3-center"><i><%=link_to(image_tag("buffalo-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "20x40",style: "width:9%;"),buffalo_milk_path)%></i>
+<% elsif exportnew.product == "camel milk"%>
+<td class="w3-center"><i><%=link_to(image_tag("camel-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "20x40",style: "width:9%;"),camel_milk_path)%></i>
+<% elsif exportnew.product == "coffee"%>
+<td class="w3-center"><i><%=link_to(image_tag("coffee-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "20x40",style: "width:80%;"),coffee_path)%></i>
+<% elsif exportnew.product == "cow milk"%>
+<td class="w3-center"><i><%=link_to(image_tag("cow-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "20x40",style: "width:9%;"),cow_milk_path)%></i>
+<% elsif exportnew.product == "goat milk"%>
+<td class="w3-center"><i><%=link_to(image_tag("goat-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "20x40",style: "width:9%;"),goat_milk_path)%></i>
+<% elsif exportnew.product == "milk"%>
+<td class="w3-center"><i><%=link_to(image_tag("milk-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "20x40",style: "width:80%;"),milk_path)%></i>
+<% elsif exportnew.product == "sheep milk"%>
+<td class="w3-center"><i><%=link_to(image_tag("sheep-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "20x40",style: "width:9%;"),sheep_milk_path)%><i>
+<% elsif exportnew.product == "tea"%>
+<td class="w3-center"><i><%=link_to(image_tag("tea-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "20x40",style: "width:9%;"),tea_path)%></i>
+<% elsif exportnew.product == "cheese"%>
+<td class="w3-center"><i><i><%=link_to(image_tag("cheese-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "20x40",style: "width:9%;"),cheese_path)%></i>
+<% elsif exportnew.product == "cocoa"%>
+<td class="w3-center"><i><i><%=link_to(image_tag("Cocoa-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "20x40",style: "width:9%;"),cocoa_path)%></i>
+<% elsif exportnew.product == "yerba mat"%>
+<td class="w3-center"><i><i><%=link_to(image_tag("yerba_mate-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "20x40",style: "width:9%;"),yerba_mate_path)%></i>
+<% elsif exportnew.product == "egg"%>
+<td class="w3-center"><i><i><%=link_to(image_tag("egg-min.png",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "20x40",style: "width:9%;"),egg_path)%></i>
+<% elsif exportnew.product == "honey"%>
+<td class="w3-center"><i><i><%=link_to(image_tag("honey-min.png",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "20x40",style: "width:9%;"),honey_path)%></i>
+<% elsif exportnew.product == "olive oil"%>
+<td class="w3-center"><i><i><%=link_to(image_tag("olive_oil-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "20x40",style: "width:9%;"),olive_oil_path)%></i><td class="w3-center"><i><%=link_to(image_tag("wine-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "20x40",style: "width:80%;"),wine_path)%></i>
+<% elsif exportnew.product == "tobacco"%>
+<td class="w3-center"><i><i><%=link_to(image_tag("tobacco-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "20x40",style: "width:9%;"),tobacco_path)%></i>
+<% else exportnew.product == "fiber"%>
+<td class="w3-center"><i><%=link_to(image_tag("fiber-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "20x40",style: "width:9%;"),fiber_path)%></i>
+<% elsif exportnew.product == "fish"%>
+<td class="w3-center"><i><%=link_to(image_tag("fish-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "20x40",style: "width:9%;"),fish_path)%></i>
+<% elsif exportnew.product == "Oyster"%>
+<td class="w3-center"><i><%=link_to(image_tag("oysters-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "20x40",style: "width:9%;"),oyster_path)%></i>
+<% elsif exportnew.product == "seaweed"%>
+<td class="w3-center"><i><%=link_to(image_tag("sea_weed-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "20x40",style: "width:9%;"),seaweed_path)%></i>
+<% elsif exportnew.product == "caviar"%>
+<td class="w3-center"><i><%=link_to(image_tag("caviar-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "20x40",style: "width:9%;"),caviar_path)%></i>
+<% elsif exportnew.product == "crab"%>
+<td class="w3-center"><i><%=link_to(image_tag("crab-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "20x40",style: "width:9%;"),crab_path)%></i>
+<% elsif exportnew.product == "lobsters"%>
+<td class="w3-center"><i><%=link_to(image_tag("lobsters-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "20x40",style: "width:9%;"),lobsters_path)%></i>
+<% elsif exportnew.product == "clam"%>
+<td class="w3-center"><i><%=link_to(image_tag("Clam-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "20x40",style: "width:9%;"),clam_path)%></i>
+<% elsif exportnew.product == "octopus"%>
+<td class="w3-center"><i><%=link_to(image_tag("Octopus-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "20x40",style: "width:9%;"),octopus_path)%></i>
+<% elsif exportnew.product == "squid"%>
+<td class="w3-center"><i><%=link_to(image_tag("squid-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "20x40",style: "width:9%;"),squid_path)%></i>
+<% elsif exportnew.product == "shrimps"%>
+<td class="w3-center"><i><%=link_to(image_tag("shrimps-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "20x40",style: "width:9%;"),shrimps_path)%></i>
+<% elsif exportnew.product == "almonds"%>
+<td class="w3-center"><i><%=link_to(image_tag("almonds-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "20x40",style: "width:9%;"),almonds_path)%></i>
+<% elsif exportnew.product == "brazil nuts"%>
+<td class="w3-center"><i><%=link_to(image_tag("brazil_nuts-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "20x40",style: "width:9%;"),brazil_nuts_path)%></i>
+<% elsif exportnew.product == "cashews nuts"%>
+<td class="w3-center"><i><%=link_to(image_tag("cashew-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "20x40",style: "width:9%;"),cashews_path)%></i>
+<% elsif exportnew.product == "filberts"%>
+<td class="w3-center"><i><%=link_to(image_tag("filberts-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "20x40",style: "width:9%;"),filberts_path)%></i>
+<% elsif exportnew.product == "hazelnuts"%>
+<td class="w3-center"><i><%=link_to(image_tag("hazelnuts-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "20x40",style: "width:9%;"),hazelnuts_path)%></i>
+<% elsif exportnew.product == "macadamia nuts"%>
+<td class="w3-center"><i><%=link_to(image_tag("macadamia_nuts-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "20x40",style: "width:9%;"),macadamia_nuts_path)%></i>
+<% elsif exportnew.product == "peanuts"%>
+<td class="w3-center"><i><%=link_to(image_tag("peanut-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "20x40",style: "width:9%;"),peanuts_path)%></i>
+<% elsif exportnew.product == "pecans"%>
+<td class="w3-center"><i><%=link_to(image_tag("pecans-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "20x40",style: "width:9%;"),pecans_path)%></i>
+<% elsif exportnew.product == "pine_nuts"%>
+<td class="w3-center"><i><%=link_to(image_tag("pinenuts-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "20x40",style: "width:9%;"),pine_nuts_path)%></i>
+<% elsif exportnew.product == "pistachios"%>
+<td class="w3-center"><i><%=link_to(image_tag("pistachios-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "20x40",style: "width:9%;"),pistachios_path)%></i>
+<% elsif exportnew.product == "sheanut"%>
+<td class="w3-center"><i><%=link_to(image_tag("sheanut-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "20x40",style: "width:9%;"),sheanut_path)%></i>
+<% elsif exportnew.product == "Walnuts"%>
+<td class="w3-center"><i><%=link_to(image_tag("walnuts-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "20x40",style: "width:9%;"),walnuts_path)%></i>
+<% elsif exportnew.product == "anise star"%>
+<td class="w3-center"><i><%=link_to(image_tag("anise_star-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "20x40",style: "width:9%;"),anise_star_path)%></i>
+<% elsif exportnew.product == "bay leaves"%>
+<td class="w3-center"><i><%=link_to(image_tag("bay_leaves-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "20x40",style: "width:9%;"),bay_leaves_path)%></i>
+<% elsif exportnew.product == "black_pepper"%>
+<td class="w3-center"><i><%=link_to(image_tag("black_pepper.png",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "20x40",style: "width:9%;"),black_pepper_path)%></i>
+<% elsif exportnew.product == "cardamom"%>
+<td class="w3-center"><i><%=link_to(image_tag("cardamom-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "20x40",style: "width:9%;"),cardamom_path)%></i>
+<% elsif exportnew.product == "chili_pepper"%>
+<td class="w3-center"><i><%=link_to(image_tag("chili_pepper-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "20x40",style: "width:9%;"),chili_pepper_path)%></i>
+<% elsif exportnew.product == "cinnamon"%>
+<td class="w3-center"><i><%=link_to(image_tag("cinnamon-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "20x40",style: "width:9%;"),cinnamon_path)%></i>
+<% elsif exportnew.product == "cloves"%>
+<td class="w3-center"><i><%=link_to(image_tag("cloves-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "20x40",style: "width:9%;"),cloves_path)%></i>
+<% elsif exportnew.product == "Coriander"%>
+<td class="w3-center"><i><%=link_to(image_tag("coriander-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "20x40",style: "width:9%;"),coriander_path)%></i>
+<% elsif exportnew.product == "cumin"%>
+<td class="w3-center"><i><%=link_to(image_tag("cumin-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "20x40",style: "width:9%;"),cumin_path)%></i>
+<% elsif exportnew.product == "fennel"%>
+<td class="w3-center"><i><%=link_to(image_tag("fennel-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "20x40",style: "width:9%;"),fennel_path)%></i>
+<% elsif exportnew.product == "fenugreek"%>
+<td class="w3-center"><i><%=link_to(image_tag("fenugreek-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "20x40",style: "width:9%;"),fenugreek_path)%></i>
+<% elsif exportnew.product == "ginger"%>
+<td class="w3-center"><i><%=link_to(image_tag("ginger-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "20x40",style: "width:9%;"),ginger_path)%></i>
+<% elsif exportnew.product == "mustard seeds"%>
+<td class="w3-center"><i><%=link_to(image_tag("mustard_seeds-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "20x40",style: "width:9%;"),mustard_seeds_path)%></i>
+<% elsif exportnew.product == "nutmeg"%>
+<td class="w3-center"><i><%=link_to(image_tag("nutmeg-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "20x40",style: "width:9%;"),nutmeg_path)%></i>
+<% elsif exportnew.product == "oregano"%>
+<td class="w3-center"><i><%=link_to(image_tag("oregano-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "20x40",style: "width:9%;"),oregano_path)%></i>
+<% elsif exportnew.product == "paprika"%>
+<td class="w3-center"><i><%=link_to(image_tag("paprika-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "20x40",style: "width:9%;"),paprika_path)%></i>
+<% elsif exportnew.product == "peppermint"%>
+<td class="w3-center"><i><%=link_to(image_tag("peppermint-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "20x40",style: "width:9%;"),peppermint_path)%></i>
+<% elsif exportnew.product == "Rosemary"%>
+<td class="w3-center"><i><%=link_to(image_tag("Rosemary-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "20x40",style: "width:9%;"),rosemary_path)%></i>
+<% elsif exportnew.product == "saffron"%>
+<td class="w3-center"><i><%=link_to(image_tag("saffron-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "20x40",style: "width:9%;"),saffron_path)%></i>
+<% elsif exportnew.product == "thyme"%>
+<td class="w3-center"><i><%=link_to(image_tag("thyme-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "20x40",style: "width:9%;"),thyme_path)%></i>
+<% elsif exportnew.product == "turmeric"%>
+<td class="w3-center"><i><%=link_to(image_tag("turmeric-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "20x40",style: "width:9%;"),turmeric_path)%></i>
+<% elsif exportnew.product == "vanilla"%>
+<td class="w3-center"><i><%=link_to(image_tag("vanilla-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "20x40",style: "width:9%;"),vanilla_path)%></i>
+<%else%>
+<td class="w3-center"><i><%=link_to(image_tag("",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "20x40",style: "width:9%;"),turmeric_path)%></i>
+<%end%>
