@@ -12,6 +12,10 @@
     width: 0.285714em;
     text-align: center;
 }
+.newsdata {
+height: 860px;
+overflow-y: scroll;
+}
 </style>
 </head>
 <body id="myPage">
@@ -121,6 +125,24 @@ From a strategic standpoint, the potential export opportunities for sorghum can 
 <tr><td>Paraguay </td><td> <1%</td></tr>
 </table>
 </div>
+
+ <div class="newsdata w3-col m2 w3-hide-small w3-hide-medium">
+ <div class="w3-container">
+ <div class="w3-panel w3-card w3-white w3-padding-16">
+ <h5 class="w3-center"><b>News</b></h5>
+ <%@exportnews.each do |exportnew|%>
+    <div class="w3-card w3-round w3-light-grey">
+        <div class="w3-container w3-padding">
+            <p class="textline"><%=exportnew.title.capitalize%></p>
+            </i><%= link_to 'Source', "#{exportnew.link}",:target => '_blank', class: " w3-button w3-theme-d1 w3-margin-bottom"%></i>
+        </div>
+    </div>
+    </br>
+  <%end%>
+</div>
+</div>
+</div>
+
 </div>
 
 <div class="w3-row">
@@ -443,26 +465,26 @@ From a strategic standpoint, the potential export opportunities for sorghum can 
         <th>Percentage</th>
       </tr>
     </thead>
-<tr><td>USA </td><td> April to August</td></tr>
-<tr><td>Nigeria </td><td> May to September</td></tr>
-<tr><td>India </td><td> July to October</td></tr>
-<tr><td>Mexico </td><td> June to September</td></tr>
-<tr><td>Sudan </td><td> June to October</td></tr>
-<tr><td>Ethiopia </td><td> June to October</td></tr>
-<tr><td>Argentina </td><td> December to March</td></tr>
-<tr><td>Australia </td><td> October to January</td></tr>
-<tr><td>Brazil </td><td> January to April</td></tr>
-<tr><td>China </td><td> May to September</td></tr>
-<tr><td>Burkina Faso </td><td> June to October</td></tr>
-<tr><td>South Africa </td><td> October to March</td></tr>
-<tr><td>Niger </td><td> June to October</td></tr>
-<tr><td>Mali </td><td> June to October</td></tr>
-<tr><td>Tanzania </td><td> November to February</td></tr>
-<tr><td>Uganda </td><td> March to June and September to December</td></tr>
-<tr><td>Chad </td><td> June to October</td></tr>
-<tr><td>Cameroon </td><td> May to September</td></tr>
-<tr><td>Zambia </td><td> October to February</td></tr>
-<tr><td>Senegal </td><td> June to October.</td></tr>
+<tr><td>USA </td><td> Apr to Aug</td></tr>
+<tr><td>Nigeria </td><td> May to Sep</td></tr>
+<tr><td>India </td><td> July to Oct</td></tr>
+<tr><td>Mexico </td><td> June to Sep</td></tr>
+<tr><td>Sudan </td><td> June to Oct</td></tr>
+<tr><td>Ethiopia </td><td> June to Oct</td></tr>
+<tr><td>Argentina </td><td> Dec to Mar</td></tr>
+<tr><td>Australia </td><td> Oct to Jan</td></tr>
+<tr><td>Brazil </td><td> Jan to Apr</td></tr>
+<tr><td>China </td><td> May to Sep</td></tr>
+<tr><td>Burkina Faso </td><td> June to Oct</td></tr>
+<tr><td>South Africa </td><td> Oct to Mar</td></tr>
+<tr><td>Niger </td><td> June to Oct</td></tr>
+<tr><td>Mali </td><td> June to Oct</td></tr>
+<tr><td>Tanzania </td><td> Nov to Feb</td></tr>
+<tr><td>Uganda </td><td> Mar to June and Sep to Dec</td></tr>
+<tr><td>Chad </td><td> June to Oct</td></tr>
+<tr><td>Cameroon </td><td> May to Sep</td></tr>
+<tr><td>Zambia </td><td> Oct to Feb</td></tr>
+<tr><td>Senegal </td><td> June to Oct.</td></tr>
 </table>
 </div>
 

@@ -5,6 +5,7 @@ class CreateExportnews < ActiveRecord::Migration[7.0]
       t.text :title
       t.text :name
       t.string :link  
+      t.string :product
       t.timestamps
     end
   end

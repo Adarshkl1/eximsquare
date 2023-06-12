@@ -12,6 +12,10 @@
     width: 0.285714em;
     text-align: center;
 }
+.newsdata {
+height: 860px;
+overflow-y: scroll;
+}
 </style>
 </head>
 <body id="myPage">
@@ -121,6 +125,24 @@ From a strategic standpoint, the potential export opportunities for fonio can be
 <tr><td>China </td><td> 0.1%</td></tr>
 </table>
 </div>
+
+ <div class="newsdata w3-col m2 w3-hide-small w3-hide-medium">
+ <div class="w3-container">
+ <div class="w3-panel w3-card w3-white w3-padding-16">
+ <h5 class="w3-center"><b>News</b></h5>
+ <%@exportnews.each do |exportnew|%>
+    <div class="w3-card w3-round w3-light-grey">
+        <div class="w3-container w3-padding">
+            <p class="textline"><%=exportnew.title.capitalize%></p>
+            </i><%= link_to 'Source', "#{exportnew.link}",:target => '_blank', class: " w3-button w3-theme-d1 w3-margin-bottom"%></i>
+        </div>
+    </div>
+    </br>
+  <%end%>
+</div>
+</div>
+</div>
+
 </div>
 
 <div class="w3-row">
@@ -644,10 +666,11 @@ From a strategic standpoint, the potential export opportunities for fonio can be
 <div class="w3-panel w3-card w3-white w3-padding-16">Sustainable Agriculture: Fonio is considered a sustainable crop, as it can grow in poor or marginal soils and has a relatively low water requirement. This focus on sustainability can make Fonio an attractive option for both producers and consumers, driving demand for this crop.</div>
 <div class="w3-panel w3-card w3-white w3-padding-16">Market Expansion and Export Potential: As awareness of Fonio's nutritional benefits grows, there is potential for the expansion of the Fonio market beyond its traditional growing regions in West Africa. This could create new opportunities for producers and exporters, as well as contribute to the development of a more diversified global food system.</div>
 <div class="w3-panel w3-card w3-white w3-padding-16">Research and Development: There is a growing interest in research and development to improve Fonio varieties, focusing on aspects such as yield, disease resistance, and adaptability to various environmental conditions. These advancements can help boost Fonio production and make it more resilient to the challenges posed by climate change.</div>
+<div class="w3-panel w3-card w3-white w3-padding-16">Diversification of Fonio Products: With growing consumer interest in Fonio, there is potential for further diversification of Fonio-based products, such as flours, snacks, and beverages. This trend could create new opportunities for growth within the Fonio market.</div>
+
 </div>
 <div class="w3-container w3-col m16 w3-center">
 
-<div class="w3-panel w3-card w3-white w3-padding-16">Diversification of Fonio Products: With growing consumer interest in Fonio, there is potential for further diversification of Fonio-based products, such as flours, snacks, and beverages. This trend could create new opportunities for growth within the Fonio market.\</div>
 <div class="w3-panel w3-card w3-white w3-padding-16">Food Security and Climate Resilience: As climate change continues to pose challenges to global food security, the cultivation of resilient and drought-tolerant crops like Fonio is becoming increasingly important. Fonio's ability to thrive in harsh conditions with minimal inputs makes it a valuable crop for ensuring food security in vulnerable regions, particularly in West Africa.</div>
 <div class="w3-panel w3-card w3-white w3-padding-16">Fair Trade and Ethical Sourcing: With increasing consumer interest in the ethical sourcing of food products, there is potential for the development of fair trade and ethically certified Fonio. This trend may encourage more Fonio producers to adopt fair trade practices, ensuring that farmers receive a fair price for their products and adhere to social and environmental standards.</div>
 <div class="w3-panel w3-card w3-white w3-padding-16">Growing Demand for Plant-Based Protein: As the demand for plant-based protein sources grows, Fonio's high protein content and essential amino acid profile make it an attractive option for consumers seeking alternatives to animal protein. This trend could further increase demand for Fonio and contribute to the development of new Fonio-based protein products.</div>

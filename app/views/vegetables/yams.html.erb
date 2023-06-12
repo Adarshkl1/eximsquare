@@ -12,6 +12,10 @@
     width: 0.285714em;
     text-align: center;
 }
+.newsdata {
+height: 860px;
+overflow-y: scroll;
+}
 </style>
 </head>
 <body id="myPage">
@@ -121,6 +125,24 @@ However, the export potential of yams can also be affected by various factors, i
 <tr><td>South Africa </td><td> 0.1%</td></tr>
 </table>
 </div>
+
+ <div class="newsdata w3-col m2 w3-hide-small w3-hide-medium">
+ <div class="w3-container">
+ <div class="w3-panel w3-card w3-white w3-padding-16">
+ <h5 class="w3-center"><b>News</b></h5>
+ <%@exportnews.each do |exportnew|%>
+    <div class="w3-card w3-round w3-light-grey">
+        <div class="w3-container w3-padding">
+            <p class="textline"><%=exportnew.title.capitalize%></p>
+            </i><%= link_to 'Source', "#{exportnew.link}",:target => '_blank', class: " w3-button w3-theme-d1 w3-margin-bottom"%></i>
+        </div>
+    </div>
+    </br>
+  <%end%>
+</div>
+</div>
+</div>
+
 </div>
 
 <div class="w3-row">
@@ -444,26 +466,26 @@ However, the export potential of yams can also be affected by various factors, i
         <th>Percentage</th>
       </tr>
     </thead>    
-<tr><td>Ghana </td><td> March to November</td></tr>
-<tr><td>Nigeria </td><td> February to July</td></tr>
-<tr><td>Togo </td><td> April to August</td></tr>
-<tr><td>Benin </td><td> April to August</td></tr>
-<tr><td>Cameroon </td><td> February to September</td></tr>
-<tr><td>Ivory Coast </td><td> March to September</td></tr>
-<tr><td>Burkina Faso </td><td> June to October</td></tr>
-<tr><td>Sierra Leone </td><td> March to October</td></tr>
-<tr><td>Senegal </td><td> June to November</td></tr>
-<tr><td>Guinea </td><td> March to September</td></tr>
-<tr><td>Central African Republic </td><td> April to September</td></tr>
-<tr><td>Mali </td><td> June to October</td></tr>
-<tr><td>Congo </td><td> May to October</td></tr>
-<tr><td>Liberia </td><td> April to August</td></tr>
-<tr><td>Chad </td><td> May to October</td></tr>
-<tr><td>Kenya </td><td> December to April</td></tr>
-<tr><td>Uganda </td><td> March to May and August to November</td></tr>
-<tr><td>Zimbabwe </td><td> August to November</td></tr>
-<tr><td>Rwanda </td><td> March to June - September to December</td></tr>
-<tr><td>Madagascar </td><td> October to January - March to June</td></tr>
+<tr><td>Ghana </td><td> Mar to Nov</td></tr>
+<tr><td>Nigeria </td><td> Feb to July</td></tr>
+<tr><td>Togo </td><td> April to Aug</td></tr>
+<tr><td>Benin </td><td> April to Aug</td></tr>
+<tr><td>Cameroon </td><td> Feb to Sep</td></tr>
+<tr><td>Ivory Coast </td><td> Mar to Sep</td></tr>
+<tr><td>Burkina Faso </td><td> June to Oct</td></tr>
+<tr><td>Sierra Leone </td><td> Mar to Oct</td></tr>
+<tr><td>Senegal </td><td> June to Nov</td></tr>
+<tr><td>Guinea </td><td> Mar to Sep</td></tr>
+<tr><td>Central African Republic </td><td> April to Sep</td></tr>
+<tr><td>Mali </td><td> June to Oct</td></tr>
+<tr><td>Congo </td><td> May to Oct</td></tr>
+<tr><td>Liberia </td><td> April to Aug</td></tr>
+<tr><td>Chad </td><td> May to Oct</td></tr>
+<tr><td>Kenya </td><td> Dec to April</td></tr>
+<tr><td>Uganda </td><td> Mar-May and Aug-Nov</td></tr>
+<tr><td>Zimbabwe </td><td> Aug to Nov</td></tr>
+<tr><td>Rwanda </td><td> Mar-Jun and Sep-Dec</td></tr>
+<tr><td>Madagascar </td><td> Oct-Jan and Mar-Jun</td></tr>
 
 </table>
 </div>

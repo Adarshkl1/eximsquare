@@ -11,7 +11,11 @@
 .fa-fw {
     width: 0.285714em;
     text-align: center;
-}
+       }
+.newsdata {
+height: 860px;
+overflow-y: scroll;
+}      
 </style>
 </head>
 <body id="myPage">
@@ -36,9 +40,7 @@
       <div class="w3-col m8">
      <div class="w3-container">
       <div class="w3-panel w3-card w3-white w3-padding-16">
-      
-         
-         <p><i></i>The potential for export opportunities for watermelons can depend on factors such as the quality of the crop, the availability of markets, and the presence of trade agreements. For example, the European Union is a significant market for watermelons, and countries such as Turkey and Iran are major producers and exporters. In addition, the presence of trade agreements such as the China-Australia Free Trade Agreement can provide a competitive advantage for exporters.
+      <p><i></i>The potential for export opportunities for watermelons can depend on factors such as the quality of the crop, the availability of markets, and the presence of trade agreements. For example, the European Union is a significant market for watermelons, and countries such as Turkey and Iran are major producers and exporters. In addition, the presence of trade agreements such as the China-Australia Free Trade Agreement can provide a competitive advantage for exporters.
 
 In terms of percentage, the value of potential export opportunities for watermelons can be significant. For example, in 2021, the value of watermelon exports as a percentage of total agricultural exports was 1% for China, 2% for Turkey, and 3% for Iran.</p>
          
@@ -121,6 +123,24 @@ In terms of percentage, the value of potential export opportunities for watermel
 
 </table>
 </div>
+
+ <div class="newsdata w3-col m2 w3-hide-small w3-hide-medium">
+ <div class="w3-container">
+ <div class="w3-panel w3-card w3-white w3-padding-16">
+ <h5 class="w3-center"><b>News</b></h5>
+ <%@exportnews.each do |exportnew|%>
+    <div class="w3-card w3-round w3-light-grey">
+        <div class="w3-container w3-padding">
+            <p class="textline"><%=exportnew.title.capitalize%></p>
+            </i><%= link_to 'Source', "#{exportnew.link}",:target => '_blank', class: " w3-button w3-theme-d1 w3-margin-bottom"%></i>
+        </div>
+    </div>
+    </br>
+  <%end%>
+</div>
+</div>
+</div>
+
 </div>
 
 <div class="w3-row">

@@ -1,0 +1,2 @@
+module ConnectBuyersHelper
+end

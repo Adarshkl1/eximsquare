@@ -12,6 +12,10 @@
     width: 0.285714em;
     text-align: center;
 }
+.newsdata {
+height: 860px;
+overflow-y: scroll;
+}
 </style>
 </head>
 <body id="myPage">
@@ -121,6 +125,24 @@ From a strategic standpoint, the potential export opportunities for quinoa can b
 <tr><td>Norway </td><td> <1%</td></tr>
 </table>
 </div>
+
+ <div class="newsdata w3-col m2 w3-hide-small w3-hide-medium">
+ <div class="w3-container">
+ <div class="w3-panel w3-card w3-white w3-padding-16">
+ <h5 class="w3-center"><b>News</b></h5>
+ <%@exportnews.each do |exportnew|%>
+    <div class="w3-card w3-round w3-light-grey">
+        <div class="w3-container w3-padding">
+            <p class="textline"><%=exportnew.title.capitalize%></p>
+            </i><%= link_to 'Source', "#{exportnew.link}",:target => '_blank', class: " w3-button w3-theme-d1 w3-margin-bottom"%></i>
+        </div>
+    </div>
+    </br>
+  <%end%>
+</div>
+</div>
+</div>
+
 </div>
 
 <div class="w3-row">
@@ -649,11 +671,10 @@ From a strategic standpoint, the potential export opportunities for quinoa can b
 <div class="w3-panel w3-card w3-white w3-padding-16">Plant-Based Food Trends: With the increasing popularity of plant-based diets, quinoa is becoming a popular ingredient in various food products, such as veggie burgers, salads, and plant-based protein bars.</div>
 <div class="w3-panel w3-card w3-white w3-padding-16">Organic and Non-GMO Demand: As consumers become more interested in organic and non-GMO food products, the demand for organically grown and non-GMO quinoa is increasing, driving growth in this segment of the market.</div>
 <div class="w3-panel w3-card w3-white w3-padding-16">Diversification of Quinoa Products: The growing consumer interest in quinoa has led to the diversification of quinoa-based products, such as breakfast cereals, pasta, and ready-to-eat meals.</div>
-
-
-</div>
-<div class="w3-container w3-col m16 w3-center">
 <div class="w3-panel w3-card w3-white w3-padding-16">Research and Development: There is ongoing research and development to improve quinoa varieties, focusing on aspects such as yield, disease resistance, and adaptability to various environmental conditions. These advancements can help boost quinoa production and make it more resilient to the challenges posed by climate change.</div>
+</div>
+
+<div class="w3-container w3-col m16 w3-center">
 <div class="w3-panel w3-card w3-white w3-padding-16">Market Expansion and Export Potential: The popularity of quinoa has led to an expansion of the quinoa market beyond its traditional growing regions in South America. This creates new opportunities for producers and exporters, as well as contributes to the development of a more diversified global food system.</div>
 <div class="w3-panel w3-card w3-white w3-padding-16">Food Security and Rural Development: Quinoa plays a crucial role in ensuring food security and supporting rural livelihoods in many developing countries, particularly in the Andean region of South America. Efforts to promote quinoa cultivation and consumption can contribute to improved food security, nutrition, and economic development in these regions.</div>
 </div>
