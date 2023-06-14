@@ -12,6 +12,10 @@
     width: 0.285714em;
     text-align: center;
 }
+.newsdata {
+height: 860px;
+overflow-y: scroll;
+}
 </style>
 </head>
 <body id="myPage">
@@ -121,6 +125,24 @@ Overall, the pumpkin crop presents opportunities for profitable exports, althoug
 <tr><td>Indonesia </td><td>1.0%</td></tr>
 </table>
 </div>
+
+ <div class="newsdata w3-col m2 w3-hide-small w3-hide-medium">
+ <div class="w3-container">
+ <div class="w3-panel w3-card w3-white w3-padding-16">
+ <h5 class="w3-center"><b>News</b></h5>
+ <%@exportnews.each do |exportnew|%>
+    <div class="w3-card w3-round w3-light-grey">
+        <div class="w3-container w3-padding">
+            <p class="textline"><%=exportnew.title.capitalize%></p>
+            </i><%= link_to 'Source', "#{exportnew.link}",:target => '_blank', class: " w3-button w3-theme-d1 w3-margin-bottom"%></i>
+        </div>
+    </div>
+    </br>
+  <%end%>
+</div>
+</div>
+</div>
+
 </div>
 
 <div class="w3-row">
@@ -650,11 +672,10 @@ Overall, the pumpkin crop presents opportunities for profitable exports, althoug
 <div class="w3-panel w3-card w3-white w3-padding-16">Increasing use of pumpkin in cosmetic products: Pumpkin is rich in vitamins and antioxidants and is used in the cosmetic industry in products such as face masks and scrubs.</div>
 <div class="w3-panel w3-card w3-white w3-padding-16">Development of new pumpkin varieties: Seed companies are developing new pumpkin varieties that are more resistant to disease and pests, have better yields, and offer unique flavor profiles.</div>
 <div class="w3-panel w3-card w3-white w3-padding-16">Growing demand for pumpkin in the animal feed industry: Pumpkin is a nutritious feed ingredient for livestock and poultry, and its demand is increasing in the animal feed industry.</div>
-
+<div class="w3-panel w3-card w3-white w3-padding-16">Sustainability concerns driving demand for locally grown pumpkin: Consumers are increasingly concerned about sustainability and are demanding locally grown pumpkin products to reduce the carbon footprint of transportation.</div>
 </div>
 
 <div class="w3-container w3-col m16 w3-center">
-<div class="w3-panel w3-card w3-white w3-padding-16">Sustainability concerns driving demand for locally grown pumpkin: Consumers are increasingly concerned about sustainability and are demanding locally grown pumpkin products to reduce the carbon footprint of transportation.</div>
 <div class="w3-panel w3-card w3-white w3-padding-16">Increasing use of pumpkin in the beverage industry: Pumpkin is being used as an ingredient in beverages, including beer, cider, and even kombucha, which is driving growth in the market.</div>
 <div class="w3-panel w3-card w3-white w3-padding-16">Climate change impacts on pumpkin production: Climate change is affecting the production of pumpkins, with unpredictable weather patterns leading to reduced yields in some regions.</div>
 </div>

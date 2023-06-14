@@ -12,6 +12,10 @@
     width: 0.285714em;
     text-align: center;
 }
+.newsdata {
+height: 860px;
+overflow-y: scroll;
+}
 </style>
 </head>
 <body id="myPage">
@@ -121,6 +125,24 @@ From a strategic standpoint, the potential export opportunities for cotton can b
 <tr><td>Paraguay</td><td>1%</td></tr>
 </table>
 </div>
+
+ <div class="newsdata w3-col m2 w3-hide-small w3-hide-medium">
+ <div class="w3-container">
+ <div class="w3-panel w3-card w3-white w3-padding-16">
+ <h5 class="w3-center"><b>News</b></h5>
+ <%@exportnews.each do |exportnew|%>
+    <div class="w3-card w3-round w3-light-grey">
+        <div class="w3-container w3-padding">
+            <p class="textline"><%=exportnew.title.capitalize%></p>
+            </i><%= link_to 'Source', "#{exportnew.link}",:target => '_blank', class: " w3-button w3-theme-d1 w3-margin-bottom"%></i>
+        </div>
+    </div>
+    </br>
+  <%end%>
+</div>
+</div>
+</div>
+
 </div>
 
 <div class="w3-row">
@@ -443,26 +465,26 @@ From a strategic standpoint, the potential export opportunities for cotton can b
       </tr>
     </thead>
 
-<tr><td>China</td><td>March - September</td></tr>
-<tr><td>India</td><td>June - October</td></tr>
-<tr><td>USA</td><td>May - September</td></tr>
+<tr><td>China</td><td>March - Sept</td></tr>
+<tr><td>India</td><td>Jun - Oct</td></tr>
+<tr><td>USA</td><td>May - Sept</td></tr>
 <tr><td>Pakistan</td><td>May - August</td></tr>
-<tr><td>Brazil</td><td>November - April</td></tr>
-<tr><td>Uzbekistan</td><td>April - September</td></tr>
-<tr><td>Turkey</td><td>April - September</td></tr>
-<tr><td>Australia</td><td>October - February</td></tr>
-<tr><td>Turkmenistan</td><td>May - September</td></tr>
-<tr><td>Mali</td><td>May - September</td></tr>
-<tr><td>Tajikistan</td><td>May - September</td></tr>
-<tr><td>Mexico</td><td>July - November</td></tr>
-<tr><td>Burkina Faso</td><td>May - September</td></tr>
-<tr><td>Egypt</td><td>March - September</td></tr>
-<tr><td>Iran</td><td>April - July</td></tr>
-<tr><td>Sudan</td><td>June - October</td></tr>
-<tr><td>Syria</td><td>April - June and October - December</td></tr>
-<tr><td>Tanzania</td><td>June - October</td></tr>
-<tr><td>Greece</td><td>May - September</td></tr>
-<tr><td>Argentina</td><td>November - April</td></tr>
+<tr><td>Brazil</td><td>Nov - Apr</td></tr>
+<tr><td>Uzbekistan</td><td>Apr - Sept</td></tr>
+<tr><td>Turkey</td><td>Apr - Sept</td></tr>
+<tr><td>Australia</td><td>Oct - Feb</td></tr>
+<tr><td>Turkmenistan</td><td>May - Sept</td></tr>
+<tr><td>Mali</td><td>May - Sept</td></tr>
+<tr><td>Tajikistan</td><td>May - Sept</td></tr>
+<tr><td>Mexico</td><td>July - Nov</td></tr>
+<tr><td>Burkina Faso</td><td>May - Sept</td></tr>
+<tr><td>Egypt</td><td>March - Sept</td></tr>
+<tr><td>Iran</td><td>Apr - July</td></tr>
+<tr><td>Sudan</td><td>Jun - Oct</td></tr>
+<tr><td>Syria</td><td>Apr - Jun and Oct - Dec</td></tr>
+<tr><td>Tanzania</td><td>Jun - Oct</td></tr>
+<tr><td>Greece</td><td>May - Sept</td></tr>
+<tr><td>Argentina</td><td>Nov - Apr</td></tr>
 </table>
 </div>
 

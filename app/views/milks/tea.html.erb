@@ -12,6 +12,10 @@
     width: 0.285714em;
     text-align: center;
 }
+.newsdata {
+height: 860px;
+overflow-y: scroll;
+}
 </style>
 </head>
 <body id="myPage">
@@ -121,6 +125,24 @@ Potential export opportunities for apples vary by country and region. For exampl
 <tr><td>Rwanda </td><td> 0.7%</td></tr>
 </table>
 </div>
+
+ <div class="newsdata w3-col m2 w3-hide-small w3-hide-medium">
+ <div class="w3-container">
+ <div class="w3-panel w3-card w3-white w3-padding-16">
+ <h5 class="w3-center"><b>News</b></h5>
+ <%@exportnews.each do |exportnew|%>
+    <div class="w3-card w3-round w3-light-grey">
+        <div class="w3-container w3-padding">
+            <p class="textline"><%=exportnew.title.capitalize%></p>
+            </i><%= link_to 'Source', "#{exportnew.link}",:target => '_blank', class: " w3-button w3-theme-d1 w3-margin-bottom"%></i>
+        </div>
+    </div>
+    </br>
+  <%end%>
+</div>
+</div>
+</div>
+
 </div>
 
 <div class="w3-row">
@@ -646,13 +668,12 @@ Potential export opportunities for apples vary by country and region. For exampl
 <div class="w3-panel w3-card w3-white w3-padding-16">Quality and taste: Meeting quality and taste preferences is critical for successful import/export trade in the tea market.</div>
 <div class="w3-panel w3-card w3-white w3-padding-16">Branding and marketing: Effective branding and marketing strategies can help to increase the demand for imported tea in certain markets.</div>
 <div class="w3-panel w3-card w3-white w3-padding-16">Health benefits: Tea is known for its health benefits, such as its antioxidant properties, which can increase its popularity in certain markets.</div>
-<div class="w3-panel w3-card w3-white w3-padding-16">Trade agreements: Trade agreements such as the Comprehensive and Progressive Agreement for Trans-Pacific Partnership (CPTPP) and the United States-Mexico-Canada Agreement (USMCA) can impact the import/export of tea.</div>
 <div class="w3-panel w3-card w3-white w3-padding-16">Climate change: Climate change is impacting tea production, and some countries are exploring the potential of climate-resistant tea varieties.</div>
-
-
 </div>
 
-
+<div class="w3-container w3-col m12  w3-center">
+<div class="w3-panel w3-card w3-white w3-padding-16">Trade agreements: Trade agreements such as the Comprehensive and Progressive Agreement for Trans-Pacific Partnership (CPTPP) and the United States-Mexico-Canada Agreement (USMCA) can impact the import/export of tea.</div>
+</div>
 
 
 </div>

@@ -12,6 +12,10 @@
     width: 0.285714em;
     text-align: center;
 }
+.newsdata {
+height: 860px;
+overflow-y: scroll;
+}
 </style>
 </head>
 <body id="myPage">
@@ -121,6 +125,24 @@ Despite these risks, there is also significant strategic value in the potential 
 <tr><td>Vietnam </td><td> 0.3%</td></tr>
 </table>
 </div>
+
+ <div class="newsdata w3-col m2 w3-hide-small w3-hide-medium">
+ <div class="w3-container">
+ <div class="w3-panel w3-card w3-white w3-padding-16">
+ <h5 class="w3-center"><b>News</b></h5>
+ <%@exportnews.each do |exportnew|%>
+    <div class="w3-card w3-round w3-light-grey">
+        <div class="w3-container w3-padding">
+            <p class="textline"><%=exportnew.title.capitalize%></p>
+            </i><%= link_to 'Source', "#{exportnew.link}",:target => '_blank', class: " w3-button w3-theme-d1 w3-margin-bottom"%></i>
+        </div>
+    </div>
+    </br>
+  <%end%>
+</div>
+</div>
+</div>
+
 </div>
 
 <div class="w3-row">
@@ -136,26 +158,126 @@ Despite these risks, there is also significant strategic value in the potential 
         <th>Present Markdown</th>
       </tr>
     </thead>
-<tr><td>China </td><td> $4.20/kg</td><td> $1.91/lb</td></tr>
-<tr><td>Thailand </td><td> $5.29/kg</td><td> $2.40/lb</td></tr>
-<tr><td>Vietnam </td><td> $5.44/kg</td><td> $2.47/lb</td></tr>
-<tr><td>Philippines </td><td> $6.48/kg</td><td> $2.95/lb</td></tr>
-<tr><td>Indonesia </td><td> $6.69/kg</td><td> $3.04/lb</td></tr>
-<tr><td>India </td><td> $7.19/kg</td><td> $3.27/lb</td></tr>
-<tr><td>Myanmar </td><td> $7.53/kg</td><td> $3.42/lb</td></tr>
-<tr><td>Malaysia </td><td> $7.75/kg</td><td> $3.52/lb</td></tr>
-<tr><td>South Africa </td><td> $8.65/kg</td><td> $3.93/lb</td></tr>
-<tr><td>Mexico </td><td> $9.09/kg</td><td> $4.13/lb</td></tr>
-<tr><td>Brazil </td><td> $9.21/kg</td><td> $4.18/lb</td></tr>
-<tr><td>Russia </td><td> $9.40/kg</td><td> $4.27/lb</td></tr>
-<tr><td>USA </td><td> $9.62/kg</td><td> $4.37/lb</td></tr>
-<tr><td>Turkey </td><td> $9.80/kg</td><td> $4.45/lb</td></tr>
-<tr><td>Egypt </td><td> $10.17/kg</td><td> $4.62/lb</td></tr>
-<tr><td>Ukraine </td><td> $10.20/kg</td><td> $4.63/lb</td></tr>
-<tr><td>Argentina </td><td> $10.67/kg</td><td> $4.85/lb</td></tr>
-<tr><td>Belarus </td><td> $10.68/kg</td><td> $4.85/lb</td></tr>
-<tr><td>Peru </td><td> $10.80/kg</td><td> $4.90/lb</td></tr>
-<tr><td>Colombia </td><td> $11.31/kg</td><td> $5.13/lb</td></tr>
+<tr><td>China </td><td> $4.20/kg</td><td> $1.91/lb</td><td><%value =[-1,-2,-3,-4,-5,-6,+1,+2,+3,+4,+5,+6,+7,+8,+9].sample.to_i%>
+<% if value > 0 %>
+<p class="glyphicon glyphicon-arrow-up"style='color:green'><%= p value %></p>
+<%else%>
+<p class="glyphicon glyphicon-arrow-down"style='color:red'><%= p value%></p>
+<%end%></td></tr>
+<tr><td>Thailand </td><td> $5.29/kg</td><td> $2.40/lb</td><td><%value =[-1,-2,-3,-4,-5,-6,+1,+2,+3,+4,+5,+6,+7,+8,+9].sample.to_i%>
+<% if value > 0 %>
+<p class="glyphicon glyphicon-arrow-up"style='color:green'><%= p value %></p>
+<%else%>
+<p class="glyphicon glyphicon-arrow-down"style='color:red'><%= p value%></p>
+<%end%></td></tr>
+<tr><td>Vietnam </td><td> $5.44/kg</td><td> $2.47/lb</td><td><%value =[-1,-2,-3,-4,-5,-6,+1,+2,+3,+4,+5,+6,+7,+8,+9].sample.to_i%>
+<% if value > 0 %>
+<p class="glyphicon glyphicon-arrow-up"style='color:green'><%= p value %></p>
+<%else%>
+<p class="glyphicon glyphicon-arrow-down"style='color:red'><%= p value%></p>
+<%end%></td></tr>
+<tr><td>Philippines </td><td> $6.48/kg</td><td> $2.95/lb</td><td><%value =[-1,-2,-3,-4,-5,-6,+1,+2,+3,+4,+5,+6,+7,+8,+9].sample.to_i%>
+<% if value > 0 %>
+<p class="glyphicon glyphicon-arrow-up"style='color:green'><%= p value %></p>
+<%else%>
+<p class="glyphicon glyphicon-arrow-down"style='color:red'><%= p value%></p>
+<%end%></td></tr>
+<tr><td>Indonesia </td><td> $6.69/kg</td><td> $3.04/lb</td><td><%value =[-1,-2,-3,-4,-5,-6,+1,+2,+3,+4,+5,+6,+7,+8,+9].sample.to_i%>
+<% if value > 0 %>
+<p class="glyphicon glyphicon-arrow-up"style='color:green'><%= p value %></p>
+<%else%>
+<p class="glyphicon glyphicon-arrow-down"style='color:red'><%= p value%></p>
+<%end%></td></tr>
+<tr><td>India </td><td> $7.19/kg</td><td> $3.27/lb</td><td><%value =[-1,-2,-3,-4,-5,-6,+1,+2,+3,+4,+5,+6,+7,+8,+9].sample.to_i%>
+<% if value > 0 %>
+<p class="glyphicon glyphicon-arrow-up"style='color:green'><%= p value %></p>
+<%else%>
+<p class="glyphicon glyphicon-arrow-down"style='color:red'><%= p value%></p>
+<%end%></td></tr>
+<tr><td>Myanmar </td><td> $7.53/kg</td><td> $3.42/lb</td><td><%value =[-1,-2,-3,-4,-5,-6,+1,+2,+3,+4,+5,+6,+7,+8,+9].sample.to_i%>
+<% if value > 0 %>
+<p class="glyphicon glyphicon-arrow-up"style='color:green'><%= p value %></p>
+<%else%>
+<p class="glyphicon glyphicon-arrow-down"style='color:red'><%= p value%></p>
+<%end%></td></tr>
+<tr><td>Malaysia </td><td> $7.75/kg</td><td> $3.52/lb</td><td><%value =[-1,-2,-3,-4,-5,-6,+1,+2,+3,+4,+5,+6,+7,+8,+9].sample.to_i%>
+<% if value > 0 %>
+<p class="glyphicon glyphicon-arrow-up"style='color:green'><%= p value %></p>
+<%else%>
+<p class="glyphicon glyphicon-arrow-down"style='color:red'><%= p value%></p>
+<%end%></td></tr>
+<tr><td>South Africa </td><td> $8.65/kg</td><td> $3.93/lb</td><td><%value =[-1,-2,-3,-4,-5,-6,+1,+2,+3,+4,+5,+6,+7,+8,+9].sample.to_i%>
+<% if value > 0 %>
+<p class="glyphicon glyphicon-arrow-up"style='color:green'><%= p value %></p>
+<%else%>
+<p class="glyphicon glyphicon-arrow-down"style='color:red'><%= p value%></p>
+<%end%></td></tr>
+<tr><td>Mexico </td><td> $9.09/kg</td><td> $4.13/lb</td><td><%value =[-1,-2,-3,-4,-5,-6,+1,+2,+3,+4,+5,+6,+7,+8,+9].sample.to_i%>
+<% if value > 0 %>
+<p class="glyphicon glyphicon-arrow-up"style='color:green'><%= p value %></p>
+<%else%>
+<p class="glyphicon glyphicon-arrow-down"style='color:red'><%= p value%></p>
+<%end%></td></tr>
+<tr><td>Brazil </td><td> $9.21/kg</td><td> $4.18/lb</td><td><%value =[-1,-2,-3,-4,-5,-6,+1,+2,+3,+4,+5,+6,+7,+8,+9].sample.to_i%>
+<% if value > 0 %>
+<p class="glyphicon glyphicon-arrow-up"style='color:green'><%= p value %></p>
+<%else%>
+<p class="glyphicon glyphicon-arrow-down"style='color:red'><%= p value%></p>
+<%end%></td></tr>
+<tr><td>Russia </td><td> $9.40/kg</td><td> $4.27/lb</td><td><%value =[-1,-2,-3,-4,-5,-6,+1,+2,+3,+4,+5,+6,+7,+8,+9].sample.to_i%>
+<% if value > 0 %>
+<p class="glyphicon glyphicon-arrow-up"style='color:green'><%= p value %></p>
+<%else%>
+<p class="glyphicon glyphicon-arrow-down"style='color:red'><%= p value%></p>
+<%end%></td></tr>
+<tr><td>USA </td><td> $9.62/kg</td><td> $4.37/lb</td><td><%value =[-1,-2,-3,-4,-5,-6,+1,+2,+3,+4,+5,+6,+7,+8,+9].sample.to_i%>
+<% if value > 0 %>
+<p class="glyphicon glyphicon-arrow-up"style='color:green'><%= p value %></p>
+<%else%>
+<p class="glyphicon glyphicon-arrow-down"style='color:red'><%= p value%></p>
+<%end%></td></tr>
+<tr><td>Turkey </td><td> $9.80/kg</td><td> $4.45/lb</td><td><%value =[-1,-2,-3,-4,-5,-6,+1,+2,+3,+4,+5,+6,+7,+8,+9].sample.to_i%>
+<% if value > 0 %>
+<p class="glyphicon glyphicon-arrow-up"style='color:green'><%= p value %></p>
+<%else%>
+<p class="glyphicon glyphicon-arrow-down"style='color:red'><%= p value%></p>
+<%end%></td></tr>
+<tr><td>Egypt </td><td> $10.17/kg</td><td> $4.62/lb</td><td><%value =[-1,-2,-3,-4,-5,-6,+1,+2,+3,+4,+5,+6,+7,+8,+9].sample.to_i%>
+<% if value > 0 %>
+<p class="glyphicon glyphicon-arrow-up"style='color:green'><%= p value %></p>
+<%else%>
+<p class="glyphicon glyphicon-arrow-down"style='color:red'><%= p value%></p>
+<%end%></td></tr>
+<tr><td>Ukraine </td><td> $10.20/kg</td><td> $4.63/lb</td><td><%value =[-1,-2,-3,-4,-5,-6,+1,+2,+3,+4,+5,+6,+7,+8,+9].sample.to_i%>
+<% if value > 0 %>
+<p class="glyphicon glyphicon-arrow-up"style='color:green'><%= p value %></p>
+<%else%>
+<p class="glyphicon glyphicon-arrow-down"style='color:red'><%= p value%></p>
+<%end%></td></tr>
+<tr><td>Argentina </td><td> $10.67/kg</td><td> $4.85/lb</td><td><%value =[-1,-2,-3,-4,-5,-6,+1,+2,+3,+4,+5,+6,+7,+8,+9].sample.to_i%>
+<% if value > 0 %>
+<p class="glyphicon glyphicon-arrow-up"style='color:green'><%= p value %></p>
+<%else%>
+<p class="glyphicon glyphicon-arrow-down"style='color:red'><%= p value%></p>
+<%end%></td></tr>
+<tr><td>Belarus </td><td> $10.68/kg</td><td> $4.85/lb</td><td><%value =[-1,-2,-3,-4,-5,-6,+1,+2,+3,+4,+5,+6,+7,+8,+9].sample.to_i%>
+<% if value > 0 %>
+<p class="glyphicon glyphicon-arrow-up"style='color:green'><%= p value %></p>
+<%else%>
+<p class="glyphicon glyphicon-arrow-down"style='color:red'><%= p value%></p>
+<%end%></td></tr>
+<tr><td>Peru </td><td> $10.80/kg</td><td> $4.90/lb</td><td><%value =[-1,-2,-3,-4,-5,-6,+1,+2,+3,+4,+5,+6,+7,+8,+9].sample.to_i%>
+<% if value > 0 %>
+<p class="glyphicon glyphicon-arrow-up"style='color:green'><%= p value %></p>
+<%else%>
+<p class="glyphicon glyphicon-arrow-down"style='color:red'><%= p value%></p>
+<%end%></td></tr>
+<tr><td>Colombia </td><td> $11.31/kg</td><td> $5.13/lb</td><td><%value =[-1,-2,-3,-4,-5,-6,+1,+2,+3,+4,+5,+6,+7,+8,+9].sample.to_i%>
+<% if value > 0 %>
+<p class="glyphicon glyphicon-arrow-up"style='color:green'><%= p value %></p>
+<%else%>
+<p class="glyphicon glyphicon-arrow-down"style='color:red'><%= p value%></p>
+<%end%></td></tr>
 </table>
 </div>
 
@@ -171,25 +293,120 @@ Despite these risks, there is also significant strategic value in the potential 
         <th>Present Markdown</th>
       </tr>
     </thead>
-<tr><td>UAE </td><td> $30.77/kg</td><td> $13.98/lb</td></tr>
-<tr><td>Saudi Arabia </td><td> $26.49/kg</td><td> $12.03/lb</td></tr>
-<tr><td>Oman </td><td> $22.31/kg</td><td> $10.13/lb</td></tr>
-<tr><td>Qatar </td><td> $20.85/kg</td><td> $9.47/lb</td></tr>
-<tr><td>Kuwait </td><td> $18.46/kg</td><td> $8.38/lb</td></tr>
-<tr><td>Bahrain </td><td> $17.70/kg</td><td> $8.04/lb</td></tr>
-<tr><td>Switzerland </td><td> $16.87/kg</td><td> $7.66/lb</td></tr>
-<tr><td>Hong Kong </td><td> $16.39/kg</td><td> $7.44/lb</td></tr>
-<tr><td>Japan </td><td> $15.63/kg</td><td> $7.09/lb</td></tr>
-<tr><td>South Korea </td><td> $15.38/kg</td><td> $6.99/lb</td></tr>
-<tr><td>Singapore </td><td> $14.85/kg</td><td> $6.74/lb</td></tr>
-<tr><td>UK </td><td> $14.49/kg</td><td> $6.58/lb</td></tr>
-<tr><td>Israel </td><td> $14.15/kg</td><td> $6.43/lb</td></tr>
-<tr><td>Denmark </td><td> $13.99/kg</td><td> $6.35/lb</td></tr>
-<tr><td>Germany </td><td> $13.61/kg</td><td> $6.18/lb</td></tr>
-<tr><td>Austria </td><td> $13.46/kg</td><td> $6.11/lb</td></tr>
-<tr><td>Sweden </td><td> $13.10/kg</td><td> $5.95/lb</td></tr>
-<tr><td>Netherlands </td><td> $13.04/kg</td><td> $5.92/lb</td></tr>
-<tr><td>France </td><td> $12.67/kg</td><td> $5.75/lb</td></tr>
+<tr><td>UAE </td><td> $30.77/kg</td><td> $13.98/lb</td><td><%value =[-1,-2,-3,-4,-5,-6,+1,+2,+3,+4,+5,+6,+7,+8,+9].sample.to_i%>
+<% if value > 0 %>
+<p class="glyphicon glyphicon-arrow-up"style='color:green'><%= p value %></p>
+<%else%>
+<p class="glyphicon glyphicon-arrow-down"style='color:red'><%= p value%></p>
+<%end%></td></tr>
+<tr><td>Saudi Arabia </td><td> $26.49/kg</td><td> $12.03/lb</td><td><%value =[-1,-2,-3,-4,-5,-6,+1,+2,+3,+4,+5,+6,+7,+8,+9].sample.to_i%>
+<% if value > 0 %>
+<p class="glyphicon glyphicon-arrow-up"style='color:green'><%= p value %></p>
+<%else%>
+<p class="glyphicon glyphicon-arrow-down"style='color:red'><%= p value%></p>
+<%end%></td></tr>
+<tr><td>Oman </td><td> $22.31/kg</td><td> $10.13/lb</td><td><%value =[-1,-2,-3,-4,-5,-6,+1,+2,+3,+4,+5,+6,+7,+8,+9].sample.to_i%>
+<% if value > 0 %>
+<p class="glyphicon glyphicon-arrow-up"style='color:green'><%= p value %></p>
+<%else%>
+<p class="glyphicon glyphicon-arrow-down"style='color:red'><%= p value%></p>
+<%end%></td></tr>
+<tr><td>Qatar </td><td> $20.85/kg</td><td> $9.47/lb</td><td><%value =[-1,-2,-3,-4,-5,-6,+1,+2,+3,+4,+5,+6,+7,+8,+9].sample.to_i%>
+<% if value > 0 %>
+<p class="glyphicon glyphicon-arrow-up"style='color:green'><%= p value %></p>
+<%else%>
+<p class="glyphicon glyphicon-arrow-down"style='color:red'><%= p value%></p>
+<%end%></td></tr>
+<tr><td>Kuwait </td><td> $18.46/kg</td><td> $8.38/lb</td><td><%value =[-1,-2,-3,-4,-5,-6,+1,+2,+3,+4,+5,+6,+7,+8,+9].sample.to_i%>
+<% if value > 0 %>
+<p class="glyphicon glyphicon-arrow-up"style='color:green'><%= p value %></p>
+<%else%>
+<p class="glyphicon glyphicon-arrow-down"style='color:red'><%= p value%></p>
+<%end%></td></tr>
+<tr><td>Bahrain </td><td> $17.70/kg</td><td> $8.04/lb</td><td><%value =[-1,-2,-3,-4,-5,-6,+1,+2,+3,+4,+5,+6,+7,+8,+9].sample.to_i%>
+<% if value > 0 %>
+<p class="glyphicon glyphicon-arrow-up"style='color:green'><%= p value %></p>
+<%else%>
+<p class="glyphicon glyphicon-arrow-down"style='color:red'><%= p value%></p>
+<%end%></td></tr>
+<tr><td>Switzerland </td><td> $16.87/kg</td><td> $7.66/lb</td><td><%value =[-1,-2,-3,-4,-5,-6,+1,+2,+3,+4,+5,+6,+7,+8,+9].sample.to_i%>
+<% if value > 0 %>
+<p class="glyphicon glyphicon-arrow-up"style='color:green'><%= p value %></p>
+<%else%>
+<p class="glyphicon glyphicon-arrow-down"style='color:red'><%= p value%></p>
+<%end%></td></tr>
+<tr><td>Hong Kong </td><td> $16.39/kg</td><td> $7.44/lb</td><td><%value =[-1,-2,-3,-4,-5,-6,+1,+2,+3,+4,+5,+6,+7,+8,+9].sample.to_i%>
+<% if value > 0 %>
+<p class="glyphicon glyphicon-arrow-up"style='color:green'><%= p value %></p>
+<%else%>
+<p class="glyphicon glyphicon-arrow-down"style='color:red'><%= p value%></p>
+<%end%></td></tr>
+<tr><td>Japan </td><td> $15.63/kg</td><td> $7.09/lb</td><td><%value =[-1,-2,-3,-4,-5,-6,+1,+2,+3,+4,+5,+6,+7,+8,+9].sample.to_i%>
+<% if value > 0 %>
+<p class="glyphicon glyphicon-arrow-up"style='color:green'><%= p value %></p>
+<%else%>
+<p class="glyphicon glyphicon-arrow-down"style='color:red'><%= p value%></p>
+<%end%></td></tr>
+<tr><td>South Korea </td><td> $15.38/kg</td><td> $6.99/lb</td><td><%value =[-1,-2,-3,-4,-5,-6,+1,+2,+3,+4,+5,+6,+7,+8,+9].sample.to_i%>
+<% if value > 0 %>
+<p class="glyphicon glyphicon-arrow-up"style='color:green'><%= p value %></p>
+<%else%>
+<p class="glyphicon glyphicon-arrow-down"style='color:red'><%= p value%></p>
+<%end%></td></tr>
+<tr><td>Singapore </td><td> $14.85/kg</td><td> $6.74/lb</td><td><%value =[-1,-2,-3,-4,-5,-6,+1,+2,+3,+4,+5,+6,+7,+8,+9].sample.to_i%>
+<% if value > 0 %>
+<p class="glyphicon glyphicon-arrow-up"style='color:green'><%= p value %></p>
+<%else%>
+<p class="glyphicon glyphicon-arrow-down"style='color:red'><%= p value%></p>
+<%end%></td></tr>
+<tr><td>UK </td><td> $14.49/kg</td><td> $6.58/lb</td><td><%value =[-1,-2,-3,-4,-5,-6,+1,+2,+3,+4,+5,+6,+7,+8,+9].sample.to_i%>
+<% if value > 0 %>
+<p class="glyphicon glyphicon-arrow-up"style='color:green'><%= p value %></p>
+<%else%>
+<p class="glyphicon glyphicon-arrow-down"style='color:red'><%= p value%></p>
+<%end%></td></tr>
+<tr><td>Israel </td><td> $14.15/kg</td><td> $6.43/lb</td><td><%value =[-1,-2,-3,-4,-5,-6,+1,+2,+3,+4,+5,+6,+7,+8,+9].sample.to_i%>
+<% if value > 0 %>
+<p class="glyphicon glyphicon-arrow-up"style='color:green'><%= p value %></p>
+<%else%>
+<p class="glyphicon glyphicon-arrow-down"style='color:red'><%= p value%></p>
+<%end%></td></tr>
+<tr><td>Denmark </td><td> $13.99/kg</td><td> $6.35/lb</td><td><%value =[-1,-2,-3,-4,-5,-6,+1,+2,+3,+4,+5,+6,+7,+8,+9].sample.to_i%>
+<% if value > 0 %>
+<p class="glyphicon glyphicon-arrow-up"style='color:green'><%= p value %></p>
+<%else%>
+<p class="glyphicon glyphicon-arrow-down"style='color:red'><%= p value%></p>
+<%end%></td></tr>
+<tr><td>Germany </td><td> $13.61/kg</td><td> $6.18/lb</td><td><%value =[-1,-2,-3,-4,-5,-6,+1,+2,+3,+4,+5,+6,+7,+8,+9].sample.to_i%>
+<% if value > 0 %>
+<p class="glyphicon glyphicon-arrow-up"style='color:green'><%= p value %></p>
+<%else%>
+<p class="glyphicon glyphicon-arrow-down"style='color:red'><%= p value%></p>
+<%end%></td></tr>
+<tr><td>Austria </td><td> $13.46/kg</td><td> $6.11/lb</td><td><%value =[-1,-2,-3,-4,-5,-6,+1,+2,+3,+4,+5,+6,+7,+8,+9].sample.to_i%>
+<% if value > 0 %>
+<p class="glyphicon glyphicon-arrow-up"style='color:green'><%= p value %></p>
+<%else%>
+<p class="glyphicon glyphicon-arrow-down"style='color:red'><%= p value%></p>
+<%end%></td></tr>
+<tr><td>Sweden </td><td> $13.10/kg</td><td> $5.95/lb</td><td><%value =[-1,-2,-3,-4,-5,-6,+1,+2,+3,+4,+5,+6,+7,+8,+9].sample.to_i%>
+<% if value > 0 %>
+<p class="glyphicon glyphicon-arrow-up"style='color:green'><%= p value %></p>
+<%else%>
+<p class="glyphicon glyphicon-arrow-down"style='color:red'><%= p value%></p>
+<%end%></td></tr>
+<tr><td>Netherlands </td><td> $13.04/kg</td><td> $5.92/lb</td><td><%value =[-1,-2,-3,-4,-5,-6,+1,+2,+3,+4,+5,+6,+7,+8,+9].sample.to_i%>
+<% if value > 0 %>
+<p class="glyphicon glyphicon-arrow-up"style='color:green'><%= p value %></p>
+<%else%>
+<p class="glyphicon glyphicon-arrow-down"style='color:red'><%= p value%></p>
+<%end%></td></tr>
+<tr><td>France </td><td> $12.67/kg</td><td> $5.75/lb</td><td><%value =[-1,-2,-3,-4,-5,-6,+1,+2,+3,+4,+5,+6,+7,+8,+9].sample.to_i%>
+<% if value > 0 %>
+<p class="glyphicon glyphicon-arrow-up"style='color:green'><%= p value %></p>
+<%else%>
+<p class="glyphicon glyphicon-arrow-down"style='color:red'><%= p value%></p>
+<%end%></td></tr>
 <tr><td>Belgium </td><td> $12.36/kg</td><td> $5.01</td></tr>
 </table>
 </div>
