@@ -1,0 +1,364 @@
+<!-- Footer -->
+<footer class="w3-container w3-padding-32 w3-grey">  
+    <div class="w3-row-padding">
+      <div class="w3-quarter">
+        <h4><b>INFO</b></h4>
+        <p><b><%=link_to"Contact Us",new_home_path%></b></p> 
+        <p><b><%=link_to"About Us",about_us_path%></b></p>
+        <!--Temp hide--><div class="temphide w3-hide-large w3-hide-medium w3-hide-small">
+         <p><b><%=link_to"Trade Leads",exportleads_path%></b></p>
+        <p><b><%=link_to"Trade News",exportleads_path%></b></p> 
+        <!--Temp hide--></div>
+        <p><b><%=link_to"Trade Data",homes_path%></b></p>
+      </div>
+<!--Temp hide--><div class="temphide w3-hide-large w3-hide-medium w3-hide-small">
+<div class="w3-quarter">
+<h4>Trade Data</h4>
+<ul class="w3-ul">
+<%value =[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30]%>
+<%value = value.sample(4)%>
+<%value.map do |value|%>
+<% if value == 0 %>
+<li class="w3-padding-8 w3-hover-black">
+<i><%=link_to(image_tag("ginger-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x28",style: "width:12%;"),ginger_path)%></i>
+<span class=""><%=link_to "Ginger",ginger_path%></span><br>
+</li>
+<% elsif value == 1 %>
+<li class="w3-padding-8 w3-hover-black">
+<i><%=link_to(image_tag("walnuts-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x28",style: "width:12%;"),walnuts_path)%></i>
+<span class=""><%=link_to "Walnut",walnuts_path%><span><br>
+</li>
+<% elsif value == 2 %>
+<li class="w3-padding-8 w3-hover-black">
+<i><%=link_to(image_tag("black_pepper.png",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x28",style: "width:12%;"),black_pepper_path)%></i>
+<span class=""><%=link_to "Black Pepper",black_pepper_path%></span><br>
+</li>
+<% elsif value == 3 %>
+<li class="w3-padding-8 w3-hover-black">
+<i><%=link_to(image_tag("egg-min.png",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x28",style: "width:12%;"),egg_path)%></i>
+<span class=""><%=link_to "Egg",egg_path%></span><br>
+</li>
+<% elsif value == 4 %>
+<li class="w3-padding-8 w3-hover-black">
+<i><%=link_to(image_tag("honey-min.png",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x28",style: "width:12%;"),honey_path)%></i>
+<span class=""><%=link_to "Honey",honey_path%></span><br>
+</li>
+<% elsif value == 5 %>
+<li class="w3-padding-8 w3-hover-black">
+<i><%=link_to(image_tag("barley.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x28",style: "width:12%;"),barley_path)%></i>
+<span class=""><%=link_to "Barley",barley_path%></span><br>
+</li>
+<% elsif value == 6 %>
+<li class="w3-padding-8 w3-hover-black">
+<i><%=link_to(image_tag("corn.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x28",style: "width:12%;"),maize_path)%></i>
+<span class=""><%=link_to "Maize",maize_path%></span><br>
+</li>
+<% elsif value == 7 %>
+<li class="w3-padding-8 w3-hover-black">
+<i><%=link_to(image_tag("oat.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x28",style: "width:12%;"),oats_path)%></i>
+<span class=""><%=link_to "Oat",oats_path%></span><br>
+</li>
+<% elsif value == 8 %>
+<li class="w3-padding-8 w3-hover-black">
+<i><%=link_to(image_tag("peanut-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x28",style: "width:12%;"),peanuts_path)%></i>
+<span class=""><%=link_to "Peanut",peanuts_path%></span><br>
+</li>
+<% elsif value == 9 %>
+<li class="w3-padding-8 w3-hover-black">
+<i><%=link_to(image_tag("rice.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x28",style: "width:12%;"),rice_path)%></i>
+<span class=""><%=link_to "Rice",rice_path%></span><br>
+</li>
+<% elsif value == 10 %>
+<li class="w3-padding-8 w3-hover-black">
+<i><%=link_to(image_tag("carrot-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x28",style: "width:12%;"),carrots_path)%></i>
+<span class=""><%=link_to "Carrot",carrots_path%></span><br>
+</li>
+<% elsif value == 11 %>
+<li class="w3-padding-8 w3-hover-black">
+<i><%=link_to(image_tag("avocado-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x28",style: "width:12%;"),avocado_path)%></i>
+<span class=""><%=link_to "Avocado",avocado_path%></span><br>
+</li>
+<% elsif value == 12 %>
+<li class="w3-padding-8 w3-hover-black">
+<i><%=link_to(image_tag("banana-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x28",style: "width:12%;"),banana_path)%></i>
+<span class=""><%=link_to "Banana",banana_path%></span><br>
+</li>
+<% elsif value == 13 %>
+<li class="w3-padding-8 w3-hover-black">
+<i><%=link_to(image_tag("crab-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x28",style: "width:12%;"),crab_path)%></i>
+<span class=""><%=link_to "Crab",crab_path%></span><br>
+</li>
+<% elsif value == 14 %>
+<li class="w3-padding-8 w3-hover-black">
+<i><%=link_to(image_tag("lobsters-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x28",style: "width:12%;"),lobsters_path)%></i>
+<span class=""><%=link_to "Lobster",lobsters_path%></span><br>
+</li>
+<% elsif value == 15 %>
+<li class="w3-padding-8 w3-hover-black">
+<i><%=link_to(image_tag("almonds-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x28",style: "width:12%;"),almonds_path)%></i>
+<span class=""><%=link_to "Almond",almonds_path%></span><br>
+</li>
+<% elsif value == 16 %>
+<li class="w3-padding-8 w3-hover-black">
+<i><%=link_to(image_tag("fish-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x28",style: "width:12%;"),fish_path)%></i>
+<span class=""><%=link_to "Fish",fish_path%></span><br>
+</li>
+<% elsif value == 17 %>
+<li class="w3-padding-8 w3-hover-black">
+<i><%=link_to(image_tag("onion-min.png",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x28",style: "width:12%;"),onion_path)%></i>
+<span class=""><%=link_to "Onion",onion_path%></span><br>
+</li>
+<% elsif value == 18 %>
+<li class="w3-padding-8 w3-hover-black">
+<i><%=link_to(image_tag("potato-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x28",style: "width:12%;"),potato_path)%></i>
+<span class=""><%=link_to "Potato",potato_path%></span><br>
+</li>
+<% elsif value == 19 %>
+<li class="w3-padding-8 w3-hover-black">
+<i><%=link_to(image_tag("broccoli-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x28",style: "width:12%;"),broccoli_path)%></i>
+<span class=""><%=link_to "Broccoli",broccoli_path%></span><br>
+</li>
+<% elsif value == 20 %>
+<li class="w3-padding-8 w3-hover-black">
+<i><%=link_to(image_tag("apple-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x28",style: "width:12%;"),apple_path)%></i>
+<span class=""><%=link_to "Apple",apple_path%></span><br>
+</li>
+<% elsif value == 21 %>
+<li class="w3-padding-8 w3-hover-black">
+<i><%=link_to(image_tag("grape-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x28",style: "width:12%;"),grape_path)%></i>
+<span class=""><%=link_to "Grape",grape_path%></span><br>
+</li>
+<% elsif value == 22 %>
+<li class="w3-padding-8 w3-hover-black">
+<i><%=link_to(image_tag("sunflower-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x28",style: "width:12%;"),sunflower_path)%></i>
+<span class=""><%=link_to "Sunflower",sunflower_path%></span><br>
+</li>
+<% elsif value == 23 %>
+<li class="w3-padding-8 w3-hover-black">
+<i><%=link_to(image_tag("tomato-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x28",style: "width:12%;"),tomato_path)%></i>
+<span class=""><%=link_to "Tomato",tomato_path%></span><br>
+</li>
+<% elsif value == 24 %>
+<li class="w3-padding-8 w3-hover-black">
+<i><%=link_to(image_tag("oysters-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x28",style: "width:12%;"),oyster_path)%></i>
+<span class=""><%=link_to "Oyster",oyster_path%></span><br>
+</li>
+<% elsif value == 25 %>
+<li class="w3-padding-8 w3-hover-black">
+<i><%=link_to(image_tag("cashew-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x28",style: "width:12%;"),cashews_path)%></i>
+<span class=""><%=link_to "Cashew",cashews_path%></span><br>
+</li>
+<% elsif value == 26 %>
+<li class="w3-padding-8 w3-hover-black">
+<i><%=link_to(image_tag("pork-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x28",style: "width:12%;"),pork_path)%></i>
+<span class=""><%=link_to "Pork",pork_path%></span><br>
+</li>
+<% elsif value == 27 %>
+<li class="w3-padding-8 w3-hover-black">
+<i><%=link_to(image_tag("beef-min.jpeg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x28",style: "width:12%;"),beef_path)%></i>
+<span class=""><%=link_to "Beef",beef_path%></span><br>
+</li>
+<% elsif value == 28 %>
+<li class="w3-padding-8 w3-hover-black">
+<i><%=link_to(image_tag("milk-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x28",style: "width:12%;"),milk_path)%></i>
+<span class=""><%=link_to "Milk",milk_path%></span><br>
+</li>
+<% elsif value == 29 %>
+<li class="w3-padding-8 w3-hover-black">
+<i><%=link_to(image_tag("tea-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x28",style: "width:12%;"),tea_path)%></i>
+<span class=""><%=link_to "Tea",tea_path%></span><br>
+</li>
+<% elsif value == 30 %>
+<li class="w3-padding-8 w3-hover-black">
+<i><%=link_to(image_tag("rubber-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x28",style: "width:12%;"),rubber_fiber_path)%></i>
+<span class=""><%=link_to "Rubber",rubber_fiber_path%></span><br>
+</li>
+<%end%>
+<%end%>
+</div>
+
+      
+<div class="w3-quarter">
+<h4>Trade Data</h4>
+<ul class="w3-ul">
+<%value =[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30]%>
+<%value = value.sample(4)%>
+<%value.map do |value|%>
+<% if value == 0 %>
+<li class="w3-padding-8 w3-hover-black">
+<i><%=link_to(image_tag("ginger-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x28",style: "width:12%;"),ginger_path)%></i>
+<span class=""><%=link_to "Ginger",ginger_path%></span><br>
+</li>
+<% elsif value == 1 %>
+<li class="w3-padding-8 w3-hover-black">
+<i><%=link_to(image_tag("walnuts-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x28",style: "width:12%;"),walnuts_path)%></i>
+<span class=""><%=link_to "Walnut",walnuts_path%><span><br>
+</li>
+<% elsif value == 2 %>
+<li class="w3-padding-8 w3-hover-black">
+<i><%=link_to(image_tag("black_pepper.png",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x28",style: "width:12%;"),black_pepper_path)%></i>
+<span class=""><%=link_to "Black Pepper",black_pepper_path%></span><br>
+</li>
+<% elsif value == 3 %>
+<li class="w3-padding-8 w3-hover-black">
+<i><%=link_to(image_tag("egg-min.png",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x28",style: "width:12%;"),egg_path)%></i>
+<span class=""><%=link_to "Egg",egg_path%></span><br>
+</li>
+<% elsif value == 4 %>
+<li class="w3-padding-8 w3-hover-black">
+<i><%=link_to(image_tag("honey-min.png",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x28",style: "width:12%;"),honey_path)%></i>
+<span class=""><%=link_to "Honey",honey_path%></span><br>
+</li>
+<% elsif value == 5 %>
+<li class="w3-padding-8 w3-hover-black">
+<i><%=link_to(image_tag("barley.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x28",style: "width:12%;"),barley_path)%></i>
+<span class=""><%=link_to "Barley",barley_path%></span><br>
+</li>
+<% elsif value == 6 %>
+<li class="w3-padding-8 w3-hover-black">
+<i><%=link_to(image_tag("corn.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x28",style: "width:12%;"),maize_path)%></i>
+<span class=""><%=link_to "Maize",maize_path%></span><br>
+</li>
+<% elsif value == 7 %>
+<li class="w3-padding-8 w3-hover-black">
+<i><%=link_to(image_tag("oat.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x28",style: "width:12%;"),oats_path)%></i>
+<span class=""><%=link_to "Oat",oats_path%></span><br>
+</li>
+<% elsif value == 8 %>
+<li class="w3-padding-8 w3-hover-black">
+<i><%=link_to(image_tag("peanut-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x28",style: "width:12%;"),peanuts_path)%></i>
+<span class=""><%=link_to "Peanut",peanuts_path%></span><br>
+</li>
+<% elsif value == 9 %>
+<li class="w3-padding-8 w3-hover-black">
+<i><%=link_to(image_tag("rice.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x28",style: "width:12%;"),rice_path)%></i>
+<span class=""><%=link_to "Rice",rice_path%></span><br>
+</li>
+<% elsif value == 10 %>
+<li class="w3-padding-8 w3-hover-black">
+<i><%=link_to(image_tag("carrot-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x28",style: "width:12%;"),carrots_path)%></i>
+<span class=""><%=link_to "Carrot",carrots_path%></span><br>
+</li>
+<% elsif value == 11 %>
+<li class="w3-padding-8 w3-hover-black">
+<i><%=link_to(image_tag("avocado-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x28",style: "width:12%;"),avocado_path)%></i>
+<span class=""><%=link_to "Avocado",avocado_path%></span><br>
+</li>
+<% elsif value == 12 %>
+<li class="w3-padding-8 w3-hover-black">
+<i><%=link_to(image_tag("banana-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x28",style: "width:12%;"),banana_path)%></i>
+<span class=""><%=link_to "Banana",banana_path%></span><br>
+</li>
+<% elsif value == 13 %>
+<li class="w3-padding-8 w3-hover-black">
+<i><%=link_to(image_tag("crab-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x28",style: "width:12%;"),crab_path)%></i>
+<span class=""><%=link_to "Crab",crab_path%></span><br>
+</li>
+<% elsif value == 14 %>
+<li class="w3-padding-8 w3-hover-black">
+<i><%=link_to(image_tag("lobsters-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x28",style: "width:12%;"),lobsters_path)%></i>
+<span class=""><%=link_to "Lobster",lobsters_path%></span><br>
+</li>
+<% elsif value == 15 %>
+<li class="w3-padding-8 w3-hover-black">
+<i><%=link_to(image_tag("almonds-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x28",style: "width:12%;"),almonds_path)%></i>
+<span class=""><%=link_to "Almond",almonds_path%></span><br>
+</li>
+<% elsif value == 16 %>
+<li class="w3-padding-8 w3-hover-black">
+<i><%=link_to(image_tag("fish-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x28",style: "width:12%;"),fish_path)%></i>
+<span class=""><%=link_to "Fish",fish_path%></span><br>
+</li>
+<% elsif value == 17 %>
+<li class="w3-padding-8 w3-hover-black">
+<i><%=link_to(image_tag("onion-min.png",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x28",style: "width:12%;"),onion_path)%></i>
+<span class=""><%=link_to "Onion",onion_path%></span><br>
+</li>
+<% elsif value == 18 %>
+<li class="w3-padding-8 w3-hover-black">
+<i><%=link_to(image_tag("potato-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x28",style: "width:12%;"),potato_path)%></i>
+<span class=""><%=link_to "Potato",potato_path%></span><br>
+</li>
+<% elsif value == 19 %>
+<li class="w3-padding-8 w3-hover-black">
+<i><%=link_to(image_tag("broccoli-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x28",style: "width:12%;"),broccoli_path)%></i>
+<span class=""><%=link_to "Broccoli",broccoli_path%></span><br>
+</li>
+<% elsif value == 20 %>
+<li class="w3-padding-8 w3-hover-black">
+<i><%=link_to(image_tag("apple-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x28",style: "width:12%;"),apple_path)%></i>
+<span class=""><%=link_to "Apple",apple_path%></span><br>
+</li>
+<% elsif value == 21 %>
+<li class="w3-padding-8 w3-hover-black">
+<i><%=link_to(image_tag("grape-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x28",style: "width:12%;"),grape_path)%></i>
+<span class=""><%=link_to "Grape",grape_path%></span><br>
+</li>
+<% elsif value == 22 %>
+<li class="w3-padding-8 w3-hover-black">
+<i><%=link_to(image_tag("sunflower-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x28",style: "width:12%;"),sunflower_path)%></i>
+<span class=""><%=link_to "Sunflower",sunflower_path%></span><br>
+</li>
+<% elsif value == 23 %>
+<li class="w3-padding-8 w3-hover-black">
+<i><%=link_to(image_tag("tomato-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x28",style: "width:12%;"),tomato_path)%></i>
+<span class=""><%=link_to "Tomato",tomato_path%></span><br>
+</li>
+<% elsif value == 24 %>
+<li class="w3-padding-8 w3-hover-black">
+<i><%=link_to(image_tag("oysters-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x28",style: "width:12%;"),oyster_path)%></i>
+<span class=""><%=link_to "Oyster",oyster_path%></span><br>
+</li>
+<% elsif value == 25 %>
+<li class="w3-padding-8 w3-hover-black">
+<i><%=link_to(image_tag("cashew-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x28",style: "width:12%;"),cashews_path)%></i>
+<span class=""><%=link_to "Cashew",cashews_path%></span><br>
+</li>
+<% elsif value == 26 %>
+<li class="w3-padding-8 w3-hover-black">
+<i><%=link_to(image_tag("pork-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x28",style: "width:12%;"),pork_path)%></i>
+<span class=""><%=link_to "Pork",pork_path%></span><br>
+</li>
+<% elsif value == 27 %>
+<li class="w3-padding-8 w3-hover-black">
+<i><%=link_to(image_tag("beef-min.jpeg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x28",style: "width:12%;"),beef_path)%></i>
+<span class=""><%=link_to "Beef",beef_path%></span><br>
+</li>
+<% elsif value == 28 %>
+<li class="w3-padding-8 w3-hover-black">
+<i><%=link_to(image_tag("milk-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x28",style: "width:12%;"),milk_path)%></i>
+<span class=""><%=link_to "Milk",milk_path%></span><br>
+</li>
+<% elsif value == 29 %>
+<li class="w3-padding-8 w3-hover-black">
+<i><%=link_to(image_tag("tea-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x28",style: "width:12%;"),tea_path)%></i>
+<span class=""><%=link_to "Tea",tea_path%></span><br>
+</li>
+<% elsif value == 30 %>
+<li class="w3-padding-8 w3-hover-black">
+<i><%=link_to(image_tag("rubber-min.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x28",style: "width:12%;"),rubber_fiber_path)%></i>
+<span class=""><%=link_to "Rubber",rubber_fiber_path%></span><br>
+</li>
+<%end%>
+<%end%>
+</div>
+<!--Temp hide--></div>
+
+      <div class="w3-quarter">
+        <h3>Follow us</h3>
+        <p>
+      <a href="https://www.facebook.com/eximsquare" target="_blank" class="exim-icon exim-facebook fa fa-facebook"><a>
+<a href="https://www.linkedin.com/company/eximsquare" target="_blank" class="exim-icon exim-linkedin fa fa-linkedin"></a>
+<a href="https://www.youtube.com/@Eximsquare" target="_blank" class="exim-icon exim-youtube fa fa-youtube"></a>
+<a href="https://www.instagram.com/eximsquare/" target="_blank" class="exim-icon exim-instagram fa fa-instagram"></a>
+<a><%= link_to "https://www.tiktok.com/@eximsquare",target: :_blank do %>
+      <%= image_tag ("tiktok.png"),:size => "44x44",class: "exim-icon-tiktok"%>
+    <% end %></a>
+        </p>
+<p><%=link_to "Privacy Policy",privacy_policy_path%></p> 
+<p><%=link_to "Terms and Condition",terms_and_condition_path%></p>        
+      </div>
+    </div>
+  </footer>
+
+  
