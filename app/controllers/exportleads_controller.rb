@@ -1,15 +1,16 @@
 class ExportleadsController < ApplicationController
     def index
-        @exportnews = Exportnew.order("random()").search(params[:search])
-        @exportleads = Exportlead.order("random()").search(params[:search])
-        @connect_buyer = ConnectBuyer.new
-        @news, @exportnews = pagy(@exportnews)
-        @leads, @exportleads = pagy(@exportleads)
-    end  
+        if params[:reset].present?
+            params[:q] = nil
+        end
 
+        @exportleads = Exportlead.order("random()").search_results(params[:q], params)
+        @exportnews = Exportnew.order("random()").search_results(params[:q], params)
+        @connect_buyer = ConnectBuyer.new
+        end
     def new
-     
-    end    
+
+    end
 
 end
 
