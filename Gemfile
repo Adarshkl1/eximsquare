@@ -12,6 +12,8 @@ gem "sprockets-rails"
 # Use sqlite3 as the database for Active Record
 gem 'pg'
 gem 'sqlite3'
+gem 'kaminari'
+gem 'pg_search'
 
 # Use the Puma web server [https://github.com/puma/puma]
 gem "puma", "~> 5.0"
@@ -46,12 +48,13 @@ gem "bootsnap", require: false
 # Use Sass to process CSS
 gem "sassc-rails"
 gem 'bootstrap-sass'
+gem 'bootstrap', '~> 4.4.1'
 gem 'devise'
 gem 'dotenv-rails'
 gem "font-awesome-rails"
 gem 'jquery-rails'
 gem 'byebug', '~> 9.0', '>= 9.0.5'
-gem 'pagy', '~> 0.6.0'
+gem 'pagy'
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
 # gem "image_processing", "~> 1.2"
 

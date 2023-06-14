@@ -7,9 +7,9 @@
 <div class="w3-panel w3-card w3-responsive">
 
 <h5 class=""><b></b></h5>
-</br>	
+</br>
 <h3 class=""><b><%=@user.fullname.first(20).capitalize%></b></h3>
-<h4 class=""><%=@user.business_type%></h4> 
+<h4 class=""><%=@user.business_type%></h4>
 <h5 class=""><%=@user.country.first(25).capitalize%></h5>
 <h5 class=""><%=@user.email.first(30).capitalize%></h5>
 <h5 class=""><%=@user.mobile_number.first(20).capitalize%></h5>
@@ -22,7 +22,7 @@
 <div class="w3-container w3-padding">
 <h5 class="minivetexim"><b>Business Information</b></h5>
 <%if @user.profiles.length == 0%>
-<% if user_signed_in? %> 
+<% if user_signed_in? %>
 <% if current_user.id == @user.id%>
 <h5 class=""><%=link_to"Add Business Information.",new_profile_path,class: "w3-btn w3-green w3-button w3-border w3-hover-blue-grey"%></h5>
 <%end%>
@@ -36,8 +36,10 @@
 <p><b>Target Country : </b><%=data.target_country%></p>
 <p><b>Company Info : </b><%=data.about_company%></p>
 <% if current_user == data.user %>
-<%= link_to "Edit", edit_profile_path(data), class: "btn btn-default"%>
-<%= link_to "Delete", profile_path(@user.profiles), method: :delete %>
+<div class="d-flex align-items-center justify-content-start">
+    <%= link_to "Edit", edit_profile_path(user_id: @user.id, profile_id: data.id), class: "btn btn-info mr-3"%>
+    <%= button_to 'Delete', profile_path(data), class: "btn btn-danger", method: :delete, data: { confirm: 'Are you sure?' } %>
+</div>
 <%end%>
 <%end%>
 </div>
