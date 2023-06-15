@@ -1,8 +1,23 @@
-</br>
-</br>
-<div class="col-md-6 col-md-offset-3">
-<h2 class="text-center sign-head"><b>Log in</b></h2>
+<!DOCTYPE html>
+<html>
+<head>
+<title>Eximsquare</title>
 
+<style>
+    .container-fluid { background-image: url(<%= asset_path 'eximsquare_signup.png',style: "height:auto;width:100%;" %>) }
+
+</style>
+</head>
+<body>
+<div class="body container-fluid">
+<div class="sign-up-fluid w3-container w3-content" style="max-width:1400px;margin-top:60px"> 
+
+<div class="col-md-8 col-sm-8 col-md-offset-2 col-sm-offset-2">
+<div class="w3-panel w3-card w3-white">
+
+</br>
+<h2 class="text-center sign-head w3-text-teal"><b>Log in</b></h2>
+</br>
 
 <%= form_for(resource, as: resource_name, url: session_path(resource_name),html: { data: { turbo: false} }) do |f| %>
   <div class="field">
@@ -23,10 +38,21 @@
   <% end %>
 </br>
   <div class="actions">
-    <%= f.submit "Log in",class: "btn-success btn btn-lg" %>
+    <%= f.submit "Log in",class: "w3-teal w3-btn" %>
   </div>
 <% end %>
 </br>
-<%= render "devise/shared/links" %>
+<div class="w3-text-teal"><%= render "devise/shared/links" %></div>
+</br>
+</br>
+</div>
+</br>
+</br>
+</br>
+</br>
+</div>
 
 </div>
+</div>
+</body>
+</html>

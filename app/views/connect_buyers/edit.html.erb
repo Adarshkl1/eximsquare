@@ -1,0 +1,34 @@
+<div class="w3-container w3-content" style="max-width:1400px;margin-top:60px"> 
+<div class="col-md-7 col-sm-7 col-md-offset-2">
+<div class="w3-panel w3-card w3-responsive">
+<div class="w3-container w3-margin-bottom">
+
+<h3 class="w3-text-teal">Edit Buyer Inquiry</h3>
+
+<%= form_for @connect_buyer do |f| %>
+
+<%= f.label :name,'Your Name'%></br>
+<%= f.text_field :name,class: "form-control",:maxlength=>"50",placeholder:"Name can't be blank"%></br>
+
+<%= f.label :email,'Email'%></br>
+<%= f.text_field :email,class: "form-control",:maxlength=>"50",placeholder:"Email can't be blank"%></br>
+
+<%= f.label :country,'Country'%></br>
+<%= f.text_field :country,class: "form-control",:maxlength=>"60",placeholder:"Country name can't be blank"%></br>
+
+<%= f.label :Phone_number,'Phone Num with Country Code'%></br>
+<%= f.text_field :Phone_number,class: "form-control",:maxlength=>"40",placeholder:"Phone Num can't be blank"%></br>
+
+<%= f.label :product_detail,'Your Product Detail'%></br>
+<%= f.text_field :product_detail,class: "form-control",:maxlength=>"60",placeholder:"Product Detail can't be blank"%></br>
+
+<%= f.label :message,'Message'%></br>
+<%= f.text_area :message,class: "form-control",:maxlength=>"500",:rows => 4,:cols => 60,placeholder:"Message can't be blank"%></br>
+
+<%= f.submit"Connect Buyer",class: "w3-btn w3-teal"%>
+
+<%end%>
+</div>
+</div>
+</div>
+</div>

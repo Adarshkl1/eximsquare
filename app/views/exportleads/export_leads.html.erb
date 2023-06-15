@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Eximsquare</title>
+<style>
+html, body, h1, h2, h3, h4, h5 {font-family: "Open Sans", sans-serif}
+.ada {
+      font-size:26px;
+      color: green;
+      }
+.aba {
+      color: green;
+     }
+.pagy-nav.pagination {
+  display: inline-block;
+}
+
+.page a, .page.gap {
+  color: black;
+  padding: 6px 8px;
+  text-decoration: none;
+  transition: background-color .3s;
+  border: 1px solid #ddd; 
+}
+
+.page.active {
+  background-color: #4d636f;
+  color: white;
+  padding: 6px 8px;
+}
+
+
+</style>
+</head>
+<body>
+
+<div class="w3-container w3-content" style="max-width:1400px;margin-top:80px"> 
+
+<div class="row">
+<div class="col-sm-10 col-md-10">
+<div class="w3-container w3-padding">
+<%=form_tag export_leads_path, :method => 'get' do %>
+<%= text_field_tag :search, params[:search], :size=>"20", placeholder: "Search Product Leads",class: "form-control" %>
+<%= submit_tag "Search", :wanted => nil,class: "btn w3-teal" %>
+<% end %>
+</div>
+</div>
+</div>
+
+<div class="col-sm-10 col-md-10">
+  <div class="w3-row w3-white">
+    <div class="w3-col m12">
+      <%@exportleads.each do |exportnew|%>
+        <div class="w3-card w3-round w3-light-grey">
+          <div class="w3-container w3-padding">
+            <h6 class=""><b><%=exportnew.wanted.titleize%></b></h6>
+              <p class=""><b><%=exportnew.buyer.capitalize%></b></p>
+              </br>
+              <p class=""><%=exportnew.title.capitalize%></p>
+              <p class=""><%=exportnew.contact%></p>
+              <% if user_signed_in? %> 
+             <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-btn w3-teal w3-hover-blue-grey" title="EximSquare" type="button" class="w3-btn w3-teal w3-theme-d1 w3-margin-bottom"><i class="fa fa-handshake-o">&nbsp;&nbsp;</i>Connect Buyer</button>
+             <% elsif !user_signed_in? %>
+             <p><%=link_to"Connect Buyer",new_user_session_path,class: "w3-btn w3-teal w3-border w3-hover-blue-grey"%></p>
+             <%end%> 
+  <div id="id01" class="w3-modal">
+  <div class="w3-modal-content w3-card-4 w3-animate-top">
+    <header class="w3-container w3-teal w3-display-container"> 
+      <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-teal w3-display-topright"><i class="fa fa-remove"></i></span>
+      <h5>Sending Inquiry For: Buyer</h5>
+    </header>
+    </br>
+    <div class="w3-container">
+<%= form_for @connect_buyer do |f| %>
+
+<%= f.label :name,'Your Name'%></br>
+<%= f.text_field :name,class: "form-control",:maxlength=>"50",placeholder:"Name can't be blank"%></br>
+
+<%= f.label :email,'Email'%></br>
+<%= f.text_field :email,class: "form-control",:maxlength=>"50",placeholder:"Email can't be blank"%></br>
+
+<%= f.label :country,'Country'%></br>
+<%= f.text_field :country,class: "form-control",:maxlength=>"60",placeholder:"Country name can't be blank"%></br>
+
+<%= f.label :Phone_number,'Phone Num with Country Code'%></br>
+<%= f.text_field :Phone_number,class: "form-control",:maxlength=>"40",placeholder:"Phone Num can't be blank"%></br>
+
+<%= f.label :product_detail,'Your Product Detail'%></br>
+<%= f.text_field :product_detail,class: "form-control",:maxlength=>"60",placeholder:"Product Detail can't be blank"%></br>
+
+<%= f.label :message,'Message'%></br>
+<%= f.text_area :message,class: "form-control",:maxlength=>"500",:rows => 4,:cols => 60,placeholder:"Message can't be blank"%></br>
+
+<%= f.submit"Connect Buyer",class: "w3-btn w3-teal"%>
+
+<%end%>
+    </div>
+    </br>
+    <footer class="w3-container w3-teal">
+      <p class="text-center">Eximsquare</p>
+    </footer>
+    
+  </div>
+</div>
+
+<span class="w3-right"><%=rand(35.day.ago..0.day.from_now).to_date%></span>
+              <div class="w3-col m12"></br>
+              <p class="w3-left w3-green"><%=["Lead : Verified",""].sample%></p>
+              <span class="w3-right aba">Review : <sub class="ada"><%=["* * *","* * * *","* * * * *"].sample%><sub></span>
+              </div>
+          </div>
+         </div>
+         </br>
+      <%end%>
+    </div>  
+  </div>
+<div class="w3-center"><%== pagy_nav(@leads)%></div>
+</div>
+    
+
+</div>
+</div>
+
+
+ 
+
+
+</body>
+</html> 

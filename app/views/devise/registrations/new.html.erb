@@ -1,9 +1,24 @@
-<div class="col-md-6 col-md-offset-3">
-</br>
-<h2 class="text-center sign-head"><b>Sign up</b></h2>
+<!DOCTYPE html>
+<html>
+<head>
+<title>Eximsquare</title>
+
+<style>
+    .container-fluid { background-image: url(<%= asset_path 'eximsquare_signup.png' %>) }
+
+</style>
+</head>
+<body>
+<div class="body container-fluid">
+<div class="sign-up-fluid w3-container w3-content" style="max-width:1400px;margin-top:60px"> 
+
+<div class="col-md-8 col-sm-8 col-md-offset-2 col-sm-offset-2">
+<div class="w3-panel w3-card w3-white">
+
+<h2 class="text-center sign-head w3-text-teal"><b>Sign up</b></h2>
 
 
-<%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+<%= form_for(resource, as: resource_name, url: registration_path(resource_name),html: { data: { turbo: false} }) do |f| %>
   <%= render "devise/shared/error_messages", resource: resource %>
 
     <div class="field">
@@ -12,7 +27,7 @@
   </div></br>
 
     <div class="field"> 
-    <b><%= f.label :country,"Country",class: "signin-text" %> : </b><br />
+    <b><%= f.label :country,"Country",class: "signin-text" %> : </b>
     <%= f.text_field :country, placeholder: "Your Country", :maxlength=>"20",class: "form-control"  %>
   </div></br>
 
@@ -77,10 +92,18 @@
   </div></br>
 
   <div class="actions">
-    <%= f.submit "Sign up",class: "btn-success btn btn-lg" %>
+    <%= f.submit "Sign up",class: "w3-teal w3-btn" %>
   </div>
 <% end %>
+</br>
 
-<%= render "devise/shared/links" %>
+<b class="w3-text-teal"><%= render "devise/shared/links"%></b>
+
+</br>
+</div>
+</div>
 
 </div>
+</div>
+</body>
+</html>

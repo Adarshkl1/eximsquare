@@ -11,14 +11,50 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+.alertmessage {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 5px;
+  text-align: center;
+  z-index: 9999;
+}
+
+.alert {
+  margin-bottom: 5px;
+  padding: 5px;
+  border-radius: 4px;
+}
+
+.alert-info {
+  background-color: #268576; 
+  color: #fff; 
+}
+
+  </style>
   </head>
 
   <body class="w3-light-grey">
  
 <%= render '/layouts/nav' %>
-<span class="notice"><%= yield %></span>
-<span class="notice"><%= notice %></span>
-<span class="alert"><%= alert %></span>
+<%= notice %>
+<%= alert %>
+<div class="alertmessage">
+  <% flash.each do |type, msg| %>
+    <div class="alert alert-info">
+      <%= msg %>
+    </div>
+  <% end %>
+</div>
+
+<span class="yield"><%= yield %></span>
+<%= render '/layouts/footer' %>
+
+<style>
+
+</style>
 </body>
 </html>
 

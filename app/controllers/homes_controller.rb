@@ -56,6 +56,40 @@ def wheat
   @exportnews = Exportnew.where(product: 'Wheat').select([:source,:title,:name,:link,:product]).order("random()").limit(5)
 end
 
+def about_us
+ 
+end  
+
+def privacy_policy
+
+end  
+
+def terms_and_condition
+
+end  
+
+def home_password_974000
+@homes = Home.all
+end  
+
+def new
+  @home = Home.new
+end 
+
+def create 
+ @home = Home.new(connect_us)
+ if @home.save
+  redirect_to homes_path,notice: "Thank you for reaching out! We'll reply to you shortly"
+ else 
+  render :action => :new
+end 
+end
+
+private
+
+def connect_us
+  params.require(:home).permit(:name,:email,:country,:Phone_number,:message)
+end  
 
 end
 

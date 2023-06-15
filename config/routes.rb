@@ -9,6 +9,14 @@ resources :profiles
 resources :news
 resources :exportleads
 resources :connect_buyers
+get '/trade_news' => 'exportleads#trade_news'
+get '/export_leads' => 'exportleads#export_leads'
+get '/home_password_974000' => 'homes#home_password_974000'
+get '/about_us' => 'homes#about_us'
+get '/privacy_policy' =>'homes#privacy_policy'  
+get '/terms_and_condition' =>'homes#terms_and_condition'   
+get '/barley' => 'homes#barley'
+get '/buckwheat' =>'homes#buckwheat'    
 get '/barley' => 'homes#barley'
 get '/buckwheat' =>'homes#buckwheat'
 get '/canary_seed' =>'homes#canary_seed'

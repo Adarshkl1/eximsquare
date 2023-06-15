@@ -2,16 +2,9 @@ class Profile < ApplicationRecord
   
     belongs_to :user
 
-
-  #before_save :check_post_quota
-
-  #private 
-
-  #def check_post_quota
-  #  if self.user.profiles.count >= 10
-   #   self.errors.add(:base, "You've reached maximum posts you can import")
-   #   return false
-   # end
-  # end
+    validates_presence_of :product_name, presence:{:message => "Product Name can't be blank"}
+    validates_presence_of :company_name, presence:{:message => "Company Name can't be blank"}
+    validates_presence_of :about_company, presence:{:message => "About Company can't be blank"}
     
 end
+

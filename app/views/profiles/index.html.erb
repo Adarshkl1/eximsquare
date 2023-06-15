@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Eximsquare</title>
+<style>
+.all-user {
+  height: 350px;
+  overflow-y: scroll;
+}
+</style>
+</head>
+
+<div class="w3-container w3-content" style="max-width:1400px;margin-top:50px"> 
+<div class="col-md-12 col-sm-12 w3-light-grey">
+<div class="w3-row">
+<div class="w3-panel w3-card w3-responsive">
+<h5 class="w3-text-teal"><b>Traders</b></h5>
+<%@users.each do |user|%>
+
+<div class="col-md-3 col-sm-3">
+<div class="all-user w3-panel w3-card w3-responsive">
+<div class="w3-container w3-padding">
+<%if user.business_type == 'Retail store'%>
+<i><%=image_tag "Paper.png",class: "img-responsive",:size => "60x40",style: "width:50%" %></i> 
+<%elsif user.business_type == 'Agriculture,Animal,Food & Beverages'%>
+<i><%=image_tag "Agriculture.png",class: "img-responsive",:size => "60x40",style: "width:50%" %></i> 
+<%elsif user.business_type == 'Apparel, Textile & Leather'%>
+<i><%=image_tag "Apparel.png",class: "img-responsive",:size => "60x40",style: "width:50%" %></i> 
+<%elsif user.business_type == 'Fashion Accessories & wear'%>
+<i><%=image_tag "FashionAccessories.png",class: "img-responsive",:size => "60x40",style: "width:50%" %></i> 
+<%elsif user.business_type == 'Cosmetic & Beauty'%>
+<i><%=image_tag "Cosmetic.png",class: "img-responsive",:size => "60x40",style: "width:50%" %></i> 
+<%elsif user.business_type == 'Sports & Fitness'%>
+<i><%=image_tag "Sports.png",class: "img-responsive",:size => "60x40",style: "width:50%" %></i> 
+<%elsif user.business_type == 'Automobiles & Transportations'%>
+<i><%=image_tag "Automobiles.png",class: "img-responsive",:size => "60x40",style: "width:50%" %></i> 
+<%elsif user.business_type == 'Computer & Telecommunication'%>
+<i><%=image_tag "Computer.png",class: "img-responsive",:size => "60x40",style: "width:50%" %></i> 
+<%elsif user.business_type == 'Electronics'%>
+<i><%=image_tag "Electronics.png",class: "img-responsive",:size => "60x40",style: "width:50%" %></i> 
+<%elsif user.business_type == 'Electrical'%>
+<i><%=image_tag "Electrical.png",class: "img-responsive",:size => "60x40",style: "width:50%" %></i> 
+<%elsif user.business_type == 'Education service business'%>
+<i><%=image_tag "College.png",class: "img-responsive",:size => "60x40",style: "width:50%" %></i> 
+<%elsif user.business_type == 'Buildings & Construction'%>
+<i><%=image_tag "Furniture.png",class: "img-responsive",:size => "60x40",style: "width:50%" %></i> 
+<%elsif user.business_type == 'School, College & University'%>
+<i><%=image_tag "College.png",class: "img-responsive",:size => "60x40",style: "width:50%" %></i> 
+<%elsif user.business_type == 'Hospital & Medical'%>
+<i><%=image_tag "Hospital.png",class: "img-responsive",:size => "60x40",style: "width:50%" %></i> 
+<%elsif user.business_type == 'Household & Kitchen'%>
+<i><%=image_tag "Household.png",class: "img-responsive",:size => "60x40",style: "width:50%" %></i> 
+<%elsif user.business_type == 'Hotel/Touism/Paying guest'%>
+<i><%=image_tag "Furniture.png",class: "img-responsive",:size => "60x40",style: "width:50%" %></i> 
+<%elsif user.business_type == 'Machinery & Industrial parts'%>
+<i><%=image_tag "Machinery.png",class: "img-responsive",:size => "60x40",style: "width:50%" %></i>
+<%elsif user.business_type == 'Manufacturer'%>
+<i><%=image_tag "Machinery.png",class: "img-responsive",:size => "60x40",style: "width:50%" %></i>
+<%elsif user.business_type == 'Valuable Jewelry, Gem & Metal'%>
+<i><%=image_tag "ValuableJewelry.png",class: "img-responsive",:size => "60x40",style: "width:50%" %></i> 
+<%elsif user.business_type == 'Wholesaler/Distributor'%>
+<i><%=image_tag "Businessservices.png",class: "img-responsive",:size => "60x40",style: "width:50%" %></i> 
+<%elsif user.business_type == 'Bags, Rubber & Plastics'%>
+<i><%=image_tag "Bags.png",class: "img-responsive",:size => "60x40",style: "width:50%" %></i> 
+<%elsif user.business_type == 'Energy, Environments & Power'%>
+<i><%=image_tag "Energy.png",class: "img-responsive",:size => "60x40",style: "width:50%" %></i> 
+<%elsif user.business_type == 'Exporter/Importer'%>
+<i><%=image_tag "Businessservices.png",class: "img-responsive",:size => "60x40",style: "width:50%" %></i> 
+<%elsif user.business_type == 'Paper & Packing material'%>
+<i><%=image_tag "Paper.png",class: "img-responsive",:size => "60x40",style: "width:50%" %></i> 
+<%elsif user.business_type == 'Printing, publishing & Hardware'%>
+<i><%=image_tag "Printing.png",class: "img-responsive",:size => "60x40",style: "width:50%" %></i> 
+<%elsif user.business_type == 'Security, Alarm & Safety'%>
+<i><%=image_tag "Security.png",class: "img-responsive",:size => "60x40",style: "width:50%" %></i> 
+<%elsif user.business_type == 'Laboratory & Measuring instruments'%>
+<i><%=image_tag "Laboratory.png",class: "img-responsive",:size => "60x40",style: "width:50%" %></i> 
+<%elsif user.business_type == 'Pipes, Tubes & Fitting'%>
+<i><%=image_tag "Pipes.png",class: "img-responsive",:size => "60x40",style: "width:50%" %></i> 
+<%elsif user.business_type == 'Handicrafts, Toys, Gifts & Crafts'%>
+<i><%=image_tag "Toys.png",class: "img-responsive",:size => "60x40",style: "width:50%" %></i> 
+<%elsif user.business_type == 'Furniture & Furnishings'%>
+<i><%=image_tag "Furniture.png",class: "img-responsive",:size => "60x40",style: "width:50%" %></i> 
+<%elsif user.business_type == 'Games, Movies & Entertainment'%>
+<i><%=image_tag "Games.png",class: "img-responsive",:size => "60x40",style: "width:50%" %></i> 
+<%elsif user.business_type == 'Business services & Freelancer'%>
+<i><%=image_tag "Businessservices.png",class: "img-responsive",:size => "60x40",style: "width:50%" %></i> 
+<%else%>
+<i><%=image_tag "",class: "img-responsive",:size => "60x40",style: "width:50%" %></i> 
+<%end%>
+<h3 class=""><b><%=user.fullname.first(20).capitalize%></b></h3>
+<h4 class=""><%=user.business_type%></h4> 
+<h5 class=""><%=user.country.first(25).capitalize%></h5>
+<h5 class=""><%=user.email.first(30).capitalize%></h5>
+<h5 class=""><%=user.mobile_number.first(20).capitalize%></h5>
+<h5><b><%=link_to "View", profile_path(user.id),class: "w3-teal w3-tiny w3-btn"%></b></h5>
+</div>
+</div>
+</div>
+
+<%end%>
+</div>
+</div>
+</div>
+</div>
+
+</body>
+</html>

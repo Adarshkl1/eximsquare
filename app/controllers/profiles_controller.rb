@@ -1,11 +1,11 @@
 class ProfilesController < ApplicationController
 
     def index
+    @users = User.all
     end
     
     def new
-    
-        @profile = Profile.new
+       @profile = Profile.new
     end        
     
     def show
@@ -24,7 +24,7 @@ class ProfilesController < ApplicationController
        
         @profile = current_user.profiles.build(profile_params)
           if @profile.save
-            redirect_to profile_path(@profile.user.id)
+            redirect_to profile_path(@profile.user.id),notice: "Business Info Added Successfully"
           else
             render "new"
           end
@@ -33,7 +33,7 @@ class ProfilesController < ApplicationController
     def update
         @profile = Profile.find(params[:id])
 		if  @profile.update(profile_params)
-            redirect_to profile_path(@profile.user.id)
+            redirect_to profile_path(@profile.user.id),notice: "Edit Successfully"
         else
             render 'edit'
         end

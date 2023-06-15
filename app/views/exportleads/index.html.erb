@@ -415,8 +415,11 @@ html, body, h1, h2, h3, h4, h5 {font-family: "Open Sans", sans-serif}
               </br>
               <p class=""><%=exportnew.title.capitalize%></p>
               <p class=""><%=exportnew.contact%></p>
-              <button onclick="document.getElementById('id01').style.display='block'" class="w3-button  w3-theme w3-hover-teal" title="EximSquare" type="button" class="w3-button w3-theme-d1 w3-margin-bottom"><i class="fa fa-handshake-o">&nbsp;&nbsp;</i>Connect Buyer</button>
-  
+              <% if user_signed_in? %> 
+             <button onclick="document.getElementById('id01').style.display='block'" class="w3-button  w3-theme w3-hover-teal" title="EximSquare" type="button" class="w3-button w3-theme-d1 w3-margin-bottom"><i class="fa fa-handshake-o">&nbsp;&nbsp;</i>Connect Buyer</button>
+             <% elsif !user_signed_in? %>
+             <p><%=link_to"Connect Buyer",new_user_session_path,class: "w3-btn w3-teal w3-button w3-border w3-hover-blue-grey"%></p>
+             <%end%> 
   <div id="id01" class="w3-modal">
   <div class="w3-modal-content w3-card-4 w3-animate-top">
     <header class="w3-container w3-teal w3-display-container"> 
@@ -445,7 +448,7 @@ html, body, h1, h2, h3, h4, h5 {font-family: "Open Sans", sans-serif}
 <%= f.label :message,'Message'%></br>
 <%= f.text_area :message,class: "form-control",:maxlength=>"500",:rows => 4,:cols => 60,placeholder:"Message can't be blank"%></br>
 
-<%= f.submit"Connect Buyer",class: "w3-btn w3-green"%>
+<%= f.submit"Connect Buyer",class: "w3-btn w3-teal"%>
 
 <%end%>
     </div>
@@ -475,35 +478,9 @@ html, body, h1, h2, h3, h4, h5 {font-family: "Open Sans", sans-serif}
 </div>
 </div>
 
-<!-- Footer -->
-<footer class="w3-container w3-theme-d3 w3-padding-16">
 
-</footer>
  
-<script>
 
-function myFunction(id) {
-  var x = document.getElementById(id);
-  if (x.className.indexOf("w3-show") == -1) {
-    x.className += " w3-show";
-    x.previousElementSibling.className += " w3-theme-d1";
-  } else { 
-    x.className = x.className.replace("w3-show", "");
-    x.previousElementSibling.className = 
-    x.previousElementSibling.className.replace(" w3-theme-d1", "");
-  }
-}
-
-function openNav() {
-  var x = document.getElementById("navDemo");
-  if (x.className.indexOf("w3-show") == -1) {
-    x.className += " w3-show";
-  } else { 
-    x.className = x.className.replace(" w3-show", "");
-  }
-}
-
-</script>
 
 </body>
 </html> 

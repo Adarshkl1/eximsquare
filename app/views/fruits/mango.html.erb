@@ -2,11 +2,6 @@
 <html>
 <head>
 <title>Eximsquare</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
 .fa-fw {
     width: 0.285714em;
@@ -160,26 +155,126 @@ The potential for export opportunities for mango can depend on factors such as t
         <th>Present Markdown</th>
       </tr>
     </thead>
-<tr><td>India </td><td> $0.50/kg </td><td> $0.23/pound</td></tr>        
-<tr><td>Pakistan </td><td> $0.75/kg </td><td> $0.34/pound</td></tr>     
-<tr><td>Mexico </td><td> $0.80/kg </td><td> $0.36/pound</td></tr>     
-<tr><td>Ecuador </td><td> $0.95/kg </td><td> $0.43/pound</td></tr>     
-<tr><td>Peru </td><td> $1.00/kg </td><td> $0.45/pound</td></tr>      
-<tr><td>Brazil </td><td> $1.10/kg </td><td> $0.50/pound</td></tr>       
-<tr><td>Dominican Republic </td><td> $1.20/kg </td><td> $0.55/pound</td></tr>      
-<tr><td>Guatemala </td><td> $1.25/kg </td><td> $0.57/pound</td></tr>     
-<tr><td>Costa Rica </td><td> $1.30/kg </td><td> $0.59/pound</td></tr>   
-<tr><td>Nicaragua </td><td> $1.40/kg </td><td> $0.64/pound</td></tr>    
-<tr><td>Honduras </td><td> $1.50/kg </td><td> $0.68/pound</td></tr>   
-<tr><td>Colombia </td><td> $1.60/kg </td><td> $0.73/pound</td></tr>   
-<tr><td>Thailand </td><td> $1.70/kg </td><td> $0.77/pound</td></tr>      
-<tr><td>Vietnam </td><td> $1.80/kg </td><td> $0.82/pound</td></tr>      
-<tr><td>Philippines </td><td> $1.90/kg </td><td> $0.86/pound</td></tr>   
-<tr><td>Cambodia </td><td> $2.00/kg </td><td> $0.91/pound</td></tr>   
-<tr><td>Bangladesh </td><td> $2.10/kg </td><td> $0.95/pound</td></tr> 
-<tr><td>Sri Lanka </td><td> $2.20/kg </td><td> $1.00/pound</td></tr>
-<tr><td>Indonesia </td><td> $2.30/kg </td><td> $1.05/pound</td></tr>
-<tr><td>Egypt </td><td> $2.40/kg </td><td> $1.09/pound</td></tr>
+<tr><td>India </td><td> $0.50/kg </td><td> $0.23/pound</td><td><%value =[-1,-2,-3,-4,-5,-6,+1,+2,+3,+4,+5,+6,+7,+8,+9].sample.to_i%>
+<% if value > 0 %>
+<p class="glyphicon glyphicon-arrow-up"style='color:green'><%= p value %></p>
+<%else%>
+<p class="glyphicon glyphicon-arrow-down"style='color:red'><%= p value%></p>
+<%end%></td></tr>        
+<tr><td>Pakistan </td><td> $0.75/kg </td><td> $0.34/pound</td><td><%value =[-1,-2,-3,-4,-5,-6,+1,+2,+3,+4,+5,+6,+7,+8,+9].sample.to_i%>
+<% if value > 0 %>
+<p class="glyphicon glyphicon-arrow-up"style='color:green'><%= p value %></p>
+<%else%>
+<p class="glyphicon glyphicon-arrow-down"style='color:red'><%= p value%></p>
+<%end%></td></tr>     
+<tr><td>Mexico </td><td> $0.80/kg </td><td> $0.36/pound</td><td><%value =[-1,-2,-3,-4,-5,-6,+1,+2,+3,+4,+5,+6,+7,+8,+9].sample.to_i%>
+<% if value > 0 %>
+<p class="glyphicon glyphicon-arrow-up"style='color:green'><%= p value %></p>
+<%else%>
+<p class="glyphicon glyphicon-arrow-down"style='color:red'><%= p value%></p>
+<%end%></td></tr>     
+<tr><td>Ecuador </td><td> $0.95/kg </td><td> $0.43/pound</td><td><%value =[-1,-2,-3,-4,-5,-6,+1,+2,+3,+4,+5,+6,+7,+8,+9].sample.to_i%>
+<% if value > 0 %>
+<p class="glyphicon glyphicon-arrow-up"style='color:green'><%= p value %></p>
+<%else%>
+<p class="glyphicon glyphicon-arrow-down"style='color:red'><%= p value%></p>
+<%end%></td></tr>     
+<tr><td>Peru </td><td> $1.00/kg </td><td> $0.45/pound</td><td><%value =[-1,-2,-3,-4,-5,-6,+1,+2,+3,+4,+5,+6,+7,+8,+9].sample.to_i%>
+<% if value > 0 %>
+<p class="glyphicon glyphicon-arrow-up"style='color:green'><%= p value %></p>
+<%else%>
+<p class="glyphicon glyphicon-arrow-down"style='color:red'><%= p value%></p>
+<%end%></td></tr>      
+<tr><td>Brazil </td><td> $1.10/kg </td><td> $0.50/pound</td><td><%value =[-1,-2,-3,-4,-5,-6,+1,+2,+3,+4,+5,+6,+7,+8,+9].sample.to_i%>
+<% if value > 0 %>
+<p class="glyphicon glyphicon-arrow-up"style='color:green'><%= p value %></p>
+<%else%>
+<p class="glyphicon glyphicon-arrow-down"style='color:red'><%= p value%></p>
+<%end%></td></tr>       
+<tr><td>Dominican Republic </td><td> $1.20/kg </td><td> $0.55/pound</td><td><%value =[-1,-2,-3,-4,-5,-6,+1,+2,+3,+4,+5,+6,+7,+8,+9].sample.to_i%>
+<% if value > 0 %>
+<p class="glyphicon glyphicon-arrow-up"style='color:green'><%= p value %></p>
+<%else%>
+<p class="glyphicon glyphicon-arrow-down"style='color:red'><%= p value%></p>
+<%end%></td></tr>      
+<tr><td>Guatemala </td><td> $1.25/kg </td><td> $0.57/pound</td><td><%value =[-1,-2,-3,-4,-5,-6,+1,+2,+3,+4,+5,+6,+7,+8,+9].sample.to_i%>
+<% if value > 0 %>
+<p class="glyphicon glyphicon-arrow-up"style='color:green'><%= p value %></p>
+<%else%>
+<p class="glyphicon glyphicon-arrow-down"style='color:red'><%= p value%></p>
+<%end%></td></tr>     
+<tr><td>Costa Rica </td><td> $1.30/kg </td><td> $0.59/pound</td><td><%value =[-1,-2,-3,-4,-5,-6,+1,+2,+3,+4,+5,+6,+7,+8,+9].sample.to_i%>
+<% if value > 0 %>
+<p class="glyphicon glyphicon-arrow-up"style='color:green'><%= p value %></p>
+<%else%>
+<p class="glyphicon glyphicon-arrow-down"style='color:red'><%= p value%></p>
+<%end%></td></tr>   
+<tr><td>Nicaragua </td><td> $1.40/kg </td><td> $0.64/pound</td><td><%value =[-1,-2,-3,-4,-5,-6,+1,+2,+3,+4,+5,+6,+7,+8,+9].sample.to_i%>
+<% if value > 0 %>
+<p class="glyphicon glyphicon-arrow-up"style='color:green'><%= p value %></p>
+<%else%>
+<p class="glyphicon glyphicon-arrow-down"style='color:red'><%= p value%></p>
+<%end%></td></tr>    
+<tr><td>Honduras </td><td> $1.50/kg </td><td> $0.68/pound</td><td><%value =[-1,-2,-3,-4,-5,-6,+1,+2,+3,+4,+5,+6,+7,+8,+9].sample.to_i%>
+<% if value > 0 %>
+<p class="glyphicon glyphicon-arrow-up"style='color:green'><%= p value %></p>
+<%else%>
+<p class="glyphicon glyphicon-arrow-down"style='color:red'><%= p value%></p>
+<%end%></td></tr>   
+<tr><td>Colombia </td><td> $1.60/kg </td><td> $0.73/pound</td><td><%value =[-1,-2,-3,-4,-5,-6,+1,+2,+3,+4,+5,+6,+7,+8,+9].sample.to_i%>
+<% if value > 0 %>
+<p class="glyphicon glyphicon-arrow-up"style='color:green'><%= p value %></p>
+<%else%>
+<p class="glyphicon glyphicon-arrow-down"style='color:red'><%= p value%></p>
+<%end%></td></tr>   
+<tr><td>Thailand </td><td> $1.70/kg </td><td> $0.77/pound</td><td><%value =[-1,-2,-3,-4,-5,-6,+1,+2,+3,+4,+5,+6,+7,+8,+9].sample.to_i%>
+<% if value > 0 %>
+<p class="glyphicon glyphicon-arrow-up"style='color:green'><%= p value %></p>
+<%else%>
+<p class="glyphicon glyphicon-arrow-down"style='color:red'><%= p value%></p>
+<%end%></td></tr>      
+<tr><td>Vietnam </td><td> $1.80/kg </td><td> $0.82/pound</td><td><%value =[-1,-2,-3,-4,-5,-6,+1,+2,+3,+4,+5,+6,+7,+8,+9].sample.to_i%>
+<% if value > 0 %>
+<p class="glyphicon glyphicon-arrow-up"style='color:green'><%= p value %></p>
+<%else%>
+<p class="glyphicon glyphicon-arrow-down"style='color:red'><%= p value%></p>
+<%end%></td></tr>      
+<tr><td>Philippines </td><td> $1.90/kg </td><td> $0.86/pound</td><td><%value =[-1,-2,-3,-4,-5,-6,+1,+2,+3,+4,+5,+6,+7,+8,+9].sample.to_i%>
+<% if value > 0 %>
+<p class="glyphicon glyphicon-arrow-up"style='color:green'><%= p value %></p>
+<%else%>
+<p class="glyphicon glyphicon-arrow-down"style='color:red'><%= p value%></p>
+<%end%></td></tr>   
+<tr><td>Cambodia </td><td> $2.00/kg </td><td> $0.91/pound</td><td><%value =[-1,-2,-3,-4,-5,-6,+1,+2,+3,+4,+5,+6,+7,+8,+9].sample.to_i%>
+<% if value > 0 %>
+<p class="glyphicon glyphicon-arrow-up"style='color:green'><%= p value %></p>
+<%else%>
+<p class="glyphicon glyphicon-arrow-down"style='color:red'><%= p value%></p>
+<%end%></td></tr>   
+<tr><td>Bangladesh </td><td> $2.10/kg </td><td> $0.95/pound</td><td><%value =[-1,-2,-3,-4,-5,-6,+1,+2,+3,+4,+5,+6,+7,+8,+9].sample.to_i%>
+<% if value > 0 %>
+<p class="glyphicon glyphicon-arrow-up"style='color:green'><%= p value %></p>
+<%else%>
+<p class="glyphicon glyphicon-arrow-down"style='color:red'><%= p value%></p>
+<%end%></td></tr> 
+<tr><td>Sri Lanka </td><td> $2.20/kg </td><td> $1.00/pound</td><td><%value =[-1,-2,-3,-4,-5,-6,+1,+2,+3,+4,+5,+6,+7,+8,+9].sample.to_i%>
+<% if value > 0 %>
+<p class="glyphicon glyphicon-arrow-up"style='color:green'><%= p value %></p>
+<%else%>
+<p class="glyphicon glyphicon-arrow-down"style='color:red'><%= p value%></p>
+<%end%></td></tr>
+<tr><td>Indonesia </td><td> $2.30/kg </td><td> $1.05/pound</td><td><%value =[-1,-2,-3,-4,-5,-6,+1,+2,+3,+4,+5,+6,+7,+8,+9].sample.to_i%>
+<% if value > 0 %>
+<p class="glyphicon glyphicon-arrow-up"style='color:green'><%= p value %></p>
+<%else%>
+<p class="glyphicon glyphicon-arrow-down"style='color:red'><%= p value%></p>
+<%end%></td></tr>
+<tr><td>Egypt </td><td> $2.40/kg </td><td> $1.09/pound</td><td><%value =[-1,-2,-3,-4,-5,-6,+1,+2,+3,+4,+5,+6,+7,+8,+9].sample.to_i%>
+<% if value > 0 %>
+<p class="glyphicon glyphicon-arrow-up"style='color:green'><%= p value %></p>
+<%else%>
+<p class="glyphicon glyphicon-arrow-down"style='color:red'><%= p value%></p>
+<%end%></td></tr>
 
 
 </table>
@@ -585,49 +680,6 @@ The potential for export opportunities for mango can depend on factors such as t
 
 
 </div>
-
-
-<!-- Footer -->
-<footer class="w3-container w3-padding-32 w3-theme-d1 w3-center">
-  <h4>Follow Us</h4>
-  <a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Facebook"><i class="fa fa-facebook"></i></a>
-  <a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Twitter"><i class="fa fa-twitter"></i></a>
-  <a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Google +"><i class="fa fa-google-plus"></i></a>
-  <a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Google +"><i class="fa fa-instagram"></i></a>
-  <a class="w3-button w3-large w3-teal w3-hide-small" href="javascript:void(0)" title="Linkedin"><i class="fa fa-linkedin"></i></a>
-  <p>Powegreen by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
-
-  <div style="position:relative;bottom:100px;z-index:1;" class="w3-tooltip w3-right">
-    <span class="w3-text w3-padding w3-teal w3-hide-small">Go To Top</span>   
-    <a class="w3-button w3-theme" href="#myPage"><span class="w3-xlarge">
-    <i class="fa fa-chevron-circle-up"></i></span></a>
-  </div>
-</footer>
-
-<script>
-// Script for side navigation
-function w3_open() {
-  var x = document.getElementById("mySidebar");
-  x.style.width = "300px";
-  x.style.paddingTop = "10%";
-  x.style.display = "block";
-}
-
-// Close side navigation
-function w3_close() {
-  document.getElementById("mySidebar").style.display = "none";
-}
-
-// Used to toggle the menu on smaller screens when clicking on the menu button
-function openNav() {
-  var x = document.getElementById("navDemo");
-  if (x.className.indexOf("w3-show") == -1) {
-    x.className += " w3-show";
-  } else { 
-    x.className = x.className.replace(" w3-show", "");
-  }
-}
-</script>
 
 </body>
 </html>

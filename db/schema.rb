@@ -46,6 +46,11 @@ ActiveRecord::Schema[7.0].define(version: 2023_06_02_002036) do
   end
 
   create_table "homes", force: :cascade do |t|
+    t.text "name"
+    t.string "email"
+    t.string "country"
+    t.string "Phone_number"
+    t.text "message"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

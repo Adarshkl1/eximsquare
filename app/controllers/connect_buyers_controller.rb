@@ -4,19 +4,22 @@ class ConnectBuyersController < ApplicationController
 
          
     def create
+
         @connect_buyer = current_user.connect_buyers.build(connect_buyer_params)
-          if @connect_buyer.save
-            redirect_to profile_path(@connect_buyer.user.id)
-          else
-            render "new"
-          end
+        if @connect_buyer.save
+        redirect_to profile_path(@connect_buyer.user.id), notice: "Message Sent To Buyer Successfully"
     end
+    end
+
+    def edit
+    
+    end    
 
 
     def update
 		
         if  @connect_buyer.update(connect_buyer_params)
-            redirect_to profile_path(@connect_buyer.user.id)
+            redirect_to profile_path(@connect_buyer.user.id),notice: "Edit Successfully"
         else
             render 'edit'
         end
@@ -39,8 +42,8 @@ class ConnectBuyersController < ApplicationController
 
     def connect_buyer
         @user = User.find(params[:id])
-        @profile = Profile.where(params[:id])
-        @connect_buyer = ConnectBuyer.where(params[:id])
+        @profile = Profile.find(params[:id])
+        @connect_buyer = ConnectBuyer.find(params[:id])
     end 
 
     #def check_quota
