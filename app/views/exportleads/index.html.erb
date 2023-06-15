@@ -26,14 +26,43 @@ html, body, h1, h2, h3, h4, h5 {font-family: "Open Sans", sans-serif}
   padding: 6px 8px;
   text-decoration: none;
   transition: background-color .3s;
-  border: 1px solid #ddd; 
+  border: 1px solid #ddd;
 }
 
-.page.active {
+.card-container{
+  height: 320px;
+}
+
+.pagination{
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.pagination .page{
+  margin: 0px 3px;
+}
+
+.pagination .current{
+  color: white;
+  background: blue;
+  padding: 6px 8px;
+  text-decoration: none;
+  transition: background-color .3s;
+  height: 37px !important;
+  overflow: hidden;
+  /* border: 1px solid #ddd; */
+}
+.page a, .page.gap, .page.current {
+  height: 36px;
+  padding: 6px 8px;
+  overflow: hidden;
+}
+/* .page.active {
   background-color: #4d636f;
   color: white;
   padding: 6px 8px;
-}
+} */
 
 
 </style>
@@ -41,34 +70,28 @@ html, body, h1, h2, h3, h4, h5 {font-family: "Open Sans", sans-serif}
 <body class="w3-theme-l5">
 <!-- Navbar -->
 <!-- Page Container -->
-<div class="w3-container w3-content" style="max-width:1400px;margin-top:80px"> 
-<div class="row">
-<div class="col-sm-6 col-md-6">
-<div class="w3-container w3-padding">
-<%=form_tag exportleads_path, :method => 'get' do %>
-<%= text_field_tag :search, params[:search], :size=>"20", placeholder: "Search Product News",class: "form-control" %>
-<%= submit_tag "Search", :product => nil,class: "btn btn-primary" %>
-<% end %>
-</div>
-</div>
-<div class="col-sm-6 col-md-6">
-<div class="w3-container w3-padding">
-<%=form_tag exportleads_path, :method => 'get' do %>
-<%= text_field_tag :search, params[:search], :size=>"20", placeholder: "Search Product Leads",class: "form-control" %>
-<%= submit_tag "Search", :wanted => nil,class: "btn btn-primary" %>
-<% end %>
-</div>
-</div>
-</div>
+<div class="container-lg mt-5">
+  <%=form_tag exportleads_path, :method => 'get' do %>
+    <div class="d-flex flex-row align-items-center justify-content-between w-100 p-3">
+      <div class="w-75">
+        <%= text_field_tag :q, params[:q], :size=>"20", placeholder: "Search Product News",class: "form-control" %>
+      </div>
+      <div class="d-flex flex-row align-items-center justify-content-between w-20">
+        <%= submit_tag "Search", :product => nil,class: "btn btn-primary mr-2" %>
+        <%= link_to "Reset", exportleads_path(reset: true), class: "btn btn-secondary" %>
+      </div>
+    </div>
+  <% end %>
 
   <div class="w3-row">
- 
+
     <div class="col-sm-6 col-md-6">
       <div class="w3-row w3-white">
         <div class="w3-col m12">
           <%@exportnews.each do |exportnew|%>
-          <div class="w3-card w3-round w3-light-grey">
-           <div class="w3-container w3-padding">
+          <div class="w3-card w3-round w3-light-grey card-container mb-4">
+           <div class="d-flex flex-column justify-content-between p-3 h-100">
+           <div>
 <% if exportnew.product == "barley"%>
 <td class="w3-center"><i><%=link_to(image_tag("barley.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "20x40",style: "width:9%;"),barley_path)%></i>
 <% elsif exportnew.product == "buckwheat"%>
@@ -383,37 +406,36 @@ html, body, h1, h2, h3, h4, h5 {font-family: "Open Sans", sans-serif}
 <td class="w3-center"><i><%=link_to(image_tag("",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "20x40",style: "width:9%;"),turmeric_path)%></i>
 <%end%>
 
-<span class=""><b>Product : </b><%=exportnew.product.capitalize%></span>
+  <span class=""><b>Product : </b><%=exportnew.product.capitalize%></span>
+</div>
 
 
                <h6 class=""><b>Source : <%=exportnew.source.titleize%></b></h6>
                 <p class=""><b><%=exportnew.title.capitalize%></b></p>
-                 </br>
                 <p class=""><%=exportnew.name.capitalize%></p>
-                  </br>
-                </i><%= link_to 'View Source', "#{exportnew.link}",:target => '_blank', class: " w3-button w3-theme-d1 w3-margin-bottom"%></i>
+                </i><%= link_to 'View Source', "#{exportnew.link}",:target => '_blank', class: " w3-button w3-theme-d1"%></i>
              </div>
             </div>
-              </br>
-              
           <%end%>
           </div>
           </div>
-          <div class="w3-center"><%== pagy_nav(@news)%></div>
           </div>
-    
 
-    
+
+
 <div class="col-sm-6 col-md-6">
   <div class="w3-row w3-white">
     <div class="w3-col m12">
       <%@exportleads.each do |exportnew|%>
-        <div class="w3-card w3-round w3-light-grey">
-          <div class="w3-container w3-padding">
-            <h6 class=""><b><%=exportnew.wanted.titleize%></b></h6>
-              <p class=""><b><%=exportnew.buyer.capitalize%></b></p>
-              </br>
-              <p class=""><%=exportnew.title.capitalize%></p>
+        <div class="w3-card w3-round w3-light-grey card-container mb-4">
+          <div class="d-flex flex-column justify-content-between p-3 h-100">
+            <div class="d-flex align-items-center justify-content-between">
+              <h6 class=""><b><%=exportnew.wanted.titleize%></b></h6>
+              <p class="w3-left w3-green"><%=["Lead : Verified",""].sample%></p>
+            </div>
+            <p class=""><b><%=exportnew.buyer.capitalize%></b></p>
+            <p class=""><%=exportnew.title.capitalize%></p>
+            <div class="d-flex align-items-center justify-content-between">
               <p class=""><%=exportnew.contact%></p>
               <% if user_signed_in? %> 
              <button onclick="document.getElementById('id01').style.display='block'" class="w3-button  w3-theme w3-hover-teal" title="EximSquare" type="button" class="w3-button w3-theme-d1 w3-margin-bottom"><i class="fa fa-handshake-o">&nbsp;&nbsp;</i>Connect Buyer</button>
@@ -430,52 +452,55 @@ html, body, h1, h2, h3, h4, h5 {font-family: "Open Sans", sans-serif}
     <div class="w3-container">
 <%= form_for @connect_buyer do |f| %>
 
-<%= f.label :name,'Your Name'%></br>
-<%= f.text_field :name,class: "form-control",:maxlength=>"50",placeholder:"Name can't be blank"%></br>
+          <div id="id01" class="w3-modal">
+            <div class="w3-modal-content w3-card-4 w3-animate-top">
+              <header class="w3-container w3-teal w3-display-container">
+                <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-teal w3-display-topright"><i class="fa fa-remove"></i></span>
+                <h5>Sending Inquiry For: Buyer</h5>
+              </header>
+              </br>
+              <div class="w3-container">
+              <%= form_for @connect_buyer do |f| %>
 
-<%= f.label :email,'Email'%></br>
-<%= f.text_field :email,class: "form-control",:maxlength=>"50",placeholder:"Email can't be blank"%></br>
+              <%= f.label :name,'Your Name'%></br>
+              <%= f.text_field :name,class: "form-control",:maxlength=>"50",placeholder:"Name can't be blank"%></br>
 
-<%= f.label :country,'Country'%></br>
-<%= f.text_field :country,class: "form-control",:maxlength=>"60",placeholder:"Country name can't be blank"%></br>
+              <%= f.label :email,'Email'%></br>
+              <%= f.text_field :email,class: "form-control",:maxlength=>"50",placeholder:"Email can't be blank"%></br>
 
-<%= f.label :Phone_number,'Phone Num with Country Code'%></br>
-<%= f.text_field :Phone_number,class: "form-control",:maxlength=>"40",placeholder:"Phone Num can't be blank"%></br>
+              <%= f.label :country,'Country'%></br>
+              <%= f.text_field :country,class: "form-control",:maxlength=>"60",placeholder:"Country name can't be blank"%></br>
 
-<%= f.label :product_detail,'Your Product Detail'%></br>
-<%= f.text_field :product_detail,class: "form-control",:maxlength=>"60",placeholder:"Product Detail can't be blank"%></br>
+              <%= f.label :Phone_number,'Phone Num with Country Code'%></br>
+              <%= f.text_field :Phone_number,class: "form-control",:maxlength=>"40",placeholder:"Phone Num can't be blank"%></br>
 
-<%= f.label :message,'Message'%></br>
-<%= f.text_area :message,class: "form-control",:maxlength=>"500",:rows => 4,:cols => 60,placeholder:"Message can't be blank"%></br>
+              <%= f.label :product_detail,'Your Product Detail'%></br>
+              <%= f.text_field :product_detail,class: "form-control",:maxlength=>"60",placeholder:"Product Detail can't be blank"%></br>
 
-<%= f.submit"Connect Buyer",class: "w3-btn w3-teal"%>
+              <%= f.label :message,'Message'%></br>
+              <%= f.text_area :message,class: "form-control",:maxlength=>"500",:rows => 4,:cols => 60,placeholder:"Message can't be blank"%></br>
 
-<%end%>
-    </div>
-    </br>
-    <footer class="w3-container w3-teal">
-      <p class="text-center">Eximsquare</p>
-    </footer>
-    
-  </div>
-</div>
+              <%= f.submit"Connect Buyer",class: "w3-btn w3-green"%>
 
-<span class="w3-right"><%=rand(35.day.ago..0.day.from_now).to_date%></span>
-              <div class="w3-col m12"></br>
-              <p class="w3-left w3-green"><%=["Lead : Verified",""].sample%></p>
-              <span class="w3-right aba">Review : <sub class="ada"><%=["* * *","* * * *","* * * * *"].sample%><sub></span>
+              <%end%>
               </div>
+                </br>
+              <footer class="w3-container w3-teal">
+                <p class="text-center">Eximsquare</p>
+              </footer>
+
+            </div>
           </div>
-         </div>
-         </br>
+        </div>
+      </div>
       <%end%>
-    </div>  
+    </div>
   </div>
-<div class="w3-center"><%== pagy_nav(@leads)%></div>
 </div>
-    
 
 </div>
+ <div><%= paginate @exportnews, out_of_range: :last %></div>
+
 </div>
 
 
@@ -483,4 +508,4 @@ html, body, h1, h2, h3, h4, h5 {font-family: "Open Sans", sans-serif}
 
 
 </body>
-</html> 
+</html>

@@ -11,6 +11,9 @@
 # It's strongly recommended that you check this file into your version control system.
 
 ActiveRecord::Schema[7.0].define(version: 2023_06_02_002036) do
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "connect_buyers", force: :cascade do |t|
     t.text "name"
     t.string "email"
@@ -20,7 +23,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_06_02_002036) do
     t.text "message"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.integer "user_id", null: false
+    t.bigint "user_id", null: false
     t.index ["user_id"], name: "index_connect_buyers_on_user_id"
   end
 
@@ -83,7 +86,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_06_02_002036) do
     t.text "about_company"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.integer "user_id", null: false
+    t.bigint "user_id", null: false
     t.index ["user_id"], name: "index_profiles_on_user_id"
   end
 

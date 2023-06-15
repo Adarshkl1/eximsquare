@@ -12,7 +12,7 @@
 <style>
 body {
   overflow-y: hidden;
-  overflow-x: hidden; 
+  overflow-x: hidden;
   margin: 0;
 }
 .navbar {
@@ -72,19 +72,19 @@ body {
     <%=image_tag ("exim_square1.jpg"),style: "width:100%;max-height:500px;" %>
     <div class="w3-display-topmiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
       <h3>Los Angeles</h3>
-      <p><b>We had the best time playing at Venice Beach!</b></p>   
+      <p><b>We had the best time playing at Venice Beach!</b></p>
     </div>
   </div>
-  
+
   <div class="mySlides w3-display-container w3-center">
     <%=image_tag ("exim_square2.jpg"),style: "width:100%;max-height:500px;" %>
     <div class="w3-display-topmiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
       <h3>New York</h3>
-      <p><b>The atmosphere in New York is lorem ipsum.</b></p>    
+      <p><b>The atmosphere in New York is lorem ipsum.</b></p>
     </div>
   </div>
 
-  <div class="w3-container w3-display-bottomleft w3-margin-bottom">  
+  <div class="w3-container w3-display-bottomleft w3-margin-bottom">
     <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-xlarge w3-theme w3-hover-teal" title="Go To W3.CSS"></button>
   </div>
 
@@ -801,7 +801,7 @@ body {
 <div class="w3-col m2">
 <div class="w3-container w3-padding-16">
 <div class="w3-center">
-<i><%=link_to(image_tag("Triticale.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x120",style: "width:70%;"),triticale_path)%></i>
+<i><%=link_to(image_tag("triticale.jpg",class: "img-responsive",class: 'w3-hover-opacity img-circle',:size => "50x120",style: "width:70%;"),triticale_path)%></i>
 <h4><b><%=link_to"Triticale",triticale_path%></b></h4>
 </div>
 </div>
@@ -2217,7 +2217,7 @@ body {
 <h4><b><%=link_to"Caviar",caviar_path%></b></h4>
 </div>
 </div>
-</div>  
+</div>
 <div class="w3-col m2">
 <div class="w3-container w3-padding-16">
 <div class="w3-center">
@@ -2243,7 +2243,7 @@ body {
 </div>
 </div>
 </div>
- 
+
 <div class="w3-row-padding w3-margin-bottom">
 <div class="w3-col m2">
 <div class="w3-container w3-padding-16">
@@ -2277,7 +2277,7 @@ body {
 </div>
 </div>
 </div>
-</div>  
+</div>
 
 </div>
 </div>
@@ -2304,12 +2304,12 @@ function carousel() {
   var i;
   var x = document.getElementsByClassName("mySlides");
   for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";  
+    x[i].style.display = "none";
   }
   myIndex++;
-  if (myIndex > x.length) {myIndex = 1}    
-  x[myIndex-1].style.display = "block";  
-  setTimeout(carousel, 4000);    
+  if (myIndex > x.length) {myIndex = 1}
+  x[myIndex-1].style.display = "block";
+  setTimeout(carousel, 4000);
 }
 
 // Close side navigation
@@ -2322,7 +2322,7 @@ function openNav() {
   var x = document.getElementById("navDemo");
   if (x.className.indexOf("w3-show") == -1) {
     x.className += " w3-show";
-  } else { 
+  } else {
     x.className = x.className.replace(" w3-show", "");
   }
 }

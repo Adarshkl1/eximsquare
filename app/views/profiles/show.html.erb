@@ -81,7 +81,7 @@
 <i><%=image_tag "",class: "img-responsive",:size => "60x40",style: "width:40%" %></i> 
 <%end%>
 <h3 class=""><b><%=@user.fullname.first(20).capitalize%></b></h3>
-<h4 class=""><%=@user.business_type%></h4> 
+<h4 class=""><%=@user.business_type%></h4>
 <h5 class=""><%=@user.country.first(25).capitalize%></h5>
 <h5 class=""><%=@user.email.first(30).capitalize%></h5>
 <h5 class=""><%=@user.mobile_number.first(20).capitalize%></h5>
@@ -94,7 +94,7 @@
 <div class="w3-container w3-padding">
 <h4 class="w3-text-teal"><b>Business Information</b></h4>
 <%if @user.profiles.length == 0%>
-<% if user_signed_in? %> 
+<% if user_signed_in? %>
 <% if current_user.id == @user.id%>
 <h5 class=""><%=link_to"Add Business Information.",new_profile_path,class: "w3-teal w3-btn w3-border w3-hover-blue-grey"%></h5>
 <p class="w3-text-red">Enhance your company's visibility by adding business information for better buyer understanding.</p>
