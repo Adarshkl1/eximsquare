@@ -1,11 +1,11 @@
-<div class="w3-container w3-content" style="max-width:1400px;margin-top:60px"> 
+<div class="w3-container w3-content" style="max-width:1400px;margin-top:60px">
 <div class="col-md-7 col-sm-7 col-md-offset-2">
 <div class="w3-panel w3-card w3-responsive">
 <div class="w3-container w3-margin-bottom">
 
 <h3 class="w3-text-teal">Edit Buyer Inquiry</h3>
 
-<%= form_for @connect_buyer do |f| %>
+<%= form_with(url: connect_buyer_path(@connect_buyer), model: @connect_buyer, local: true) do |f| %>
 
 <%= f.label :name,'Your Name'%></br>
 <%= f.text_field :name,class: "form-control",:maxlength=>"50",placeholder:"Name can't be blank"%></br>
