@@ -12,6 +12,15 @@ class Exportnew < ApplicationRecord
          all.page(params[:page]).per(20)
       end
    end
+
+   def self.search(search)
+      if search
+         self.where("product like ?", "%#{search}%")
+      else
+       self.all
+      end
+   end
+
 end
 
 

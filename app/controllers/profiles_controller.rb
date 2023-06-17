@@ -3,25 +3,25 @@ class ProfilesController < ApplicationController
     def index
     @users = User.all
     end
-    
+
     def new
        @profile = Profile.new
-    end        
-    
+    end
+
     def show
       @user = User.find(params[:id])
-      @profile = Profile.where(params[:id])  
+      @profile = Profile.where(params[:id])
       @profiles = Profile.order('created_at DESC')
       @connect_buyer = ConnectBuyer.order('created_at DESC')
     end
 
     def edit
-        @user = User.find(params[:id])
-        @profile = Profile.find(params[:id])
-    end    
-     
+        @user = User.find(params[:user_id])
+        @profile = Profile.find(params[:profile_id])
+    end
+
     def create
-       
+
         @profile = current_user.profiles.build(profile_params)
           if @profile.save
             redirect_to profile_path(@profile.user.id),notice: "Business Info Added Successfully"
@@ -50,8 +50,8 @@ class ProfilesController < ApplicationController
     def profile_params
         params.require(:profile).permit(:product_name,:company_name,:minimun_order,:target_country,:about_company)
     end
-    
-    
+
+
 
     #def check_quota
     #    if !@user.profiles.nil? && @user.profiles.count >= 1
