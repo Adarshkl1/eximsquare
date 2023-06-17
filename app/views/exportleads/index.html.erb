@@ -437,20 +437,13 @@ html, body, h1, h2, h3, h4, h5 {font-family: "Open Sans", sans-serif}
             <p class=""><%=exportnew.title.capitalize%></p>
             <div class="d-flex align-items-center justify-content-between">
               <p class=""><%=exportnew.contact%></p>
-              <% if user_signed_in? %> 
-             <button onclick="document.getElementById('id01').style.display='block'" class="w3-button  w3-theme w3-hover-teal" title="EximSquare" type="button" class="w3-button w3-theme-d1 w3-margin-bottom"><i class="fa fa-handshake-o">&nbsp;&nbsp;</i>Connect Buyer</button>
-             <% elsif !user_signed_in? %>
-             <p><%=link_to"Connect Buyer",new_user_session_path,class: "w3-btn w3-teal w3-button w3-border w3-hover-blue-grey"%></p>
-             <%end%> 
-  <div id="id01" class="w3-modal">
-  <div class="w3-modal-content w3-card-4 w3-animate-top">
-    <header class="w3-container w3-teal w3-display-container"> 
-      <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-teal w3-display-topright"><i class="fa fa-remove"></i></span>
-      <h5>Sending Inquiry For: Buyer</h5>
-    </header>
-    </br>
-    <div class="w3-container">
-<%= form_for @connect_buyer do |f| %>
+              <span class="w3-right"><%=rand(35.day.ago..0.day.from_now).to_date%></span>
+            </div>
+
+            <div class="d-flex align-items-center justify-content-between">
+              <button onclick="document.getElementById('id01').style.display='block'" class="w3-button  w3-theme w3-hover-teal" title="EximSquare" type="button" class="w3-button w3-theme-d1 w3-margin-bottom"><i class="fa fa-handshake-o">&nbsp;&nbsp;</i>Connect Buyer</button>
+              <span class="w3-right aba">Review : <sub class="ada"><%=["* * *","* * * *","* * * * *"].sample%><sub></span>
+            </div>
 
           <div id="id01" class="w3-modal">
             <div class="w3-modal-content w3-card-4 w3-animate-top">
@@ -504,7 +497,7 @@ html, body, h1, h2, h3, h4, h5 {font-family: "Open Sans", sans-serif}
 </div>
 
 
- 
+
 
 
 </body>
