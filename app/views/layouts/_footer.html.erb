@@ -5,10 +5,14 @@
         <h4><b>INFO</b></h4>
         <p><b><%=link_to"Contact Us",new_home_path%></b></p> 
         <p><b><%=link_to"About Us",about_us_path%></b></p>
-         <p><b><%=link_to"Trade Leads",exportleads_path%></b></p>
+        <!--hide--><div class = "w3-hide-small w3-hide-large w3-hide-medium">
+        <p><b><%=link_to"Trade Leads",exportleads_path%></b></p>
         <p><b><%=link_to"Trade News",exportleads_path%></b></p> 
+        </div>
         <p><b><%=link_to"Trade Data",homes_path%></b></p>
       </div>
+
+<!--hide--><div class = "w3-hide-small w3-hide-large w3-hide-medium">
 <div class="w3-quarter">
 <h4>Trade Data</h4>
 <ul class="w3-ul">
@@ -339,6 +343,8 @@
 <%end%>
 <%end%>
 </div>
+<!--hide--></div>
+
 
       <div class="w3-quarter">
         <h3>Follow us</h3>
@@ -352,7 +358,8 @@
     <% end %></a>
         </p>
 <p><%=link_to "Privacy Policy",privacy_policy_path%></p> 
-<p><%=link_to "Terms and Condition",terms_and_condition_path%></p>        
+<p><%=link_to "Terms and Condition",terms_and_condition_path%></p> 
+<p>Copyright © <%= Time.now.strftime("%m/%d/%Y") %> Eximsquare.com All Rights Reserved.</p>       
       </div>
     </div>
   </footer>

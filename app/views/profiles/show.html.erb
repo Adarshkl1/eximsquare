@@ -130,11 +130,13 @@
 
 
 <%if @user.connect_buyers.length == 0%>
+<!--hide--><div class = "w3-hide-small w3-hide-large w3-hide-medium">
 <p class="">In Free Account: You Can Connect with Two Buyers</p>
 <p><%=link_to"Connect Buyer",exportleads_path,class: "w3-btn w3-teal w3-button w3-border w3-hover-blue-grey"%></p>
 <%elsif @user.connect_buyers.length >= 2%>
 <p class="w3-text-red">Free Account:You Can Connect With Two Buyers. Unlock Unlimited Access.</p>
 <p><%=link_to"Contact Us",new_home_path,class: "w3-btn w3-teal w3-button w3-border w3-hover-blue-grey"%></p>
+<!--hide--></div>
 <%end%>
 
 
@@ -163,6 +165,8 @@
 <%end%>
 
 </div>
+
+
 
 
 

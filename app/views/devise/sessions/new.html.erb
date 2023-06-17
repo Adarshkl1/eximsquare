@@ -4,7 +4,7 @@
 <title>Eximsquare</title>
 
 <style>
-    .container-fluid { background-image: url(<%= asset_path 'eximsquare_signup.png',style: "height:auto;width:100%;" %>) }
+    .container-fluid { background-image: url(<%= asset_path 'exim_square2.jpg',style: "height:auto;width:100%;" %>) }
 
 </style>
 </head>
@@ -24,12 +24,12 @@
     <%= f.label :email %><br />
     <%= f.email_field :email, autofocus: true, autocomplete: "email",:maxlength=>"80",class: "form-control" %>
   </div>
-
+</br>
   <div class="field">
     <%= f.label :password %><br />
     <%= f.password_field :password, autocomplete: "current-password",:maxlength=>"80",class: "form-control" %>
   </div>
-
+</br>
   <% if devise_mapping.rememberable? %>
     <div class="field">
       <%= f.check_box :remember_me %>
