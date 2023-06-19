@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>W3.CSS Template</title>
+<title>Eximsquare</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -68,10 +68,10 @@ html, body, h1, h2, h3, h4, h5 {font-family: "Open Sans", sans-serif}
      crossorigin="anonymous"></script>
 
 </head>
-<body class="w3-theme-l5">
+<body>
 <!-- Navbar -->
 <!-- Page Container -->
-<div class="w3-hide-small w3-container w3-content" style="max-width:1400px;margin-top:60px"> 
+<div class="w3-hide-small w3-container w3-content" style="max-width:1400px;margin-top:60px">
 <div class="col-sm-6 col-md-6">
   <%=form_tag exportleads_path, :method => 'get' do %>
     <div class="d-flex flex-row align-items-center justify-content-between w-100 p-3">
@@ -434,13 +434,13 @@ html, body, h1, h2, h3, h4, h5 {font-family: "Open Sans", sans-serif}
 
         <div class="w3-card w3-round w3-light-grey card-container mb-4">
           <div class="d-flex flex-column justify-content-between p-3 h-100">
-            
+
             <div class="d-flex align-items-center justify-content-between">
               <h6 class=""><b><%=exportnew.wanted.titleize%></b></h6>
               <p class="w3-left w3-green"><%=["Lead : Verified",""].sample%></p>
             </div>
-            <p class=""><%=exportnew.title.capitalize%></p> 
-            
+            <p class=""><%=exportnew.title.capitalize%></p>
+
             <div class="d-flex align-items-center justify-content-between">
             <p class=""><b><%=exportnew.buyer.capitalize%></b></p>
             <p class="w3-right"><b>Date : <%=rand(35.day.ago..0.day.from_now).to_date%></b></p>
@@ -451,17 +451,17 @@ html, body, h1, h2, h3, h4, h5 {font-family: "Open Sans", sans-serif}
             <p class=""><b><%=exportnew.contact%></b></p>
               </div>
 
-              <% if user_signed_in? %> 
+              <% if user_signed_in? %>
              <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-block w3-teal" title="EximSquare" type="button" class="w3-button w3-block w3-teal"><i class="fa fa-handshake-o">&nbsp;&nbsp;</i>Connect Buyer</button>
              <% elsif !user_signed_in? %>
              <i><%=link_to"Connect Buyer",new_user_session_path,class:"w3-button w3-block w3-teal"%></i>
-             <%end%> 
-             
+             <%end%>
+
 
   <div id="id01" class="w3-modal">
   <div class="w3-modal-content w3-card-4 w3-animate-top">
 
-    <header class="w3-container w3-teal w3-display-container"> 
+    <header class="w3-container w3-teal w3-display-container">
       <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-teal w3-display-topright"><i class="fa fa-remove"></i></span>
       <h5>Sending Inquiry For: Buyer</h5>
     </header>
@@ -499,7 +499,7 @@ html, body, h1, h2, h3, h4, h5 {font-family: "Open Sans", sans-serif}
                 <p class="text-center">Eximsquare</p>
               </footer>
 
-           
+
           </div>
         </div>
       </div>
@@ -514,7 +514,7 @@ html, body, h1, h2, h3, h4, h5 {font-family: "Open Sans", sans-serif}
  <div><%= paginate @exportnews, out_of_range: :last %></div>
 
 
- 
+
 
 
 </body>
