@@ -15,9 +15,9 @@ class Exportnew < ApplicationRecord
 
    def self.search(search)
       if search
-         self.where("product like ?", "%#{search}%")
+        self.where("LOWER(product) LIKE ?", "%#{search.downcase}%")
       else
-       self.all
+        self.all
       end
    end
 

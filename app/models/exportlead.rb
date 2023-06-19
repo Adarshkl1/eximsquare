@@ -15,10 +15,10 @@ class Exportlead < ApplicationRecord
 
   def self.search(search)
     if search
-      self.where("wanted like ?", "%#{search}%")
+      self.where("LOWER(wanted) LIKE ?", "%#{search.downcase}%")
     else
-    self.all
+      self.all
     end
-end
+  end
 
 end
