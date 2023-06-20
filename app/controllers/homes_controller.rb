@@ -1,5 +1,7 @@
 class HomesController < ApplicationController
 
+before_action :find_conactus, only: [:show, :edit, :update, :destroy]
+  
 def barley
   @exportnews = Exportnew.where(product: 'barley').select([:source,:title,:name,:link,:product]).order("random()").limit(5)
 end  
@@ -82,7 +84,7 @@ def create
   redirect_to homes_path,notice: "Thank you for reaching out! We'll reply to you shortly"
  else 
   render :action => :new
-end 
+ end 
 end
 
 private
@@ -90,6 +92,10 @@ private
 def connect_us
   params.require(:home).permit(:name,:email,:country,:Phone_number,:message)
 end  
+
+def find_conactus
+  @home = Home.find(params[:id])
+end
 
 end
 
