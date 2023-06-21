@@ -33,29 +33,6 @@
 <p>Email: eximsquare.help@gmail.com</p>
 <p>Phone: +91 9740005323</p>
 
-</br>
-<h4 class = "w3-text-teal"><b>WRITE US YOUR QUERIES</b></h4>
-</br>
-<%= form_for @home do |f| %>
-
-<%= f.label :name,'Your Name'%></br>
-<%= f.text_field :name,class: "form-control",:maxlength=>"50",placeholder:"Name can't be blank"%></br>
-
-<%= f.label :email,'Email'%></br>
-<%= f.text_field :email,class: "form-control",:maxlength=>"50",placeholder:"Email can't be blank"%></br>
-
-<%= f.label :country,'Country'%></br>
-<%= f.text_field :country,class: "form-control",:maxlength=>"60",placeholder:"Country name can't be blank"%></br>
-
-<%= f.label :Phone_number,'Phone Num with Country Code'%></br>
-<%= f.text_field :Phone_number,class: "form-control",:maxlength=>"40",placeholder:"Phone Num can't be blank"%></br>
-
-<%= f.label :message,'Message'%></br>
-<%= f.text_area :message,class: "form-control",:maxlength=>"500",:rows => 4,:cols => 60,placeholder:"Message can't be blank"%></br>
-
-<%= f.submit"Connect Buyer",class: "w3-btn w3-teal"%>
-<%end%>
-</br>
 
 </br>
 
